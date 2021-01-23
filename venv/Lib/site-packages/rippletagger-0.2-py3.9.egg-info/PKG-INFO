@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: rippletagger
+Version: 0.2
+Summary: RippleTagger identifies part-of-speech tags (NOUN, VERB...).
+Home-page: https://github.com/EmilStenstrom/rippletagger/
+Author: Emil Stenström
+Author-email: em@kth.se
+License: UNKNOWN
+Download-URL: https://github.com/EmilStenstrom/rippletagger/archive/0.2.zip
+Description: UNKNOWN
+Keywords: pos-tagging,pos-tagger,multi-langauge,nlp,rippletagger
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Operating System :: OS Independent
