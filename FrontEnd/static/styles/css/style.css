@@ -1,0 +1,10 @@
+.jumbotron {
+  background-image: url('../images/historycover.jpeg');
+  background-size: cover;
+}
+
+.website-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: xxx-large;
+}
