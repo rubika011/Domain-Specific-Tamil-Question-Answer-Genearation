@@ -4,3 +4,5 @@ This project geneartes wh question from tamil text with text processing techniqu
 
 Following libraries are used:
 RippleTagger for POS tagging
+
+Front end implementation done using flask, flask bootstrap used for styling.
