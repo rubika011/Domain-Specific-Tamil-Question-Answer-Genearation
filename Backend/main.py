@@ -51,7 +51,7 @@ uni = auto2unicode(tscii)
 print(uni)
 
 
-file = open("SampleDoc.txt", encoding="utf-8")
+file = open("Files/SampleDoc.txt", encoding="utf-8")
 text = ""
 for line in file:
     line = line.rstrip()
