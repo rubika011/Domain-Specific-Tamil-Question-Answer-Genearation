@@ -8,6 +8,7 @@ Bootstrap(app)
 
 app.config["FILE_UPLOADS"] = "C:\\Users\ASUS\PycharmProjects\QuestionAnswerGeneration\FrontEnd\\files"
 app.config["ALLOWED_FILE_EXTENSIONS"] = ["PDF", "DOC", "TXT", "DOCX"]
+app.config['SECRET_KEY'] = 'thisisasecret'
 
 def allowed_files(filename):
     if not "." in filename:
@@ -33,7 +34,7 @@ def view_qa_generation_page():
                     processFile.processFile(file_content)
                 return redirect(request.url)
             else:
-                flash("The file uploaded is not supported by the application.")
+                flash('The file uploaded is not supported by the application.', 'danger')
 
     return render_template("questionAnswerGenerator.html", title="Q&A Generator")
 
