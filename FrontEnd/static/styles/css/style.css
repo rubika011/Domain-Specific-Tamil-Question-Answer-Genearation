@@ -8,3 +8,23 @@
     text-align: center;
     font-size: xxx-large;
 }
+
+.inline-div {
+    display:inline-block;
+}
+
+.page-title {
+    text-align: center;
+}
+
+textarea {
+        overflow-y: scroll;
+        overflow-x: scroll;
+        display: block;
+        display: inline;
+        resize: none; /* Remove this if you want the user to resize the textarea */
+}
+
+.upload-btn {
+    display: inline;
+}

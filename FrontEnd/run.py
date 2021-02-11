@@ -23,9 +23,10 @@ def allowed_files(filename):
 
 @app.route("/", methods=["GET", "POST"])
 def view_qa_generation_page():
+    file_content=""
     if request.method == "POST":
         if request.files:
-            file = request.files["file"]
+            file = request.files["upload-file"]
             if allowed_files(file.filename):
                 file.save(os.path.join(app.config["FILE_UPLOADS"], file.filename))
 
@@ -36,7 +37,7 @@ def view_qa_generation_page():
             else:
                 flash('The file uploaded is not supported by the application.', 'danger')
 
-    return render_template("questionAnswerGenerator.html", title="Q&A Generator")
+    return render_template("questionAnswerGenerator.html", content=file_content)
 
 @app.route("/named-entity-recognition")
 def view_ner_page():
