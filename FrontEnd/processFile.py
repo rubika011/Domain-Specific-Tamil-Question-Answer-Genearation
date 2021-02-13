@@ -1,32 +1,22 @@
 from rippletagger.tagger import Tagger
 import rulebased
-from tamil.txt2unicode import auto2unicode
 import snowballstemmer
 
-def processFile(file):
-    #tscii = 'C÷u Põ»¨£Sv°À ¤µõßì •u¼¯ |õkPÎ¾® \ÚzöuõøP AvPÍÂÀ'
-    #uni = auto2unicode(tscii)
-    #print(uni)
+def processfile(filecontent, filewritepath):
+    stopwordsfile = open("stopwords.txt", encoding="utf-8")
+    stopwords = stopwordsfile.read().splitlines()
+    print(stopwords)
 
-    stopwordsFile = open("stopwords.txt", encoding="utf-8")
-    stopWords = stopwordsFile.read().splitlines()
-    print(stopWords)
-
-    #text = ""
-    #for line in file:
-    #    line = line.rstrip()
-     #   if line:
-      #      text = text + line
-
-    sentences = file.split(".")
-
+    writefile = open(filewritepath, "w", encoding="utf-8")
+    sentences = filecontent.split(".")
+    print(sentences)
     for sentence in sentences:
-        matchFound = rulebased.regex_match_multiple_items(sentence)
-        if (matchFound):
+        matchFound = rulebased.regex_match_multiple_items(sentence, writefile)
+        if matchFound:
             continue
 
-        matchFound = rulebased.regex_match_date_time_quantity(sentence)
-        if (matchFound):
+        matchFound = rulebased.regex_match_date_time_quantity(sentence, writefile)
+        if matchFound:
             continue
 
         tagger = Tagger(language='tam')
@@ -34,7 +24,7 @@ def processFile(file):
         print(sentence)
         print('POS tag', posTagger)
         for (word, tag) in posTagger:
-            if tag == 'NOUN' and word not in stopWords:
+            if tag == 'NOUN' and word not in stopwords:
                 stemmer = snowballstemmer.stemmer('tamil')
                 stemWord = stemmer.stemWords(word.split())
                 print(stemWord)
