@@ -9,7 +9,7 @@ def regex_match_multiple_items(sentence, writefile):
         print('question: ' + question + '?')
         writefile.write(question + "?\n")
         print(match.string)
-        writefile.write(match.string + "\r\n\n")
+        writefile.write(match.string + "\r\n")
         return True
     else:
         multipleItemsRegex2 = re.compile('(.*,\s)+.*(?:ஆகியன\s|என்பன\s|போன்றன\s|போன்றவை\s|ஆகியவை\s|என்பவை\s)')
@@ -17,20 +17,20 @@ def regex_match_multiple_items(sentence, writefile):
         if match2:
             question = re.sub(multipleItemsRegex2, 'எவை ', sentence)
             print('question2: ' + question + '?')
-            writefile.write(question + "\r\n")
+            writefile.write(question + "?\n")
             print(match.string)
             writefile.write(match.string + "\r\n")
             return True
 
 #regex match for எப்போது, எத்தனை question generation
 def regex_match_date_time_quantity(sentence, writefile):
-    dateTimeRegex = re.compile('(கி.பி\s)?[1-2][0-9]{3}\s?(?:இல்)')
+    dateTimeRegex = re.compile('(கி\.பி\s)?[1-2][0-9]{3}\s?(?:இல்|ல்)')
     match = re.match(dateTimeRegex, sentence)
     print("line 21")
     if match:
         question = re.sub(dateTimeRegex, 'எந்த வருடம் ', sentence)
         print('question: ' + question + '?')
-        writefile.write(question + "\r\n")
+        writefile.write(question + "?\n")
         print(match.string)
         writefile.write(match.string + "\r\n")
         return True
@@ -41,7 +41,7 @@ def regex_match_date_time_quantity(sentence, writefile):
         if match2:
             question = re.sub(dateTimeRegex2, 'எந்த', sentence)
             print('question2: ' + question + '?')
-            writefile.write(question + "\r\n")
+            writefile.write(question + "?\n")
             print(match.string)
             writefile.write(match.string + "\r\n")
             return True
@@ -52,7 +52,7 @@ def regex_match_date_time_quantity(sentence, writefile):
             if match3:
                 question = re.sub(dateTimeRegex3, 'எத்தனையாம் நூற்றாண்', sentence)
                 print('question3: ' + question + '?')
-                writefile.write(question + "\r\n")
+                writefile.write(question + "?\n")
                 print(match.string)
                 writefile.write(match.string + "\r\n")
                 return True

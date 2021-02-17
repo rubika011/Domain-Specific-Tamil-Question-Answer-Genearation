@@ -49,6 +49,7 @@ def readtxtfile(filename):
 @app.route("/", methods=["GET", "POST"])
 def view_qa_generation_page():
     file_content = ""
+    generatedQAs = ""
     if request.method == "POST":
         if request.form['submitBtn'] == 'uploadFile':
             if request.files:
@@ -69,8 +70,10 @@ def view_qa_generation_page():
         elif request.form['submitBtn'] == 'generateQA':
             file_content = request.form['textContent']
             processFile.processfile(file_content, app.config['QUESTION_ANSWER_FILE_PATH'])
+            with open(app.config["QUESTION_ANSWER_FILE_PATH"], encoding="utf-8") as f:
+                generatedQAs = f.read()
 
-    return render_template("questionAnswerGenerator.html", content=file_content)
+    return render_template("questionAnswerGenerator.html", content=file_content, questionAnswers=generatedQAs)
 
 @app.route("/named-entity-recognition")
 def view_ner_page():
