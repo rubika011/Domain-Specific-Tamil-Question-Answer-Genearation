@@ -1,7 +1,7 @@
 from rippletagger.tagger import Tagger
 import rulebased
 import snowballstemmer
-from polyglot.text import Text
+import re
 
 dictionary = {
     'location': ['ரஷ்யா', 'பிரான்ஸ்', 'ஆஸ்திரியா-ஹங்கேரி', 'பல்கேரியா', 'ஐக்கிய அமெரிக்கா',
@@ -14,6 +14,9 @@ dictionary = {
                'அடோல்ஃப் ஹிட்லர்', 'பெனிட்டோ முசோலினி', 'ஜோசப் ஸ்டாலின்', 'டக்ளஸ் மாக்ஆர்தர்', 'டுவைட் ஐசனோவர்',
                'மன்னர் ஜார்ஜ் V']
 }
+
+ignorewordlistfile = open("ignoresentence.txt", encoding="utf-8")
+ignorewordlist = ignorewordlistfile.read().splitlines()
 
 def lookup_search(lookup):
     for key, value in dictionary.items():
@@ -30,9 +33,6 @@ def checkanophoricresolution(sentence, firstword, stemword):
     return True
 
 def ignorenonsuitablesentence(sentence):
-    ignorewordlistfile = open("ignoresentence.txt", encoding="utf-8")
-    ignorewordlist = ignorewordlistfile.read().splitlines()
-
     firstword = sentence.partition(' ')[0]
     if firstword in ignorewordlist:
         return False
@@ -41,7 +41,7 @@ def ignorenonsuitablesentence(sentence):
     if stemWord and stemWord[0] in ignorewordlist:
         return False
 
-    return checkanophoricresolution(sentence,firstword, stemWord)
+    return checkanophoricresolution(sentence, firstword, stemWord)
 
 def processfile(filecontent, filewritepath):
     stopwordsfile = open("stopwords.txt", encoding="utf-8")
@@ -52,6 +52,7 @@ def processfile(filecontent, filewritepath):
 
     for sentence in sentences:
         sentence = ' '.join(sentence.split())
+        sentence = re.sub('\u200c', '', sentence)
         issentencesuitable = ignorenonsuitablesentence(sentence)
         if not issentencesuitable:
             continue
@@ -70,12 +71,10 @@ def processfile(filecontent, filewritepath):
             continue
 
         for (word, tag) in postagger:
-
             if tag == 'NOUN' and word not in stopwords:
-
                 matchFound = lookup_search(word)
                 if matchFound == 'location':
-                    question = sentence.replace(word, "எந்த நாட்டில்")
+                    question = sentence.replace(word, "எந்த நாடு")
                     rulebased.writeqafile(writefile, question, word)
                     break
                 elif matchFound == 'person':

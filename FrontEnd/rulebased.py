@@ -8,7 +8,7 @@ def writeqafile(writefile, question, answer):
 
 #regex match for எந்த, எவை question generation
 def regex_match_multiple_items(sentence, writefile):
-    multipleItemsRegex1 = re.compile('(.*,\s)+.*(?:ஆகிய\s|போன்ற\s)')
+    multipleItemsRegex1 = re.compile('([^,\s]+,\s)+[^,]+(?:ஆகிய\s|போன்ற\s)')
     match = re.match(multipleItemsRegex1, sentence)
     if match:
         question = re.sub(multipleItemsRegex1, 'எந்த ', sentence)
@@ -33,11 +33,29 @@ def regex_match_date_time_quantity(sentence, writefile):
         if match2:
             question = re.sub(dateTimeRegex2, 'எந்த', sentence)
             return writeqafile(writefile, question, match2.string)
-        else:
-            dateTimeRegex3 = re.compile('\d{1,2}\s(?:ஆம் நூற்றாண்)')
-            match3 = re.search(dateTimeRegex3, sentence)
-            if match3:
-                question = re.sub(dateTimeRegex3, 'எத்தனையாம் நூற்றாண்', sentence)
-                return writeqafile(writefile, question, match3.string)
+
+        dateTimeRegex3 = re.compile('[1-2][0-9]{3}(\s)*-(\s)*[1-2][0-9]{3}')
+        match3 = re.search(dateTimeRegex3, sentence)
+        if match3:
+            question = re.sub(dateTimeRegex3, 'எந்த ஆண்டு தொடக்கம் எந்த ஆண்டு', sentence)
+            return writeqafile(writefile, question, match3.string)
+
+        dateTimeRegex4 = re.compile('\d+\s*ஆம்')
+        match4 = re.search(dateTimeRegex3, sentence)
+        if match4:
+            question = re.sub(dateTimeRegex4, 'எத்தனையாம்', sentence)
+            return writeqafile(writefile, question, match4.string)
+
+        dateTimeRegex5 = re.compile('\d+\s*(?:ஆவது|வது)')
+        match5 = re.search(dateTimeRegex5, sentence)
+        if match5:
+            question = re.sub(dateTimeRegex5, 'எத்தனையாவது', sentence)
+            return writeqafile(writefile, question, match5.string)
+
+        dateTimeRegex6 = re.compile('[1-9]+\s')
+        match6 = re.search(dateTimeRegex6, sentence)
+        if match6:
+            question = re.sub(dateTimeRegex6, 'எத்தனை ', sentence)
+            return writeqafile(writefile, question, match6.string)
 
     return False

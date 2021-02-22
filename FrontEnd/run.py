@@ -1,3 +1,4 @@
+import tamil
 from PyPDF2 import PdfFileReader
 from flask import Flask, flash, render_template, request, redirect
 from flask_bootstrap import Bootstrap
@@ -24,7 +25,7 @@ def allowed_files(filename):
 
 def readpdffile(file):
     pdf = PdfFileReader(file)
-    with open(app.config['TXT_CONVERSION_FILE_PATH'], 'w') as f:
+    with open(app.config['TXT_CONVERSION_FILE_PATH'], 'w', encoding="utf-8") as f:
         for page_num in range(pdf.numPages):
             # print('Page: {0}'.format(page_num))
             pageObj = pdf.getPage(page_num)
@@ -60,7 +61,7 @@ def view_qa_generation_page():
                     if ext == 'pdf':
                         readpdffile(file)
                         file_content = readtxtfile('pdftotxtconversion.txt')
-
+                        file_content = tamil.txt2unicode.auto2unicode(file_content)
                     else:
                         file_content = readtxtfile(file.filename)
 
@@ -74,6 +75,7 @@ def view_qa_generation_page():
                 generatedQAs = f.read()
 
     return render_template("questionAnswerGenerator.html", content=file_content, questionAnswers=generatedQAs)
+
 
 @app.route("/named-entity-recognition")
 def view_ner_page():
