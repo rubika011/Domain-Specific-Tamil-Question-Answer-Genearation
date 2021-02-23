@@ -12,6 +12,7 @@ app.config["TXT_CONVERSION_FILE_PATH"] = "C:\\Users\ASUS\PycharmProjects\Questio
 app.config["ALLOWED_FILE_EXTENSIONS"] = ["pdf", "doc", "txt", "docx"]
 app.config['SECRET_KEY'] = 'thisisasecret'
 app.config['QUESTION_ANSWER_FILE_PATH'] = "C:\\Users\ASUS\PycharmProjects\QuestionAnswerGeneration\FrontEnd\\files\questionanswers.txt"
+app.config["MAX_IMAGE_FILESIZE"] = 10 * 1024 * 1024
 
 def allowed_files(filename):
     if not "." in filename:
@@ -19,6 +20,12 @@ def allowed_files(filename):
 
     ext = filename.rsplit(".", 1)[1]
     if ext.lower() in app.config["ALLOWED_FILE_EXTENSIONS"]:
+        return True
+    else:
+        return False
+
+def allowed_image_filesize(filesize):
+    if int(filesize) <= app.config["MAX_IMAGE_FILESIZE"]:
         return True
     else:
         return False
@@ -75,7 +82,6 @@ def view_qa_generation_page():
                 generatedQAs = f.read()
 
     return render_template("questionAnswerGenerator.html", content=file_content, questionAnswers=generatedQAs)
-
 
 @app.route("/named-entity-recognition")
 def view_ner_page():
