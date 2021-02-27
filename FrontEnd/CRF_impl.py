@@ -1,5 +1,4 @@
-
-
+import sklearn_crfsuite
 
 def word2features(sent, i):
     word = sent[i][0]
@@ -9,16 +8,14 @@ def word2features(sent, i):
         'bias': 1.0,
         'word[-3:]': word[-3:],
         'word.isdigit()': word.isdigit(),
-        'postag': postag,
-        'postag[:2]': postag[:2],
+        'postag': postag
     }
     if i > 0:
         word1 = sent[i-1][0]
         postag1 = sent[i-1][1]
         features.update({
-            '-1:word.isupper()': word1.isupper(),
+            '-1:word.isdigit()': word1.isupper(),
             '-1:postag': postag1,
-            '-1:postag[:2]': postag1[:2],
         })
     else:
         features['BOS'] = True
@@ -27,8 +24,6 @@ def word2features(sent, i):
         word1 = sent[i+1][0]
         postag1 = sent[i+1][1]
         features.update({
-            '+1:word.lower()': word1.lower(),
-            '+1:word.istitle()': word1.istitle(),
             '+1:word.isupper()': word1.isupper(),
             '+1:postag': postag1,
             '+1:postag[:2]': postag1[:2],
@@ -48,8 +43,9 @@ def sent2labels(sent):
 def sent2tokens(sent):
     return [token for token, postag, label in sent]
 
-#X_train = [sent2features(s) for s in train_sents]
-#y_train = [sent2labels(s) for s in train_sents]
 
-#X_test = [sent2features(s) for s in test_sents]
-#y_test = [sent2labels(s) for s in test_sents]
+X_train = [sent2features(s) for s in train_sents]
+y_train = [sent2labels(s) for s in train_sents]
+
+X_test = [sent2features(s) for s in test_sents]
+y_test = [sent2labels(s) for s in test_sents]

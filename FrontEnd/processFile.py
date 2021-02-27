@@ -21,6 +21,17 @@ dictionary = {
 ignorewordlistfile = open("ignoresentence.txt", encoding="utf-8")
 ignorewordlist = ignorewordlistfile.read().splitlines()
 
+def getlistofsentences(file_content):
+    sentences = []
+    while file_content is not "":
+        sentenceregex = re.compile('^[^.]+([0-9]+\.{0,1}\s*){0,}[^.]+[^\s.]{2,}\.')
+        match = re.search(sentenceregex, file_content)
+        sentences.append(match.string)
+        if match:
+            file_content = re.sub(sentenceregex, '', file_content)
+
+    return sentences
+
 def lookup_search(lookup):
     for key, value in dictionary.items():
         for v in value:
