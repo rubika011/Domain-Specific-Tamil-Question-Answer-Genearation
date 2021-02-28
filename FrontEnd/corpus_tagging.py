@@ -2,12 +2,12 @@ import re
 from rippletagger.tagger import Tagger
 
 def ner_tagging():
-    nertaggingfile = open('ner_tagging.txt', encoding="utf-8")
+    nertaggingfile = open('ner_tagging_test_data.txt', encoding="utf-8")
     nertaggingsentences = nertaggingfile.read()
     sentences = nertaggingsentences.split(".")
     #sentences = processFile.getlistofsentences(nertaggingsentences)
 
-    writefile = open("ner_tagging_dataset.txt", "w", encoding="utf-8")
+    writefile = open("ner_testing_dataset.txt", "w", encoding="utf-8")
     nersentencestag = []
     nersentencestagstring = ""
     for sentence in sentences:

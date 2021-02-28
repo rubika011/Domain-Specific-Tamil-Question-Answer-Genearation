@@ -3,6 +3,7 @@ from PyPDF2 import PdfFileReader
 from flask import Flask, flash, render_template, request, redirect
 from flask_bootstrap import Bootstrap
 import processFile, os
+from FrontEnd import crf_impl
 
 app= Flask(__name__)
 Bootstrap(app)
@@ -60,6 +61,7 @@ def view_qa_generation_page():
     generatedQAs = ""
     if request.method == "POST":
         if request.form['submitBtn'] == 'uploadFile':
+            crf_impl.trainandtest()
             if request.files:
                 file = request.files["upload-file"]
                 if allowed_files(file.filename):
