@@ -1,29 +1,16 @@
 from rippletagger.tagger import Tagger
+from indicnlp.tokenize import sentence_tokenize
+from FrontEnd import gazetteers
 import rulebased
 import snowballstemmer
 import re
-
-dictionary = {
-    'location': ['ரஷ்யா', 'பிரான்ஸ்', 'ஆஸ்திரியா-ஹங்கேரி', 'பல்கேரியா', 'ஐக்கிய அமெரிக்கா',
-                 'பிரித்தானியா', 'இத்தாலி', 'ஓட்டோமான்', 'ஜெர்மன்', 'ரோமானியா', 'ஜப்பான்', 'போலந்து'],
-
-    'person': ['நிக்கோலாஸ் II', 'அலெக்சேய் புருசிலோவ்', 'ஜார்ஜஸ் கிளெமென்சியு', 'ஜோசப் ஜோப்ரே', 'பேர்டினண்ட் ஃபோக்',
-               'ராபர்ட் நிவேலே','பிலிப் பெட்டேன்','ஹெர்பேர்ட் எச். அஸ்குயித்', 'டே. லாயிட் ஜார்ஜ்', 'டக்ளஸ் ஹேக்',
-               'ஜான் ஜெலிக்கோ', 'விக்டர் இம்மானுவேல் III', 'லுய்கி கடோர்னா', 'ஆர்மண்டோ டயஸ்', 'வூட்ரோ வில்சன்',
-               'ஜான் பேர்ஷிங்', 'வின்ஸ்டன் சர்ச்சில்', 'பிராங்க்ளின் டெலானோ ரூஸ்வெல்ட்', 'பேரரசர் ஹிரோஹிட்டோ',
-               'அடோல்ஃப் ஹிட்லர்', 'பெனிட்டோ முசோலினி', 'ஜோசப் ஸ்டாலின்', 'டக்ளஸ் மாக்ஆர்தர்', 'டுவைட் ஐசனோவர்',
-               'மன்னர் ஜார்ஜ் V'],
-
-    'month': ['ஜனவரி', 'பெப்ரவரி', 'மார்ச்', 'ஏப்ரல்', 'மே', 'ஜூனஂ', 'ஜூலை', 'ஆகஸஂடஂ', 'செப்டெம்பர்', 'அக்டோபர்',
-              'நவம்பர்', 'டிசம்பர்']
-}
 
 ignorewordlistfile = open("ignoresentence.txt", encoding="utf-8")
 ignorewordlist = ignorewordlistfile.read().splitlines()
 
 def getlistofsentences(file_content):
     sentences = []
-    while file_content is not "":
+    while file_content != "":
         sentenceregex = re.compile('^[^.]+([0-9]+\.{0,1}\s*){0,}[^.]+[^\s.]{2,}\.')
         match = re.search(sentenceregex, file_content)
         sentences.append(match.string)
@@ -33,9 +20,10 @@ def getlistofsentences(file_content):
     return sentences
 
 def lookup_search(lookup):
-    for key, value in dictionary.items():
+    for key, value in gazetteers.dictionary.items():
         for v in value:
-            if lookup in v:
+            partnames = v.split(" ")
+            if lookup in partnames:
                 return key
     return 'None'
 
@@ -62,7 +50,7 @@ def processfile(filecontent, filewritepath):
     stopwords = stopwordsfile.read().splitlines()
 
     writefile = open(filewritepath, "w", encoding="utf-8")
-    sentences = filecontent.split(".")
+    sentences = sentence_tokenize.sentence_split(filecontent, lang='tam')
 
     for sentence in sentences:
         sentence = ' '.join(sentence.split())
@@ -76,7 +64,7 @@ def processfile(filecontent, filewritepath):
         print(sentence)
         print('POS tag', postagger)
 
-        matchFound = rulebased.regex_match_date_time_quantity(sentence, writefile)
+        matchFound = rulebased.regex_match_date_time_quantity(sentence, writefile, postagger)
         if matchFound:
             continue
 
@@ -85,7 +73,7 @@ def processfile(filecontent, filewritepath):
             continue
 
         for (word, tag) in postagger:
-            if tag == 'NOUN' and word not in stopwords:
+            if (tag == 'NOUN' or tag == 'PROPN') and word not in stopwords:
                 matchFound = lookup_search(word)
                 if matchFound == 'location':
                     question = sentence.replace(word, "எந்த நாடு")
