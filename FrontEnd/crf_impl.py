@@ -121,11 +121,6 @@ def sent2tokens(sent):
     return [token for token, postag, label in sent]
 
 def trainandtest():
-    #nertrainingdatasetfile = open('ner_training_dataset.txt', encoding="utf-8")
-    #nertrainingdata = nertrainingdatasetfile.readlines()
-
-    #nertestingdatasetfile = open('ner_testing_dataset.txt', encoding="utf-8")
-    #nertestingdata = nertestingdatasetfile.readlines()
 
     train_sents = training_data.get_training_data()
     test_sents = testing_data.get_testing_data()
