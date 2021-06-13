@@ -138,7 +138,7 @@ def trainandtest():
         c1=0.1,
         c2=0.1,
         max_iterations=20,
-        all_possible_transitions=False,
+        all_possible_transitions=True,
     )
     crf.fit(X_test, y_test)
 
