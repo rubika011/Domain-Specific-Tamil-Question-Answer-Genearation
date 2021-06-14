@@ -1,6 +1,6 @@
 import pickle
+import warnings
 
-import joblib
 import sklearn_crfsuite
 import snowballstemmer
 import re
@@ -62,6 +62,10 @@ def checkcluewordlist(word, key):
 
     return False
 
+def getstemword(word):
+    stemmer = snowballstemmer.stemmer('tamil')
+    return stemmer.stemWords(word.split())
+
 def iswordcontainshyphen(word):
     return re.search(r'-', word) != 'None'
 
@@ -114,7 +118,7 @@ def word2features(sent, i):
 
     features = {
         'bias': 1.0,
-        'word[-3:]': word[-3:],
+        'word[-2:]': word[-2:],
         'isnumber': checkifwordisnumber(word),
         'postag': postag,
         'clueword': isclueword(word),
@@ -123,57 +127,63 @@ def word2features(sent, i):
         'isyearformat': isyearformat(word),
         'endwithcomma': checkifwordendswithcomma(word),
         'containhyphen': iswordcontainshyphen(word),
-        'ishyphen': ishyphen(word)
+        'ishyphen': ishyphen(word),
+        'stemword': getstemword(word)
     }
 
     if i > 0:
-        word1 = sent[i-1][0]
+        pword1 = sent[i-1][0]
         postag1 = sent[i-1][1]
         features.update({
+            '-1:word': pword1,
             '-1:postag': postag1,
-            '-1:clueword': isclueword(word1),
-            '-1:isnumber': checkifwordisnumber(word1),
-            '-1:gazetteerword': gazettercheck(word1),
-            '-1:isordinal': checkifordinalnumericword(word1),
-            '-1:isyearformat': isyearformat(word1),
-            '-1:isconjunction': wordisaconjunction(word1),
-            '-1:endwithcomma': checkifwordendswithcomma(word1),
-            '-1:ishyphen': ishyphen(word)
+            '-1:clueword': isclueword(pword1),
+            '-1:isnumber': checkifwordisnumber(pword1),
+            '-1:gazetteerword': gazettercheck(pword1),
+            '-1:isordinal': checkifordinalnumericword(pword1),
+            '-1:isyearformat': isyearformat(pword1),
+            '-1:isconjunction': wordisaconjunction(pword1),
+            '-1:endwithcomma': checkifwordendswithcomma(pword1),
+            '-1:ishyphen': ishyphen(word),
+            '-1:prefixword': checkprefixword(word)
         })
         if i > 1:
-            word2 = sent[i-2][0]
+            pword2 = sent[i-2][0]
             postag2 = sent[i-2][1]
             features.update({
+                '-2:word': pword2,
                 '-2:postag': postag2,
-                '-2:gazetteerword': gazettercheck(word2),
-                '-2:isyearformat': isyearformat(word2),
-                '-2:clueword': isclueword(word2),
-                '-2:endwithcomma': checkifwordendswithcomma(word2)
+                '-2:gazetteerword': gazettercheck(pword2),
+                '-2:isyearformat': isyearformat(pword2),
+                '-2:clueword': isclueword(pword2),
+                '-2:endwithcomma': checkifwordendswithcomma(pword2)
             })
     else:
         features['BOS'] = True
 
     if i < len(sent) - 1:
-        word1 = sent[i+1][0]
+        nword1 = sent[i+1][0]
         postag1 = sent[i+1][1]
         features.update({
+            '+1:word': nword1,
             '+1:postag': postag1,
-            '+1:clueword': isclueword(word1),
-            '+1:gazetteerword': gazettercheck(word1),
-            '+1:isnumber': checkifwordisnumber(word1),
-            '+1:isconjunction': wordisaconjunction(word1),
-            '+1:endwithcomma': checkifwordendswithcomma(word1),
+            '+1:clueword': isclueword(nword1),
+            '+1:gazetteerword': gazettercheck(nword1),
+            '+1:isnumber': checkifwordisnumber(nword1),
+            '+1:isconjunction': wordisaconjunction(nword1),
+            '+1:endwithcomma': checkifwordendswithcomma(nword1),
             '+1:ishyphen': ishyphen(word)
         })
         if i < len(sent) - 2:
-            word2 = sent[i+2][0]
+            nword2 = sent[i+2][0]
             postag2 = sent[i+2][1]
             features.update({
+                '+2:word': nword2,
                 '+2:postag': postag2,
-                '+2:gazetteerword': gazettercheck(word2),
-                '+2:clueword': isclueword(word2),
-                '+2:isconjunction': wordisaconjunction(word2),
-                '+2:endwithcomma': checkifwordendswithcomma(word2)
+                '+2:gazetteerword': gazettercheck(nword2),
+                '+2:clueword': isclueword(nword2),
+                '+2:isconjunction': wordisaconjunction(nword2),
+                '+2:endwithcomma': checkifwordendswithcomma(nword2)
             })
 
     else:
@@ -191,19 +201,11 @@ def sent2tokens(sent):
     return [token for token, postag, label in sent]
 
 def trainandtest():
-    #nertrainingdatasetfile = open('ner_training_dataset.txt', encoding="utf-8")
-    #nertrainingdata = nertrainingdatasetfile.readlines()
-
-    #nertestingdatasetfile = open('ner_testing_dataset.txt', encoding="utf-8")
-    #nertestingdata = nertestingdatasetfile.readlines()
-
     train_sents = training_data.get_training_data()
     test_sents = testing_data.get_testing_data()
 
-
     X_train = [sent2features(s) for s in train_sents]
     y_train = [sent2labels(s) for s in train_sents]
-
 
     X_test = [sent2features(s) for s in test_sents]
     y_test = [sent2labels(s) for s in test_sents]
@@ -247,6 +249,10 @@ def trainandtest():
         labels,
         key=lambda name: (name[1:], name[0])
     )
+    with warnings.catch_warnings():
+        # ignore all caught warnings
+        warnings.filterwarnings("ignore")
+
     print('Test set classification report: \n\n{}'.format(metrics.flat_classification_report(y_test, ypred, labels=sorted_labels, digits=3)))
 
 def tagsentence(sentence):
