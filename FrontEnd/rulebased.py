@@ -71,5 +71,7 @@ def checkgazetteer(sentence, writefile):
     for wordindex in range(len(words)):
         namedentitytype = lookup_search(words[wordindex])
         if (namedentitytype != 'None'):
-            question = generatequestion(sentence, words[wordindex], words[wordindex - 1], words[wordindex + 1], namedentitytype)
+            prevword = words[wordindex-1] if wordindex != 0 else ''
+            nextword = words[wordindex+1] if wordindex != len(words)-1 else ''
+            question = generatequestion(sentence, words[wordindex], prevword, nextword, namedentitytype)
             return writeqafile(writefile, question, sentence)
