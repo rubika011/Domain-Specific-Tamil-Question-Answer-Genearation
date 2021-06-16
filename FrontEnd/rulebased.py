@@ -1,5 +1,9 @@
 import re
 
+from FrontEnd.crf_impl import lookup_search
+from FrontEnd.questiongenerator import generatequestion
+
+
 def writeqafile(writefile, question, answer):
     writefile.write(question + "?\n")
     print(answer)
@@ -60,3 +64,12 @@ def regex_match_date_time_quantity(sentence, writefile):
             return writeqafile(writefile, question, match6.string)
 
     return False
+
+def checkgazetteer(sentence, writefile):
+    words = sentence.split()
+
+    for wordindex in range(len(words)):
+        namedentitytype = lookup_search(words[wordindex])
+        if (namedentitytype != 'None'):
+            question = generatequestion(sentence, words[wordindex], words[wordindex - 1], words[wordindex + 1], namedentitytype)
+            return writeqafile(writefile, question, sentence)

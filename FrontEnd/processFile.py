@@ -55,12 +55,14 @@ def processfile(filecontent, filewritepath):
             continue
 
         matchFound = rulebased.regex_match_date_time_quantity(sentence, writefile)
-        if matchFound:
-            continue
+        #if matchFound:
+        #    continue
 
         matchFound = rulebased.regex_match_multiple_items(sentence, writefile)
-        if matchFound:
-            continue
+        #if matchFound:
+        #    continue
+
+        rulebased.checkgazetteer(sentence, writefile)
 
     predictnertag(cleanedsentences)
 
