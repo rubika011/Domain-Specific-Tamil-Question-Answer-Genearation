@@ -2,8 +2,10 @@ import tamil
 from PyPDF2 import PdfFileReader
 from flask import Flask, flash, render_template, request, redirect
 from flask_bootstrap import Bootstrap
-import processFile, os
-from FrontEnd import crf_impl
+import os
+from FrontEnd import processFile
+from FrontEnd.questiongenerator import findinflectionsuffix, generatequestion
+from FrontEnd.rulebased import checkgazetteer
 
 app= Flask(__name__)
 Bootstrap(app)
@@ -59,9 +61,14 @@ def readtxtfile(filename):
 def view_qa_generation_page():
     file_content = ""
     generatedQAs = ""
+    suffix = findinflectionsuffix("ஜேர்மனியினது")
+    print(suffix)
+    #question = checkgazetteer("முசோலினி இத்தாலியை ஆட்சி செய்த காலத்தில் முதலாம் உலகப்போர் தொடங்கியது")
+    #question = generatequestion("முசோலினியை இத்தாலியை ஆட்சி செய்த காலத்தில் முதலாம் உலகப்போர் தொடங்கியது", "முசோலினியை","", "இத்தாலியை", 'person')
+    #print(question)
+    #trainandtest()
     if request.method == "POST":
         if request.form['submitBtn'] == 'uploadFile':
-            crf_impl.trainandtest()
             if request.files:
                 file = request.files["upload-file"]
                 if allowed_files(file.filename):

@@ -2,7 +2,8 @@ import snowballstemmer
 import tamil
 
 from FrontEnd import tamilutils, gazetteers, grammaticalrules
-from FrontEnd.crf_impl import checkcluewordlist
+from FrontEnd.crf_model_prediction import predictnertag
+
 
 def findinflectionsuffix(word):
     letters = tamil.utf8.get_letters(word)
@@ -52,3 +53,40 @@ def searchcluewordlist(word, key):
         return stemword
     return 'None'
 
+def nerquestiongeneration(sentences):
+    namedentitiespredicted = predictnertag(sentences)
+    namedentitytagtypes = ['COU', 'CITY', 'CON', 'PER', 'KIN', 'ORG', 'EVE', 'TRO']
+    i = 0
+    for sentence in sentences:
+        predictednamedentitytags = namedentitiespredicted[i]
+        print(sentence)
+        print(namedentitiespredicted[i])
+        for namedentitytag in namedentitytagtypes:
+            processquestionword(sentence, predictednamedentitytags, namedentitytag)
+        i = i + 1
+
+def processquestionword(sentence, predictednamedentitytags, namedentitytag):
+    btag = "B-" + namedentitytag
+    itag = "I-" + namedentitytag
+
+    startindex = returnindexoflist(predictednamedentitytags, btag)
+    endindex = startindex
+
+    if startindex > 0:
+        while 0 < endindex < len(predictednamedentitytags) - 1:
+            endindex = endindex + 1
+            if predictednamedentitytags[endindex] != itag:
+                break
+        words = sentence.split()
+        namedentity = ''.join(words[startindex: endindex])
+        prevword = ''.join(words[startindex-1])
+        nextword = ''.join(words[endindex])
+
+        generatequestion(sentence, namedentity, prevword, nextword, namedentitytag)
+
+
+def returnindexoflist(list, item):
+    try:
+        return list.index(item)
+    except ValueError:
+        return -1

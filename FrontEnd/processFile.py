@@ -1,10 +1,9 @@
 from indicnlp.tokenize import sentence_tokenize
-from FrontEnd import gazetteers
 import rulebased
 import snowballstemmer
 import re
 
-from FrontEnd.crf_model_prediction import predictnertag
+from FrontEnd.questiongenerator import nerquestiongeneration
 
 ignorewordlistfile = open("ignoresentence.txt", encoding="utf-8")
 ignorewordlist = ignorewordlistfile.read().splitlines()
@@ -27,7 +26,7 @@ def checkanophoricresolution(sentence, firstword, stemword):
 
     return True
 
-def ignorenonsuitablesentence(sentence):
+def checkifsentencesuitable(sentence):
     firstword = sentence.partition(' ')[0]
     if firstword in ignorewordlist:
         return False
@@ -49,11 +48,12 @@ def processfile(filecontent, filewritepath):
     for sentence in sentences:
         sentence = ' '.join(sentence.split())
         sentence = re.sub('\u200c', '', sentence)
-        cleanedsentences.append(sentence)
-        issentencesuitable = ignorenonsuitablesentence(sentence)
+        print(sentence)
+        issentencesuitable = checkifsentencesuitable(sentence)
         if not issentencesuitable:
             continue
 
+        cleanedsentences.append(sentence)
         matchFound = rulebased.regex_match_date_time_quantity(sentence, writefile)
         #if matchFound:
         #    continue
@@ -63,6 +63,5 @@ def processfile(filecontent, filewritepath):
         #    continue
 
         rulebased.checkgazetteer(sentence, writefile)
-
-    predictnertag(cleanedsentences)
+    nerquestiongeneration(cleanedsentences)
 

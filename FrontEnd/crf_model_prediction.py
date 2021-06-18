@@ -1,4 +1,4 @@
-import pickle
+import pickle, re
 
 from indicnlp.tokenize import sentence_tokenize
 from rippletagger.tagger import Tagger
@@ -11,10 +11,10 @@ def loadmodel():
     return loaded_model
 
 def tagsentence(sentences):
-    sentences = ''.join(sentences)
-    sentences = sentence_tokenize.sentence_split(sentences, lang='tam')
     sentencetaglist = []
     for sentence in sentences:
+        sentence = ' '.join(sentence.split())
+        sentence = re.sub('\u200c', '', sentence)
         tagger = Tagger(language='tam')
         postagger = tagger.tag(sentence)
         sentencetag = []
@@ -29,10 +29,6 @@ def predictnertag(sentences):
     print(taggeddata)
     features = [sent2features(ts) for ts in taggeddata]
     predicted = loadmodel().predict(features)
-    i=0
-    for sentence in sentences:
-        print(sentence)
-        print(predicted[i])
-        i = i+1
+
     print(predicted)
     return predicted

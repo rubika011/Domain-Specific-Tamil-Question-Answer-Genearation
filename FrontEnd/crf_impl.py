@@ -20,19 +20,19 @@ def lookup_search(lookup):
     return 'None'
 
 def isyearformat(word):
-    return (word.isdigit() and (re.match('^[1-2][0-9]{3}[^0-9]*', word) != 'None'))
+    return (re.match('^[1-2][0-9]{3}(?:இல்|ல்|ஆம்|ம்){0,1}', word) != 'None')
 
 def checkifordinalnumericword(word):
-    return word in gazetteers.previousword.get('ordinal')
+    return word in gazetteers.previousword.get('ORDINAL')
 
 def checkprefixword(word):
-    if word in gazetteers.previousword.get('location'):
+    if word in gazetteers.previousword.get('LOC'):
         return 'location'
-    if word in gazetteers.previousword.get('country'):
+    if word in gazetteers.previousword.get('COU'):
         return 'country'
-    if word in gazetteers.previousword.get('org'):
+    if word in gazetteers.previousword.get('ORG'):
         return 'org'
-    if word in gazetteers.previousword.get('time'):
+    if word in gazetteers.previousword.get('TIME'):
         return 'time'
 
     return 'None'
@@ -73,37 +73,37 @@ def ishyphen(word):
     return word == '-'
 
 def isclueword(word):
-    if checkcluewordlist(word, 'city'):
+    if checkcluewordlist(word, 'CITY'):
         return 'city'
 
-    elif checkcluewordlist(word, 'country'):
+    elif checkcluewordlist(word, 'COU'):
         return 'country'
 
-    elif checkcluewordlist(word, 'continent'):
+    elif checkcluewordlist(word, 'CON'):
         return 'continent'
 
-    elif checkcluewordlist(word, 'person'):
+    elif checkcluewordlist(word, 'PER'):
         return 'person'
 
-    elif checkcluewordlist(word, 'org'):
+    elif checkcluewordlist(word, 'ORG'):
         return 'org'
 
-    elif checkcluewordlist(word, 'time'):
+    elif checkcluewordlist(word, 'TIME'):
         return 'time'
 
-    elif checkcluewordlist(word, 'quantity'):
+    elif checkcluewordlist(word, 'NUM'):
         return 'quantity'
 
-    elif checkcluewordlist(word, 'troop'):
+    elif checkcluewordlist(word, 'TRO'):
         return 'troop'
 
-    elif checkcluewordlist(word, 'event'):
+    elif checkcluewordlist(word, 'EVE'):
         return 'event'
 
-    elif checkcluewordlist(word, 'gpe'):
+    elif checkcluewordlist(word, 'GPE'):
         return 'gpe'
 
-    elif checkcluewordlist(word, 'gov'):
+    elif checkcluewordlist(word, 'GOV'):
         return 'gov'
 
     else:
@@ -144,8 +144,9 @@ def word2features(sent, i):
             '-1:isyearformat': isyearformat(pword1),
             '-1:isconjunction': wordisaconjunction(pword1),
             '-1:endwithcomma': checkifwordendswithcomma(pword1),
+            '-1:prefixword': checkprefixword(pword1),
+            '-1:stemword': getstemword(pword1),
             '-1:ishyphen': ishyphen(word),
-            '-1:prefixword': checkprefixword(word)
         })
         if i > 1:
             pword2 = sent[i-2][0]
@@ -173,6 +174,7 @@ def word2features(sent, i):
             '+1:isconjunction': wordisaconjunction(nword1),
             '+1:endwithcomma': checkifwordendswithcomma(nword1),
             '+1:ishyphen': ishyphen(word)
+            '+1:stemword': getstemword(nword1)
         })
         if i < len(sent) - 2:
             nword2 = sent[i+2][0]
@@ -263,11 +265,3 @@ def tagsentence(sentence):
         sentencetaglist.append((word, tag, 'O'))
 
     return sentencetaglist
-
-def predictnertag(sentence):
-    taggeddata = tagsentence(sentence)
-    print(taggeddata)
-    features = sent2features(taggeddata)
-    #predicted = trainandtest().predict(features)
-    #print(predicted)
-    #return predicted
