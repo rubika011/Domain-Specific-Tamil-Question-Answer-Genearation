@@ -173,7 +173,7 @@ def word2features(sent, i):
             '+1:isnumber': checkifwordisnumber(nword1),
             '+1:isconjunction': wordisaconjunction(nword1),
             '+1:endwithcomma': checkifwordendswithcomma(nword1),
-            '+1:ishyphen': ishyphen(word)
+            '+1:ishyphen': ishyphen(word),
             '+1:stemword': getstemword(nword1)
         })
         if i < len(sent) - 2:
