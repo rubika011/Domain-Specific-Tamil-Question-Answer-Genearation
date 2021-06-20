@@ -4,8 +4,6 @@ from flask import Flask, flash, render_template, request, redirect
 from flask_bootstrap import Bootstrap
 import os
 from FrontEnd import processFile
-from FrontEnd.questiongenerator import findinflectionsuffix, generatequestion
-from FrontEnd.rulebased import checkgazetteer
 
 app= Flask(__name__)
 Bootstrap(app)
@@ -57,16 +55,17 @@ def readtxtfile(filename):
         flash('File uploaded successfully. Please review content before generating Q&A.', 'success')
         return file_content
 
+def writeqafile(writefile, question, answer):
+    writefile.write(question + "?\n")
+    print(answer)
+    writefile.write(answer + "\r\n")
+    return True
+
 @app.route("/", methods=["GET", "POST"])
 def view_qa_generation_page():
     file_content = ""
     generatedQAs = ""
-    suffix = findinflectionsuffix("ஜேர்மனியினது")
-    print(suffix)
-    #question = checkgazetteer("முசோலினி இத்தாலியை ஆட்சி செய்த காலத்தில் முதலாம் உலகப்போர் தொடங்கியது")
-    #question = generatequestion("முசோலினியை இத்தாலியை ஆட்சி செய்த காலத்தில் முதலாம் உலகப்போர் தொடங்கியது", "முசோலினியை","", "இத்தாலியை", 'person')
-    #print(question)
-    #trainandtest()
+
     if request.method == "POST":
         if request.form['submitBtn'] == 'uploadFile':
             if request.files:

@@ -1,14 +1,8 @@
 import re
 
-from FrontEnd.crf_impl import lookup_search
+from FrontEnd import gazetteers
 from FrontEnd.questiongenerator import generatequestion
-
-
-def writeqafile(writefile, question, answer):
-    writefile.write(question + "?\n")
-    print(answer)
-    writefile.write(answer + "\r\n")
-    return True
+from FrontEnd.run import writeqafile
 
 #regex match for எந்த, எவை question generation
 def regex_match_multiple_items(sentence, writefile):
@@ -66,12 +60,37 @@ def regex_match_date_time_quantity(sentence, writefile):
     return False
 
 def checkgazetteer(sentence, writefile):
-    words = sentence.split()
-
-    for wordindex in range(len(words)):
-        namedentitytype = lookup_search(words[wordindex])
+     words = sentence.split()
+     for wordindex in range(len(words)):
+        firstword = words[wordindex]
+        namedentitytype, gazetteerval = gazetteersearch(firstword)
         if (namedentitytype != 'None'):
-            prevword = words[wordindex-1] if wordindex != 0 else ''
-            nextword = words[wordindex+1] if wordindex != len(words)-1 else ''
-            question = generatequestion(sentence, words[wordindex], prevword, nextword, namedentitytype)
-            return writeqafile(writefile, question, sentence)
+            searchvalparts = gazetteerval.split(" ")
+            lastindex = returngazetteerwordlastindex(words, wordindex, searchvalparts)
+            namedentity = ''.join(words[wordindex: lastindex])
+            prevword = ''.join(words[wordindex-1]) if wordindex != 0 else ''
+            nextword = ''.join(words[lastindex]) if wordindex != len(words)-1 else ''
+            generatequestion(sentence, namedentity, prevword, nextword, namedentitytype, writefile)
+
+def returnindexoflist(list, item):
+    try:
+        return list.index(item)
+    except ValueError:
+        return -1
+
+def gazetteersearch(word):
+    for key, value in gazetteers.gazetteerlist.items():
+        for val in value:
+            partnames = val.split(" ")
+            if word in partnames:
+                return key, val
+    return 'None', 'None'
+
+def returngazetteerwordlastindex(wordlist, index, searchvalparts):
+    i = 1
+    if len(searchvalparts) > 1:
+        while i < len(searchvalparts) - 1:
+            if not wordlist[i] == searchvalparts[i]:
+                break
+            i = i + 1
+    return index+i
