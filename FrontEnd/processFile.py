@@ -45,6 +45,7 @@ def processfile(filecontent, filewritepath):
     sentences = sentence_tokenize.sentence_split(filecontent, lang='tam')
 
     cleanedsentences = []
+    writefile.write("Questions and Answers generated from Rule based Module" + "\r\n")
     for sentence in sentences:
         sentence = ' '.join(sentence.split())
         sentence = re.sub('\u200c', '', sentence)
@@ -63,5 +64,7 @@ def processfile(filecontent, filewritepath):
         #    continue
 
         rulebased.checkgazetteer(sentence, writefile)
-    nerquestiongeneration(cleanedsentences)
+
+    writefile.write("Questions and Answers generated from NER Module" + "\r\n")
+    nerquestiongeneration(cleanedsentences, writefile)
 

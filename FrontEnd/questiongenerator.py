@@ -33,7 +33,7 @@ def findinflectionsuffix(word):
                 return u"அது"
         elif lastletter == u"ம்":
             tuple = tamilutils.getUnicodePoints(secondlastletter)
-            if tuple[1] == u"ம்":
+            if tuple[1] == u"உ":
                 return u"உம்"
         elif lastletter == u"ன":
             tuple = tamilutils.getUnicodePoints(secondlastletter)
@@ -107,7 +107,7 @@ def searchcluewordlist(word, key):
 
 def nerquestiongeneration(sentences, writefile):
     namedentitiespredicted = predictnertag(sentences)
-    namedentitytagtypes = ['COU', 'CITY', 'CON', 'PER', 'KIN', 'ORG', 'EVE', 'TRO']
+    namedentitytagtypes = ['COU', 'CITY', 'CON', 'PER', 'KIN', 'EVE', 'TRO']
     i = 0
     for sentence in sentences:
         predictednamedentitytags = namedentitiespredicted[i]

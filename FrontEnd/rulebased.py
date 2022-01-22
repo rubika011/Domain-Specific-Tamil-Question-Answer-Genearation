@@ -51,11 +51,16 @@ def regex_match_date_time_quantity(sentence, writefile):
             question = re.sub(dateTimeRegex5, 'எத்தனையாவது', sentence)
             return writeqafile(writefile, question, match5.string)
 
-        dateTimeRegex6 = re.compile('\d+\s')
+        dateTimeRegex6 = re.compile('[1-2][0-9]{3}(\s)')
         match6 = re.search(dateTimeRegex6, sentence)
         if match6:
-            question = re.sub(dateTimeRegex6, 'எத்தனை ', sentence)
-            return writeqafile(writefile, question, match6.string)
+            return False
+
+        dateTimeRegex7 = re.compile('\d+\s')
+        match7 = re.search(dateTimeRegex7, sentence)
+        if match7:
+            question = re.sub(dateTimeRegex7, 'எத்தனை ', sentence)
+            return writeqafile(writefile, question, match7.string)
 
     return False
 
