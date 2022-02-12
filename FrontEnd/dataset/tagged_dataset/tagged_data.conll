@@ -53,15 +53,15 @@
 
 இவ்விராச்சியத்தின்	NOUN	O
 தலைநகர்	VERB	O
-கண்டியாகும்.	PROPN	B-TOWN
+கண்டியாகும்.	PROPN	B-CITY
 
 அது	PRON	O
 இயற்கையால்	NOUN	O
 பாதுகாக்கப்பட்ட	VERB	O
 ஓரிடமாகும்.	PROPN	O
 
-கண்டி	NOUN	B-TOWN
-நகருக்கு	NOUN	I-TOWN
+கண்டி	NOUN	B-CITY
+நகருக்கு	NOUN	I-CITY
 மகாவலி	NOUN	B-WAT
 கங்கை	PROPN	I-WAT
 பாதுகாப்பு	VERB	O
@@ -197,8 +197,8 @@
 அக்கால	NOUN	O
 கண்டி	NOUN	B-KIN
 இராச்சிய	ADJ	I-KIN
-பிரதானியான	ADJ	O
-பேராதனையின்	NOUN	B-TOWN
+பிரதானியான	ADJ	B-POS
+பேராதனையின்	NOUN	B-CITY
 வீரசுந்தர	NOUN	B-PER
 பண்டார,	NOUN	I-PER
 1	NUM	B-PER
@@ -262,8 +262,8 @@
 பண்டாரனின்	NOUN	I-PER
 நடத்தையில்	NOUN	O
 சந்தேகமுற்ற	ADJ	O
-இராஜசிங்க	NOUN	B-KING
-மன்னன்	NOUN	O
+இராஜசிங்க	NOUN	B-PER
+மன்னன்	NOUN	B-POS
 தந்திரமான	ADJ	O
 முறையில்	NOUN	O
 அவனைக்	VERB	O
@@ -768,7 +768,7 @@
 ஒல்லாந்தரின்	NOUN	B-NORP
 ஆக்கிரமிப்பில்	NOUN	O
 இருந்து	ADP	O
-கண்டி	NOUN	B-KINN
+கண்டி	NOUN	B-KIN
 இராச்சியத்தை	NOUN	O
 காத்துக்	VERB	O
 கொள்ளல்.	PROPN	O
@@ -1032,7 +1032,7 @@
 வரும்போது	ADV	O
 கண்டி	NOUN	B-KIN
 இராச்சியத்தில்	NOUN	O
-உபசம்பதா	VERB	B-RIT
+உபசம்பதா	VERB	B-EVE
 தளர்ச்சியுற்றிருந்தது.	VERB	O
 
 எனவே	ADV	O
@@ -1042,9 +1042,9 @@
 செய்வதற்காக	ADV	O
 பர்மாவில்	NOUN	O
 இருந்து	ADP	O
-உபசம்பதாவைத்	NOUN	B-RIT
+உபசம்பதாவைத்	NOUN	B-EVE
 தருவித்து,	NOUN	O
-உபசம்பதா	NOUN	B-RIT
+உபசம்பதா	NOUN	B-EVE
 சடங்கை	VERB	O
 நடத்துவித்தான்.	PROPN	O
 
@@ -1172,9 +1172,9 @@
 
 இவனில்	NOUN	O
 இருந்தே	NOUN	O
-நாயக்க	VERB	B-REIGN
-வம்ச	NOUN	I-REIGN
-ஆட்சி	VERB	I-REIGN
+நாயக்க	VERB	B-NORP
+வம்ச	NOUN	O
+ஆட்சி	VERB	O
 ஆரம்பித்தது.	VERB	O
 
 ஸ்ரீ	PROPN	B-PER
@@ -1220,7 +1220,7 @@
 பர்மாவிலிருந்து	_	B-COU
 குருமாரைத்	NOUN	O
 தருவித்து,	NOUN	O
-உபசம்பதாவை	NOUN	B-RIT
+உபசம்பதாவை	NOUN	B-EVE
 நடத்த	VERB	O
 முற்பட்டாலும்	ADJ	O
 அது	PRON	O
@@ -1320,14 +1320,14 @@
 1753	NUM	B-PER
 ஆம்	AUX	O
 ஆண்டில்	NOUN	O
-உபசம்பதாவை	VERB	B-RIT
+உபசம்பதாவை	VERB	B-EVE
 நடத்தினான்.	PROPN	O
 
 அதன்	NOUN	O
 மூலம்	ADP	O
 இன்றைய	NOUN	O
-சியம்	NOUN	B-RIT
-நிக்காய	NOUN	I-RIT
+சியம்	NOUN	B-EVE
+நிக்காய	NOUN	I-EVE
 இங்கு	VERB	O
 ஆரம்பிக்கப்பட்டது.	VERB	O
 
@@ -1733,8 +1733,8 @@
 செயலாளர்,	NOUN	I-POS
 களஞ்சியப்	NOUN	B-POS
 பொறுப்பாளர்	NOUN	I-POS
-புனித	NOUN	B-MOM
-தந்ததாதுவிற்குப்	NOUN	I-MOM
+புனித	NOUN	B-ARC
+தந்ததாதுவிற்குப்	NOUN	I-ARC
 பொறுப்பான	ADJ	O
 தியவடன	NOUN	B-POS
 நிலமே,	NOUN	I-POS
@@ -2494,10 +2494,10 @@
 காணப்பட்ட	ADJ	O
 போதிலும்	ADJ	O
 அவற்றை	PRON	O
-இலக்கிய	PROPN	O
-மூலாதாரங்கள்,	NOUN	O
-தொல்பொருள்	NOUN	B-TYPE
-மூலாதாரங்கள்	NOUN	B-TYPE
+இலக்கிய	PROPN	B-ARC
+மூலாதாரங்கள்,	NOUN	I-ARC
+தொல்பொருள்	NOUN	B-ARC
+மூலாதாரங்கள்	NOUN	I-ARC
 என	PART	O
 இரண்டு	NUM	O
 வகைகளாகப்	NOUN	O
@@ -2547,12 +2547,12 @@
 அறியக்கூடிய	ADJ	O
 இலக்கிய	PROPN	O
 மூலாதாரங்களை	NOUN	O
-உள்நாட்டு	PROPN	B-TYPE
-இலக்கிய	PROPN	I-TYPE
-மூலாதாரங்கள்,	NOUN	I-TYPE
-வெளிநாட்டு	PROPN	B-TYPE
-இலக்கிய	PROPN	I-TYPE
-மூலாதாரங்கள்	NOUN	I-TYPE
+உள்நாட்டு	PROPN	B-ARC
+இலக்கிய	PROPN	I-ARC
+மூலாதாரங்கள்,	NOUN	I-ARC
+வெளிநாட்டு	PROPN	B-ARC
+இலக்கிய	PROPN	I-ARC
+மூலாதாரங்கள்	NOUN	I-ARC
 என்று	PART	O
 இரு	NUM	O
 வகைகளாகப்	VERB	O
@@ -2820,7 +2820,7 @@
 நூற்றாண்டுகளின்	NOUN	O
 பின்னர்	ADV	O
 பாளி	NOUN	B-LAN
-மொழியில்	NOUN	O
+மொழியில்	NOUN	I-LAN
 எழுதப்பட்ட	ADJ	O
 நூலின்	NOUN	O
 சில	ADJ	O
@@ -2828,7 +2828,7 @@
 மேலும்	ADV	O
 விளக்கமளிக்கும்	ADJ	O
 வகையில்	NOUN	O
-‘டீகாவ’	NOUN	B-LIT
+‘டீகாவ’	NOUN	B-NAME
 என்னும்	ADJ	O
 உரை	NOUN	O
 நூல்	AUX	O
@@ -2920,12 +2920,12 @@
 வரலாற்றை	NOUN	O
 அறிந்து	_	O
 கொள்வதற்குத்	NOUN	O
-தூது	NOUN	B-TYPE
-காவியங்கள்,	NOUN	O
-புகழ்	NOUN	B-TYPE
-காவியங்கள்,	NOUN	O
-போர்க்	NOUN	B-TYPE
-காவியங்கள்	NOUN	O
+தூது	NOUN	B-LIT
+காவியங்கள்,	NOUN	I-LIT
+புகழ்	NOUN	B-LIT
+காவியங்கள்,	NOUN	I-LIT
+போர்க்	NOUN	B-LIT
+காவியங்கள்	NOUN	I-LIT
 என்பன	NOUN	O
 பெரிதும்	ADV	O
 துணைபுரிகின்றன.	VERB	O
@@ -2995,8 +2995,8 @@
 வர்த்தகத்	PROPN	O
 தொடர்புகளைப்	NOUN	O
 பேணியமையால்	NOUN	O
-இந்து	PROPN	B-OCEAN
-சமுத்திரத்தில்	NOUN	I-OCEAN
+இந்து	PROPN	B-WAT
+சமுத்திரத்தில்	NOUN	I-WAT
 வர்த்தக	PROPN	O
 நடவடிக்கையில்	NOUN	O
 ஈடுபட்ட	ADJ	O
@@ -3125,21 +3125,21 @@
 அமைப்பைப்	NOUN	O
 பொறுத்து	_	O
 அது	PRON	O
-குகைக்	NOUN	B-TYPE
-கல்வெட்டு,	NOUN	I-TYPE
-குன்றுக்	NOUN	B-TYPE
-கல்வெட்டு,	NOUN	I-TYPE
-தூண்	NOUN	B-TYPE
-கல்வெட்டு,	NOUN	I-TYPE
-சுவர்க்	NOUN	B-TYPE
-கல்வெட்டு	PROPN	I-TYPE
+குகைக்	NOUN	B-ARC
+கல்வெட்டு,	NOUN	I-ARC
+குன்றுக்	NOUN	B-ARC
+கல்வெட்டு,	NOUN	I-ARC
+தூண்	NOUN	B-ARC
+கல்வெட்டு,	NOUN	I-ARC
+சுவர்க்	NOUN	B-ARC
+கல்வெட்டு	PROPN	I-ARC
 என	PART	O
 வகைப்படுத்தப்பட்டுள்ளது.	VERB	O
 
 இலங்கையின்	NOUN	B-COU
 புராதன	NOUN	O
 கல்வெட்டுக்கள்	NOUN	O
-பிராமி	NOUN	B-SCR
+பிராமி	NOUN	B-LIT
 எழுத்துக்களில்	VERB	O
 எழுதப்பட்டவையாகும்.	PROPN	O
 
@@ -3269,13 +3269,13 @@
 பெயர்களாலும்	VERB	O
 அழைக்கப்பட்டது.	VERB	O
 
-யானை	NOUN	B-SYM
+யானை	NOUN	O
 மற்றும்	CONJ	O
-சுவஸ்திகா	PROPN	B-SYM
+சுவஸ்திகா	PROPN	O
 உருவம்	NOUN	O
 பதித்த	ADJ	O
 நாணயம்,	NOUN	B-SOU
-இலக்ஷ்மியின்	NOUN	B-SYM
+இலக்ஷ்மியின்	NOUN	B-GOD
 உருவம்	NOUN	O
 பதித்த	ADJ	O
 நாணயம்	NOUN	B-SOU
@@ -3313,9 +3313,9 @@
 உள்நாட்டு	PROPN	O
 நாணயங்கள்	NOUN	O
 போலவே	NOUN	O
-உரோம,	NOUN	B-TYPE
-சீன,	NOUN	B-TYPE
-இந்திய	PROPN	B-TYPE
+உரோம,	NOUN	B-COU
+சீன,	NOUN	B-COU
+இந்திய	PROPN	B-COU
 நாணயங்களும்	ADJ	B-SOU
 இங்கு	VERB	O
 கிடைக்கப்பெற்றுள்ளன.	VERB	O
@@ -3337,8 +3337,8 @@
 நாணயங்கள்	NOUN	O
 பற்றி	NOUN	O
 கற்றல்	NOUN	O
-‘நாணய	NOUN	B-STU
-விஞ்ஞானம்'	VERB	I-STU
+‘நாணய	NOUN	B-NAME
+விஞ்ஞானம்'	VERB	I-NAME
 எனப்படும்.	PROPN	O
 
 இலங்கையில்	PROPN	B-COU
@@ -3410,13 +3410,13 @@
 துணைபுரிகின்றன.	VERB	O
 
 புராதன	NOUN	O
-சித்திரங்கள்,	NOUN	B-MON
-சிற்பங்கள்	NOUN	B-MON
+சித்திரங்கள்,	NOUN	B-ARC
+சிற்பங்கள்	NOUN	B-ARC
 (	PUNCT	O
-சிலைகள்	PROPN	B-MON
+சிலைகள்	PROPN	B-ARC
 )	PUNCT	O
-செதுக்கல்	PROPN	B-MON
-கலைகள்	NOUN	I-MON
+செதுக்கல்	PROPN	B-ARC
+கலைகள்	NOUN	I-ARC
 என்பன	NOUN	O
 இலங்கையின்	NOUN	B-COU
 கலாசார	PROPN	O
@@ -3439,18 +3439,18 @@
 பற்றி	NOUN	O
 அறிந்து	_	O
 கொள்வதற்கு	VERB	O
-சித்திரம்,	NOUN	B-MON
-சிற்பம்,	NOUN	B-MON
-செதுக்கல்	NOUN	B-MON
+சித்திரம்,	NOUN	B-ARC
+சிற்பம்,	NOUN	B-ARC
+செதுக்கல்	NOUN	B-ARC
 போன்ற	ADP	O
 கலையம்சங்கள்	NOUN	O
 பெரிதும்	ADV	O
 உதவுகின்றன.	VERB	O
 
 உதாரணமாக,	NOUN	O
-சீகிரி	NOUN	B-MON
-சுவர்	NOUN	I-MON
-ஓவியங்களை	NOUN	I-MON
+சீகிரி	NOUN	B-ARC
+சுவர்	NOUN	I-ARC
+ஓவியங்களை	NOUN	I-ARC
 எடுத்துக்	NOUN	O
 கொண்டால்	NOUN	O
 பண்டைய	NOUN	O
@@ -3865,9 +3865,9 @@
 அடையாளச்	NOUN	O
 சின்னங்கள்	NOUN	O
 மற்றும்	CONJ	O
-சந்திரவட்டக்கல்,	NOUN	B-MON
-காவற்கல்,	NOUN	B-MON
-கற்றூண்கள்	NOUN	B-MON
+சந்திரவட்டக்கல்,	NOUN	B-ARC
+காவற்கல்,	NOUN	B-ARC
+கற்றூண்கள்	NOUN	B-ARC
 மற்றும்	CONJ	O
 தொல்பொருள்கள்	NOUN	O
 காணப்படும்	ADJ	O
@@ -4177,9 +4177,9 @@ Baldaeus	NOUN	I-PER
 
 அவ்வறிக்கைகள்	NOUN	O
 டச்சு	NOUN	B-LAN
-மொழியிலும்	ADJ	O
+மொழியிலும்	ADJ	I-LAN
 ஜேர்மன்	NOUN	B-LAN
-மொழியிலும்	VERB	O
+மொழியிலும்	VERB	I-LAN
 வெளியிடப்பட்டன.	VERB	O
 
 இவ்வறிக்கைகளின்	NOUN	O
@@ -4553,7 +4553,7 @@ Ceylon	NOUN	I-LIT
 அங்கு	ADV	O
 கிரேக்க,	NOUN	B-LAN
 இலத்தீன்	NOUN	B-LAN
-மொழிகளைப்	VERB	O
+மொழிகளைப்	VERB	I-LAN
 பரப்பினர்.	PROPN	O
 
 இதனால்	ADV	O
@@ -4840,11 +4840,11 @@ Ceylon	NOUN	I-LIT
 பயிலும்போதும்	ADJ	O
 ஓரளவு	NOUN	O
 இலத்தின்	NOUN	B-LAN
-மொழி	AUX	O
+மொழி	AUX	I-LAN
 பயன்படுத்தப்பட்டது.	VERB	O
 
 கிரேக்க	PROPN	B-LAN
-மொழி	NOUN	O
+மொழி	NOUN	I-LAN
 வழக்கில்	NOUN	O
 இல்லாத	ADP	O
 மொழி	NOUN	O
@@ -4856,7 +4856,7 @@ Ceylon	NOUN	I-LIT
 காலத்தில்	NOUN	I-TIME
 கிரேக்க,	NOUN	B-LAN
 இலத்தின்	NOUN	B-LAN
-மொழிகளில்	NOUN	O
+மொழிகளில்	NOUN	I-LAN
 எழுதப்	NOUN	O
 பட்ட	ADJ	O
 நூல்களின்	NOUN	O
@@ -4895,7 +4895,7 @@ Ceylon	NOUN	I-LIT
 
 கிரேக்க,	NOUN	B-LAN
 இலத்தின்	NOUN	B-LAN
-மொழிகளைக்	NOUN	O
+மொழிகளைக்	NOUN	I-LAN
 கற்ற	ADJ	O
 பின்னர்	ADV	O
 அந்த	DET	O
@@ -4909,7 +4909,7 @@ Ceylon	NOUN	I-LIT
 ஏற்பட்டது.	VERB	O
 
 குறிப்பாக	ADV	O
-கிரேக்க	PROPN	B-PERART
+கிரேக்க	PROPN	O
 நாடகம்	NOUN	O
 தொடர்பாக	ADV	O
 அதிக	NOUN	O
@@ -4957,7 +4957,7 @@ Ceylon	NOUN	I-LIT
 உதாரணங்களாகக்	VERB	O
 குறிப்பிடலாம்.	PROPN	O
 
-மானிடவாதம்	NOUN	B-CON
+மானிடவாதம்	NOUN	B-LAW
 எனும்	ADJ	O
 மனிதன்	NOUN	O
 மேன்மையானவன்	NOUN	O
@@ -5209,10 +5209,10 @@ Ceylon	NOUN	I-LIT
 
 அவரது	PRON	O
 கலைப்படைப்புகளான	ADJ	O
-மோனலீசா,	NOUN	B-ART
-இயேசுநாதரின்	NOUN	B-ART
-இறுதி	NOUN	I-ART
-இராப்போசனம்	NOUN	I-ART
+மோனலீசா,	NOUN	B-ARC
+இயேசுநாதரின்	NOUN	B-ARC
+இறுதி	NOUN	I-ARC
+இராப்போசனம்	NOUN	I-ARC
 போன்ற	ADP	O
 சித்திரங்கள்	NOUN	O
 இன்றும்	ADJ	O
@@ -5244,12 +5244,12 @@ Ceylon	NOUN	I-LIT
 சிறப்பிடம்	VERB	O
 பெறுகின்றன.	VERB	O
 
-இறுதித்	NOUN	B-ART
-தீர்ப்பு,	NOUN	I-ART
+இறுதித்	NOUN	B-ARC
+தீர்ப்பு,	NOUN	I-ARC
 சிஸ்டைன்	NOUN	B-LOC
 ஆலயத்தில்	NOUN	I-LOC
-ஆதாமின்	NOUN	B-ART
-சித்திரம்	NOUN	I-ART
+ஆதாமின்	NOUN	B-ARC
+சித்திரம்	NOUN	I-ARC
 என்பன	NOUN	O
 அவரின்	NOUN	O
 படைப்புகளில்	VERB	O
@@ -5288,9 +5288,9 @@ Ceylon	NOUN	I-LIT
 கல்லில்	VERB	O
 வடிவமைத்தார்.	PROPN	O
 
-பியெட்டா,	NOUN	B-ART
-மோயிசன்,	NOUN	B-ART
-தாவீது	_	B-ART
+பியெட்டா,	NOUN	B-ARC
+மோயிசன்,	NOUN	B-ARC
+தாவீது	_	B-ARC
 போன்ற	ADP	O
 உருவச்	NOUN	O
 சிலைகள்	NOUN	O
@@ -5504,8 +5504,8 @@ Ceylon	NOUN	I-LIT
 சேர்ந்த	ADJ	O
 ஐசக்	NOUN	B-PER
 நியுட்டன்	PROPN	I-PER
-புவியீர்ப்புச்	NOUN	B-DISC
-சக்தியைக்	VERB	I-DISC
+புவியீர்ப்புச்	NOUN	B-CON
+சக்தியைக்	VERB	I-CON
 கண்டுபிடித்தார்.	PROPN	O
 
 மறுமலர்ச்சிக்	NOUN	B-TIME
@@ -5582,7 +5582,7 @@ Ceylon	NOUN	I-LIT
 ஜொஹேன்ஸ்	PROPN	B-PER
 கூடன்	NOUN	I-PER
 பேர்க்	NOUN	I-PER
-அச்சியந்திரத்தைக்	VERB	B-DISC
+அச்சியந்திரத்தைக்	VERB	B-APP
 கண்டுபிடித்தார்.	PROPN	O
 
 நிலமானிய	ADJ	B-TIME
@@ -5928,7 +5928,7 @@ Ceylon	NOUN	I-LIT
 அறியப்பட்டது.	VERB	O
 
 தொலமியின்	NOUN	B-PER
-உலகப்படத்தின்	NOUN	B-GEO
+உலகப்படத்தின்	NOUN	O
 மூலம்	ADP	O
 உலகம்	NOUN	O
 பற்றிய	ADP	O
@@ -6189,8 +6189,8 @@ Ceylon	NOUN	I-LIT
 இடையிலான	ADJ	O
 தொடர்பு	NOUN	O
 காரணமாக	ADV	O
-ஐரோப்பிய	ADJ	B-SKILL
-விஞ்ஞானத்	NOUN	I-SKILL
+ஐரோப்பிய	ADJ	B-CONT
+விஞ்ஞானத்	NOUN	B-SKILL
 தொழினுட்ப	NOUN	I-SKILL
 அறிவு	NOUN	I-SKILL
 உலகம்	NOUN	O
@@ -6376,8 +6376,8 @@ Ceylon	NOUN	I-LIT
 
 ஒல்லாந்தரது	_	B-NORP
 காலத்தில்	NOUN	O
-உரோம	NOUN	B-RULE
-டச்சுச்சட்டம்	NOUN	I-RULE
+உரோம	NOUN	B-LAW
+டச்சுச்சட்டம்	NOUN	I-LAW
 இந்நாட்டிற்கு	VERB	O
 அறிமுகம்	VERB	O
 செய்யப்பட்டது.	VERB	O
@@ -6424,8 +6424,8 @@ Ceylon	NOUN	I-LIT
 ஒல்லாந்து,	NOUN	B-COU
 இங்கிலாந்து	PROPN	B-COU
 போன்ற	ADP	O
-அத்திலாந்திக்குச்	NOUN	B-OCEAN
-சமுத்திரத்தை	NOUN	I-OCEAN
+அத்திலாந்திக்குச்	NOUN	B-WAT
+சமுத்திரத்தை	NOUN	I-WAT
 அண்மித்த	ADJ	O
 நாடுகள்	NOUN	O
 முக்கியத்துவம்	VERB	O
@@ -7313,12 +7313,8 @@ Ceylon	NOUN	I-LIT
 ஜோன்	NOUN	B-PER
 கே	NOUN	I-PER
 என்பவரால்	NOUN	O
-பறக்கும்	ADJ	B-DISC
-நூனாழி	NOUN	I-DISC
-(	PUNCT	O
-Flying	PROPN	B-DISC
-shuttle	NOUN	I-DISC
-)	PUNCT	O
+பறக்கும்	ADJ	B-APP
+நூனாழி	NOUN	I-APP
 கண்டுபிடிக்கப்பட்டமையால்	PROPN	O
 நெசவு	NOUN	O
 செய்யும்	VERB	O
@@ -7358,7 +7354,7 @@ shuttle	NOUN	I-DISC
 வேகப்படுத்த	ADJ	O
 வேண்டிய	ADJ	O
 தேவை	NOUN	O
-பிரித்தானியாவில்	VERB	B-VOU
+பிரித்தானியாவில்	VERB	B-COU
 ஏற்பட்டது.	VERB	O
 
 அதன்	NOUN	O
@@ -7451,7 +7447,7 @@ shuttle	NOUN	I-DISC
 
 ஜெனி	PROPN	B-APP
 இயந்திரம்,	NOUN	I-APP
-நீர்ச்சக்கரம்	NOUN	O
+நீர்ச்சக்கரம்	NOUN	B-APP
 இரண்டினதும்	ADJ	O
 அடிப்படையில்	NOUN	O
 சாமுவெல்	NOUN	B-PER
@@ -8184,8 +8180,8 @@ shuttle	NOUN	I-DISC
 ஆண்டு	NOUN	O
 ஜேர்மனியரான	ADJ	B-NORP
 டெம்லர்	NOUN	B-PER
-மோட்டார்	NOUN	B-DISC
-வண்டியைக்	NOUN	I-DISC
+மோட்டார்	NOUN	B-APP
+வண்டியைக்	NOUN	I-APP
 கண்டுபிடித்ததுடன்	PROPN	O
 1903	NUM	B-YEAR
 ஆம்	AUX	O
@@ -8304,7 +8300,7 @@ shuttle	NOUN	I-DISC
 ஆண்டு	NOUN	O
 தொலைவில்	NOUN	O
 அமைந்திருந்த	ADJ	O
-இரண்டு	NUM	N+B-NUM
+இரண்டு	NUM	B-NUM
 இடங்களுக்கிடையில்	NOUN	O
 கேபிள்	NOUN	B-PRO
 கம்பி	NOUN	I-PRO
@@ -8359,8 +8355,8 @@ shuttle	NOUN	I-DISC
 சாமுவெல்	NOUN	B-PER
 மோஸ்	PROPN	I-PER
 என்பவரால்	NOUN	O
-தந்தி	NOUN	B-DISC
-முறை	NOUN	I-DISC
+தந்தி	NOUN	O
+முறை	NOUN	O
 (	PUNCT	O
 Telegraph	PROPN	O
 )	PUNCT	O
@@ -10394,7 +10390,7 @@ Telegraph	PROPN	O
 கிடைக்கப்	VERB	O
 பெற்றமை	NOUN	O
 அதற்கான	_	O
-இரு	NUM	B0NUM
+இரு	NUM	B-NUM
 காரணிகளாகும்.	PROPN	O
 
 இலங்கை	PROPN	B-COU
@@ -10485,9 +10481,9 @@ Telegraph	PROPN	O
 
 இந்தியாவின்	PROPN	B-COU
 பாதுகாப்பிற்காகவும்	PRON	O
-இந்து	PROPN	B-TRO
-சமுத்திரக்	NOUN	I-TRO
-கடற்படை	NOUN	I-TRO
+இந்து	PROPN	B-WAT
+சமுத்திரக்	NOUN	I-WAT
+கடற்படை	NOUN	B-TRO
 நடவடிக்கைகளுக்காகவும்	PRON	O
 பொருத்தமான	ADJ	O
 கேந்திர	PROPN	O
@@ -10764,7 +10760,7 @@ Telegraph	PROPN	O
 ஆகஸ்ட்	NOUN	B-MONTH
 மாதத்தில்	NOUN	O
 ஆங்கிலேயப்	NOUN	B-TRO
-படை,	NOUN	I-TROOP
+படை,	NOUN	I-TRO
 ஒல்லாந்தர்	NOUN	B-NORP
 வசமிருந்த	ADJ	O
 திருகோணமலைத்	NOUN	B-LOC
@@ -11127,7 +11123,7 @@ Telegraph	PROPN	O
 ஆங்கிலேயக்	NOUN	B-ORG
 கிழக்கிந்திய	ADJ	I-ORG
 வர்த்தகக்	ADV	I-ORG
-கம்பனியின்	NOUN	I-PRG
+கம்பனியின்	NOUN	I-ORG
 ஆட்சியின்	NOUN	O
 கீழ்	AUX	O
 வந்தது.	VERB	O
@@ -11452,8 +11448,8 @@ Telegraph	PROPN	O
 தலைமையில்	NOUN	O
 நியமிக்கப்பட்ட	ADJ	O
 இக்குழு	NOUN	O
-மியூரன்	NOUN	B-TRO
-ஆணைக்குழு	VERB	I-TRO
+மியூரன்	NOUN	B-ORG
+ஆணைக்குழு	VERB	I-ORG
 எனப்பட்டது.	VERB	O
 
 வரி	NOUN	O
@@ -11804,7 +11800,7 @@ Telegraph	PROPN	O
 மனச்	AUX	O
 சஞ்சலமுற்றார்.	PROPN	O
 
-கண்டியில்	NOUN	B-COTY
+கண்டியில்	NOUN	B-CITY
 சுதந்திரமான	ADJ	O
 அரசொன்று	NOUN	O
 இருப்பது,	NOUN	O
@@ -12773,11 +12769,11 @@ Telegraph	PROPN	O
 கையொப்பம்	NOUN	O
 இடுவதற்கு	VERB	O
 முன்னர்	ADV	O
-சிங்கக்	ADV	B-SYM
-கொடியைக்	NOUN	I-SYM
+சிங்கக்	ADV	O
+கொடியைக்	NOUN	O
 கீழிறக்கி,	NOUN	O
-ஆங்கிலேயக்	NOUN	B-SYM
-கொடியை	NOUN	I-SYM
+ஆங்கிலேயக்	NOUN	O
+கொடியை	NOUN	O
 ஏற்றியபோது,	NOUN	O
 வாரிய	PROPN	B-PER
 பொல	NOUN	I-PER
@@ -12883,8 +12879,8 @@ Telegraph	PROPN	O
 செயற்பாடு	VERB	O
 விவரிக்கப்பட்டுள்ளது.	VERB	O
 
-கண்டி	NOUN	B-DOC
-உடன்படிக்கை	NOUN	I-DOC
+கண்டி	NOUN	B-LAW
+உடன்படிக்கை	NOUN	I-LAW
 கையொப்பமானதுடன்,	NOUN	O
 இரண்டாயிரம்	NOUN	B-NUM
 ஆண்டுகளுக்கு	NOUN	O
@@ -15196,7 +15192,7 @@ Telegraph	PROPN	O
 அமெரிக்காவில்	PROPN	B-COU
 குடியேற்றங்கள்	NOUN	O
 நிறுவப்பட்டமை	VERB	O
-சிறப்பம்சமாகும் PROPN	O
+சிறப்பம்சமாகும்.	PROPN	O
 
 பிரித்தானிய	ADJ	B-COU
 அரசிடமிருந்து	_	O
@@ -15206,12 +15202,12 @@ Telegraph	PROPN	O
 தேவையான	ADJ	O
 அனுமதியும்	ADJ	O
 அனுசரணையும்	VERB	O
-கிடைத்தது   VERB	O
+கிடைத்தது.	VERB	O
 
 இவ்வாறு	ADV	O
 இடையிடையே	NOUN	O
-பிரித்தானியாவிலிருந்து  _   B-COU
-வட  NOUN    B-CONT
+பிரித்தானியாவிலிருந்து	_	B-COU
+வட	NOUN	B-CONT
 அமெரிக்கா	PROPN	I-CONT
 சென்ற	ADJ	O
 குழுவினர்	NOUN	O
@@ -15220,7 +15216,7 @@ Telegraph	PROPN	O
 ஆண்டளவில்	NOUN	I-YEAR
 பதின்மூன்று	NOUN	B-NUM
 குடியேற்றங்களை	VERB	O
-நிறுவினர்   PROPN	O
+நிறுவினர்.	PROPN	O
 
 இந்த	DET	O
 பதின்மூன்று	NOUN	B-NUM
@@ -15229,11 +15225,11 @@ Telegraph	PROPN	O
 குடியேற்றங்கள்	NOUN	O
 1607	NUM	B-YEAR
 -	PUNCT	O
-3682	NUM B-YEAR
+3682	NUM	B-YEAR
 இற்கும்	ADJ	O
 இடைப்பட்ட	ADJ	O
 காலத்திலேயே	VERB	O
-ஆரம்பமாகின  VERB	O
+ஆரம்பமாகின.	VERB	O
 
 வட	NOUN	B-CONT
 அமெரிக்கக்	ADV	I-CONT
@@ -15241,13 +15237,13 @@ Telegraph	PROPN	O
 இறுதியாகத்	PROPN	O
 தோற்றம்பெற்ற	ADJ	O
 குடியேற்றம்	VERB	O
-ஜோர்ஜியாவாகும்  PROPN	B-COU
+ஜோர்ஜியாவாகும்.	PROPN	B-COU
 
 அது	PRON	O
 1733	NUM	B-YEAR
 ஆம்	AUX	O
 ஆண்டு	VERB	O
-நிறுவப்பட்டது   VERB	O
+நிறுவப்பட்டது.	VERB	O
 
 ஆரம்பக்	NOUN	O
 குடியேற்றங்களின்	NOUN	O
@@ -15257,7 +15253,7 @@ Telegraph	PROPN	O
 ஒரேயடியாகத்	PROPN	O
 தோற்றம்	NOUN	O
 பெற்றதாகத்	VERB	O
-தெரியவில்லை	VERB	O
+தெரியவில்லை.	VERB	O
 
 அவ்வாறே	NOUN	O
 அக்குடியேற்றங்களை	NOUN	O
@@ -15265,7 +15261,7 @@ Telegraph	PROPN	O
 தாக்கம்	NOUN	O
 செலுத்திய	ADJ	O
 காரணங்களும்	VERB	O
-பலவிதமானதாகும்	PROPN	O
+பலவிதமானதாகும்.	PROPN	O
 
 சமய	NOUN	O
 சுதந்திரம்	NOUN	O
@@ -15277,7 +15273,7 @@ Telegraph	PROPN	O
 பெறும்	ADJ	O
 நோக்கிலும்	ADJ	O
 அவை	AUX	O
-நிறுவப்பட்டன	VERB	O
+நிறுவப்பட்டன.	VERB	O
 
 சனத்தொகை,	NOUN	O
 வாழ்க்கை	NOUN	O
@@ -15287,7 +15283,7 @@ Telegraph	PROPN	O
 ஆகியவற்றிலும்	ADJ	O
 இக்குடியேற்றங்களுக்கிடையே	NOUN	O
 வேறுபாடுகள்	VERB	O
-காணப்பட்டன	VERB	O
+காணப்பட்டன.	VERB	O
 
 இவ்வாறு	ADV	O
 பல	ADJ	O
@@ -15309,21 +15305,21 @@ Telegraph	PROPN	O
 பிரிவாக	ADV	O
 இக்குடியேற்றவாசிகள்	NOUN	O
 எழுச்சியுறத்	VERB	O
-தொடங்கினர்	PROPN	O
+தொடங்கினர்.	PROPN	O
 
 வட	NOUN	B-CONT
 அமெரிக்கப்	VERB	I-CONT
 பகுதியில்	NOUN	O
 பிரித்தானியக்	PROPN	B-COU
 குடியேற்றங்கள்	NOUN	O
-பிரித்தானிய	ADJ B-COU
+பிரித்தானிய	ADJ	B-COU
 நிறுவனங்களதும்	NOUN	O
 பல்வேறு	ADJ	O
 நபர்களதும்	ADJ	O
 உதவியினால்	NOUN	O
 நிறுவப்பட்டனவாக	ADV	O
 முன்னர்	ADV	O
-குறிப்பிடப்பட்டுள்ளது   VERB	O
+குறிப்பிடப்பட்டுள்ளது.	VERB	O
 
 இவ்வாறு	ADV	O
 குடியேற்றங்களை	NOUN	O
@@ -15333,7 +15329,7 @@ Telegraph	PROPN	O
 அனுமதியைப்	NOUN	O
 பிரித்தானிய	ADJ	B-COU
 அரசிடம்	VERB	O
-பெற்றிருந்தனர்  PROPN	O
+பெற்றிருந்தனர்.	PROPN	O
 
 இதன்படி	ADV	O
 சில	ADJ	O
@@ -15342,7 +15338,7 @@ Telegraph	PROPN	O
 இணங்க	VERB	O
 வேண்டிய	ADJ	O
 நிலை	AUX	O
-ஏற்பட்டது   VERB	O
+ஏற்பட்டது.	VERB	O
 
 பிரித்தானிய	ADJ	B-COU
 ஆதிக்கத்தை	NOUN	O
@@ -15367,7 +15363,7 @@ Telegraph	PROPN	O
 நியமிக்கப்பட்ட	ADJ	O
 ஆளுநர்களால்	NOUN	B-COM
 முன்னெடுத்துச்	VERB	O
-செல்லப்பட்டது   VERB	O
+செல்லப்பட்டது.	VERB	O
 
 அவர்களுக்கு	PRON	O
 உதவும்	PRON	O
@@ -15376,7 +15372,7 @@ Telegraph	PROPN	O
 குடியேற்றங்களிலிருந்து	_	O
 தெரிவுசெய்யப்பட்ட	ADJ	O
 சட்டசபை	VERB	B-ORG
-இருந்தது	VERB	O
+இருந்தது.	VERB	O
 
 அமெரிக்காவுக்கும்	ADJ	B-COU
 பிரித்தானியாவுக்கும்	ADJ	B-COU
@@ -15394,12 +15390,12 @@ Telegraph	PROPN	O
 சுதந்திரமாக	ADV	O
 நிருவாகத்தை	NOUN	O
 முன்னெடுத்துச்	VERB	O
-சென்றனர்    PROPN	O
+சென்றனர்.	PROPN	O
 
 இதற்கமைய	NOUN	O
-17683	NUM	B-YEAR
+1763	NUM	B-YEAR
 ஆம்	AUX	I-YEAR
-ஆண்டு	NOUN    I-YEAR
+ஆண்டு	NOUN	I-YEAR
 வரை	ADP	O
 அமெரிக்கக்	ADV	B-COU
 குடியேற்றங்கள்	NOUN	O
@@ -15411,7 +15407,7 @@ Telegraph	PROPN	O
 இலகுத்தன்மையுடையதாக	ADV	O
 இருந்தமையைக்	NOUN	O
 காணக்கூடியதாக	VERB	O
-உள்ளது  VERB	O
+உள்ளது.	VERB	O
 
 இந்நிலைமை	NOUN	O
 குடியேற்றவாசிகளில்	NOUN	B-COM
@@ -15430,25 +15426,25 @@ Telegraph	PROPN	O
 பிரித்தானியரின்	NOUN	B-NORP
 உதவி	NOUN	O
 அவர்களுக்குத்	VERB	O
-தேவைப்பட்டது    VERB	O
+தேவைப்பட்டது.	VERB	O
 
 1763	NUM	B-YEAR
 ஆம்	AUX	I-YEAR
 ஆண்டிற்கு	VERB	I-YEAR
 முன்னர்	ADV	O
-அமெரிக்கக்	ADV	B-COM
-குடியேற்றவாசிகள்	NOUN	I-COM
+அமெரிக்கக்	ADV	B-COU
+குடியேற்றவாசிகள்	NOUN	B-COM
 எதிர்நோக்கிய	ADJ	O
-பாதுகாப்புத்    NOUN	O
+பாதுகாப்புத்	NOUN	O
 தொடர்பான	ADJ	O
 இரண்டு	NUM	B-NUM
 பிரச்சினைகள்	VERB	O
-இருந்தன VERB	O
+இருந்தன.	VERB	O
 
 இவற்றில்	NOUN	O
 பிரான்சியரின்	NOUN	B-NORP
 அச்சுறுத்தல்	VERB	O
-முதலாவதாகும்    PROPN	O
+முதலாவதாகும்.	PROPN	O
 
 பிரித்தானிய	ADJ	B-COU
 குடியேற்றங்களுக்கு	NOUN	O
@@ -15465,7 +15461,7 @@ Telegraph	PROPN	O
 குடியேற்றவாசிகளுக்கு	NOUN	B-COM
 பிரித்தானியரின்	NOUN	B-COU
 பாதுகாப்புத்	VERB	O
-தேவைப்பட்டது    VERB	O
+தேவைப்பட்டது.	VERB	O
 
 1756	NUM	B-YEAR
 -	PUNCT	O
@@ -15478,12 +15474,12 @@ Telegraph	PROPN	O
 போர்	NOUN	O
 ஏழாண்டுப்	NOUN	B-NAME
 போர்	AUX	I-NAME
-எனப்படும்   PROPN	O
+எனப்படும்.	PROPN	O
 
 இந்தப்	DET	O
 போரில்	NOUN	O
 பிரான்சியர்	VERB	B-NORP
-தோற்கடிக்கப்பட்டனர் PROPN	O
+தோற்கடிக்கப்பட்டனர்.	PROPN	O
 
 மேலும்	ADV	O
 பிரித்தானியருக்கும்	ADJ	B-NORP
@@ -15496,7 +15492,7 @@ Telegraph	PROPN	O
 தொடர்பான	ADJ	O
 அச்சுறுத்தல்	NOUN	O
 முடிவுக்கு	VERB	O
-வந்தது  VERB	O
+வந்தது.	VERB	O
 
 அமெரிக்கக்	ADV	B-COU
 குடியேற்றங்கள்	NOUN	O
@@ -15506,7 +15502,7 @@ Telegraph	PROPN	O
 அச்சுறுத்தல்	NOUN	O
 பிரதான	ADJ	O
 தடையாக	VERB	O
-இருந்தது    VERB	O
+இருந்தது.	VERB	O
 
 பிரான்சியரின்	NOUN	B-NORP
 ஆதிக்கம்	NOUN	O
@@ -15517,13 +15513,13 @@ Telegraph	PROPN	O
 பிரான்சியருடன்	NOUN	B-NORP
 செவ்விந்தியர்	NOUN	B-NORP
 தொடர்பு	VERB	O
-வைத்திருந்தனர்  PROPN	O
+வைத்திருந்தனர்.	PROPN	O
 
 எனினும்	ADV	O
 பிரான்சியரின்	NOUN	B-NORP
 தோல்வியுடன்	NOUN	O
 இந்நிலை	VERB	O
-மாற்றமடைந்தது   VERB	O
+மாற்றமடைந்தது.	VERB	O
 
 மேலும்	ADV	O
 பிரித்தானியர்	NOUN	B-NORP
@@ -15531,7 +15527,7 @@ Telegraph	PROPN	O
 கொள்கையினால்	NOUN	O
 செவ்விந்தியரின்	NOUN	B-NORP
 அச்சுறுத்தல்	VERB	O
-குறைவடைந்தது    VERB	O
+குறைவடைந்தது.	VERB	O
 
 இவ்வாறு	ADV	O
 ஏழாண்டுப்	NOUN	B-NUM
@@ -15558,7 +15554,7 @@ Telegraph	PROPN	O
 கட்டாயம்	VERB	O
 தேவைப்படவில்லை.	VERB	O
 
-அமெரிக்கக்	ADV B-COU
+அமெரிக்கக்	ADV	B-COU
 குடியேற்றங்கள்	NOUN	O
 தொடர்பாகப்	NOUN	O
 பிரித்தானியப்	NOUN	B-COU
@@ -15569,7 +15565,7 @@ Telegraph	PROPN	O
 தாய்நாட்டிற்கு	VERB	O
 சாதகமான	ADJ	O
 முறையில்	NOUN	O
-செயற்படுத்தப்பட்டன  VERB	O
+செயற்படுத்தப்பட்டன.	VERB	O
 
 இதன்படி	ADV	O
 பிரித்தானியாவில்	NOUN	B-COU
@@ -15579,9 +15575,9 @@ Telegraph	PROPN	O
 உற்பத்தி	NOUN	O
 செய்வது	_	O
 தடை	AUX	O
-செய்யப்பட்டது   VERB	O
+செய்யப்பட்டது.	VERB	O
 
-புகையிலை,   NOUN	B-PRO
+புகையிலை,	NOUN	B-PRO
 சீனி,	NOUN	B-PRO
 பருத்தி,	NOUN	B-PRO
 தேன்	NOUN	B-PRO
@@ -15593,7 +15589,7 @@ Telegraph	PROPN	O
 பிரித்தானியாவுக்கு	NOUN	B-COU
 மாத்திரமே	NOUN	O
 கொடுக்க	VERB	O
-வேண்டும்	PROPN	O
+வேண்டும்.	PROPN	O
 
 இவ்வாறு	ADV	O
 குறிப்பிடப்பட்டுள்ள	_	O
@@ -15607,7 +15603,7 @@ Telegraph	PROPN	O
 ஏனைய	NOUN	O
 நாடுகளுக்கு	NOUN	O
 அனுப்ப	VERB	O
-வேண்டும்	PROPN	O
+வேண்டும்.	PROPN	O
 
 அவ்வாறே	NOUN	O
 உற்பத்திச்	NOUN	O
@@ -15636,7 +15632,7 @@ Telegraph	PROPN	O
 அவர்களுக்கு	PRON	O
 நிலையான	ADJ	O
 சந்தை	VERB	O
-கிடைத்திருந்தது VERB	O
+கிடைத்திருந்தது.	VERB	O
 
 அவ்வாறே	NOUN	O
 ஆரம்ப	NOUN	O
@@ -15657,12 +15653,12 @@ Telegraph	PROPN	O
 வர்த்தகத்	PROPN	O
 தொடர்பினை	NOUN	O
 மேற்கொள்ளக்கூடியதாக	VERB	O
-இருந்தது    VERB	O
+இருந்தது.	VERB	O
 
 இதனால்	ADV	O
-1763	NUM B-YEAR
-ஆம்	AUX I-YEAR
-ஆண்டு	NOUN    I-YEAR
+1763	NUM	B-YEAR
+ஆம்	AUX	I-YEAR
+ஆண்டு	NOUN	I-YEAR
 வரை	ADP	O
 பிரித்தானியப்	NOUN	B-COU
 பொருளாதார	PROPN	O
@@ -15672,7 +15668,7 @@ Telegraph	PROPN	O
 குடியேற்றங்களில்	NOUN	O
 அதிக	NOUN	O
 எதிர்ப்பை	VERB	O
-எதிர்நோக்கவில்லை    VERB	O
+எதிர்நோக்கவில்லை.	VERB	O
 
 எனினும்	ADV	O
 1763	NUM	B-YEAR
@@ -15688,14 +15684,14 @@ Telegraph	PROPN	O
 நாட்டிற்குமிடையே	NOUN	O
 கருத்து	_	O
 வேறுபாடு	VERB	O
-தோன்றியது   VERB	O
+தோன்றியது.	VERB	O
 
 அது	PRON	O
 சுதந்திரம்	NOUN	O
 தொடர்பான	ADJ	O
 கருத்து	_	O
 வலுவடைவதற்குக்	VERB	O
-காரணமாகியது VERB	O
+காரணமாகியது.	VERB	O
 
 ஏழாண்டுப்	NOUN	B-NUM
 போரின்	NOUN	O
@@ -15709,7 +15705,7 @@ Telegraph	PROPN	O
 அந்நாட்டின்	_	O
 கடன்	NOUN	O
 சுமை	AUX	O
-அதிகரித்தது VERB	O
+அதிகரித்தது.	VERB	O
 
 அக்கடனையும்	ADV	O
 வட்டியின்	NOUN	O
@@ -15722,7 +15718,7 @@ Telegraph	PROPN	O
 என்பது	PART	O
 பிரித்தானியரின்	NOUN	B-NORP
 நோக்கமாக	VERB	O
-இருந்தது    VERB	O
+இருந்தது.	VERB	O
 
 இதனால்	ADV	O
 பிரித்தானியப்	NOUN	B-COU
@@ -15737,7 +15733,7 @@ Telegraph	PROPN	O
 முறையாக	ADV	O
 அறவிடப்படுவதற்கான	ADJ	O
 நடவடிக்கையை	VERB	O
-மேற்கொண்டார்    PROPN	O
+மேற்கொண்டார்.	PROPN	O
 
 குடியேற்றங்களில்	NOUN	O
 இரகசிய	ADJ	O
@@ -15752,7 +15748,7 @@ Telegraph	PROPN	O
 செய்யவும்	PRON	O
 அவர்	PRON	O
 நடவடிக்கையை	VERB	O
-மேற்கொண்டார்    PROPN	O
+மேற்கொண்டார்.	PROPN	O
 
 1764,	NUM	B-YEAR
 1765	NUM	B-YEAR
@@ -15762,7 +15758,7 @@ Telegraph	PROPN	O
 மூன்று	NUM	B-NUM
 சட்டங்கள்	NOUN	O
 அறிமுகம்	VERB	O
-செய்யப்பட்டன    VERB	O
+செய்யப்பட்டன.	VERB	O
 
 சீனிச்	NOUN	B-LAW
 சட்டத்திற்கு	NOUN	I-LAW
@@ -15779,7 +15775,7 @@ Telegraph	PROPN	O
 அனுப்பப்பட்டதால்	VERB	O
 குடியேற்றவாசிகளுடன்	NOUN	B-COM
 மோதல்கள்	VERB	O
-ஏற்பட்டன    VERB	O
+ஏற்பட்டன.	VERB	O
 
 நாணய	NOUN	B-LAW
 சட்டத்திற்கு	NOUN	I-LAW
@@ -15791,7 +15787,7 @@ Telegraph	PROPN	O
 நாணயங்கள்	NOUN	B-PRO
 வழங்குவது	_	O
 தடை	AUX	O
-செய்யப்பட்டது   VERB	O
+செய்யப்பட்டது.	VERB	O
 
 வெள்ளி	NOUN	B-PRO
 அல்லது	CONJ	O
@@ -15799,7 +15795,7 @@ Telegraph	PROPN	O
 அத்தொகையை	NOUN	O
 செலுத்துவதற்கு	VERB	O
 குடியேற்றவாசிகளுக்கு	VERB	B-COM
-நேர்ந்தது   VERB	O
+நேர்ந்தது.	VERB	O
 
 குடியேற்றவாசிகள்	NOUN	B-COM
 இச்சட்டத்திற்கு	NOUN	O
@@ -15813,7 +15809,7 @@ Telegraph	PROPN	O
 முத்திரைச்	NOUN	B-LAW
 சட்டம்	NOUN	I-LAW
 அமுல்	VERB	O
-செய்யப்பட்டது   VERB	O
+செய்யப்பட்டது.	VERB	O
 
 இதற்கமைய	NOUN	O
 சட்டரீதியான	ADJ	O
@@ -15823,7 +15819,7 @@ Telegraph	PROPN	O
 வரி	NOUN	I-LAW
 அறவிட	NOUN	O
 வேண்டுமென	VERB	O
-விதிக்கப்பட்டது VERB	O
+விதிக்கப்பட்டது.	VERB	O
 
 முத்திரை	NOUN	B-LAW
 வரி	NOUN	I-LAW
@@ -15836,7 +15832,7 @@ Telegraph	PROPN	O
 பாதித்தமையால்	NOUN	O
 அவர்கள்	PRON	O
 எதிர்ப்பைத்	VERB	O
-தெரிவித்தனர்    PROPN	O
+தெரிவித்தனர்.	PROPN	O
 
 இந்த	DET	O
 சட்டத்திற்குப்	NOUN	O
@@ -15847,7 +15843,7 @@ Telegraph	PROPN	O
 குடியேற்றவாசிகள்	NOUN	O
 முத்திரையை	NOUN	O
 நிராகரிக்கவும்	VERB	O
-முன்வந்தனர் PROPN	O
+முன்வந்தனர்.	PROPN	O
 
 எதிர்ப்பினைத்	NOUN	O
 தெரிவிக்கும்	ADJ	O
@@ -15856,7 +15852,7 @@ Telegraph	PROPN	O
 குடியேற்றங்களில்	NOUN	O
 ஒற்றுமை	NOUN	O
 காணப்பட்டமை	VERB	O
-சிறப்பம்சமாகும் PROPN	O
+சிறப்பம்சமாகும்.	PROPN	O
 
 மேற்கூறப்பட்ட	ADJ	O
 வரிகள்	NOUN	O
@@ -15870,7 +15866,7 @@ Telegraph	PROPN	O
 செலுத்துவது	_	O
 தொடர்பாக	ADV	O
 எதிர்ப்பு	VERB	O
-எழுந்தது    VERB	O
+எழுந்தது.	VERB	O
 
 பிரித்தானியரால்	NOUN	B-NORP
 அமுல்	NOUN	O
@@ -15889,7 +15885,7 @@ Telegraph	PROPN	O
 என்பன	NOUN	O
 குடியேற்றங்கள்	NOUN	O
 மீது	ADP	O
-சுமத்தப்பட்டன   VERB	O
+சுமத்தப்பட்டன.	VERB	O
 
 இந்தச்	NOUN	O
 சட்டங்களுக்கு	NOUN	O
@@ -15905,7 +15901,7 @@ Telegraph	PROPN	O
 கலைத்தல்	NOUN	O
 போன்ற	ADP	O
 செயற்பாட்டையும்	VERB	O
-மேற்கொண்டனர்    PROPN	O
+மேற்கொண்டனர்.	PROPN	O
 
 இதனால்	ADV	O
 குடியேற்றவாசிகள்	NOUN	B-COM
@@ -15915,7 +15911,7 @@ Telegraph	PROPN	O
 நோக்கில்	NOUN	O
 ஒன்றிணைந்து	_	O
 போராட	VERB	O
-முன்வந்தனர் PROPN	O
+முன்வந்தனர்.	PROPN	O
 
 இந்த	DET	O
 நிலையை	NOUN	O
@@ -15926,7 +15922,7 @@ Telegraph	PROPN	O
 சில	ADJ	O
 காரணங்களாகப்	NOUN	O
 பின்வருவனவற்றைக்	VERB	O
-குறிப்பிடலாம்   PROPN	O
+குறிப்பிடலாம்.	PROPN	O
 
 1763	NUM	B-YEAR
 ஆம்	AUX	I-YEAR
@@ -15944,7 +15940,7 @@ Telegraph	PROPN	O
 போராட்டத்தில்	NOUN	O
 ஈடுபடும்	ADJ	O
 நிலைக்கு	VERB	O
-உள்ளாகினர்  PROPN	O
+உள்ளாகினர்.	PROPN	O
 
 புதிய	ADJ	O
 சட்டங்களில்	NOUN	O
@@ -15952,7 +15948,7 @@ Telegraph	PROPN	O
 சட்டத்திற்கே	NOUN	I-LAW
 அதிகமான	ADJ	O
 எதிர்ப்புத்	VERB	O
-தோன்றியது   VERB	O
+தோன்றியது.	VERB	O
 
 இதனால்	ADV	O
 முத்திரை	NOUN	O
@@ -15962,7 +15958,7 @@ Telegraph	PROPN	O
 பகிஷ்கரிப்பது	_	O
 வரை	ADP	O
 எதிர்ப்புத்	VERB	O
-தொடர்ந்தது  VERB	O
+தொடர்ந்தது.	VERB	O
 
 அக்காலத்தில்	NOUN	O
 பிரித்தானியாவில்	NOUN	B-COU
@@ -15971,18 +15967,18 @@ Telegraph	PROPN	O
 மக்கள்	NOUN	O
 பிரதிநிதிகளைக்	NOUN	O
 கொண்ட	ADP	O
-பாராளுமன்றத்திற்கே	NOUN	B-PLACE
+பாராளுமன்றத்திற்கே	NOUN	B-LOC
 வரி	NOUN	O
 விதிக்கும்	ADJ	O
 உரிமை	VERB	O
-இருந்தது    VERB	O
+இருந்தது.	VERB	O
 
 எனினும்	ADV	O
 பிரித்தானியப்	NOUN	B-COU
-பாராளுமன்றத்தில்	NOUN	B-PLACE
+பாராளுமன்றத்தில்	NOUN	B-LOC
 குடியேற்றவாசிகளின்	NOUN	B-COM
 பிரதிநிதிகள்	VERB	B-COM
-இருக்கவில்லை    VERB	O
+இருக்கவில்லை.	VERB	O
 
 எனவே	ADV	O
 தமது	NOUN	O
@@ -15991,12 +15987,12 @@ Telegraph	PROPN	O
 விதிக்கும்	ADJ	O
 உரிமை	NOUN	O
 பிரித்தானியப்	_	B-COU
-பாராளுமன்றத்திற்கு	VERB	B-PLACE
+பாராளுமன்றத்திற்கு	VERB	B-LOC
 இல்லை	AUX	O
 என்ற	PART	O
 கருத்து	_	O
 குடியேற்றவாசிகளிடையே	VERB	B-COM
-நிலவியது    VERB	O
+நிலவியது.	VERB	O
 
 இந்தக்	NOUN	O
 கருத்து	_	O
@@ -16010,7 +16006,7 @@ Telegraph	PROPN	O
 என்ற	PART	O
 கோஷம்	NOUN	O
 தோற்றம்	VERB	O
-பெற்றது VERB	O
+பெற்றது.	VERB	O
 
 இவ்வாறு	ADV	O
 பொருளாதார	PROPN	O
@@ -16019,7 +16015,7 @@ Telegraph	PROPN	O
 எதிர்ப்பானது	_	O
 அரசியல்	NOUN	O
 பிரச்சினையாக	VERB	O
-மாறியது VERB	O
+மாறியது.	VERB	O
 
 முத்திரைச்	NOUN	B-LAW
 சட்டத்திற்கு	NOUN	I-LAW
@@ -16031,7 +16027,7 @@ Telegraph	PROPN	O
 பிரித்தானிய	ADJ	B-EMP
 அரசு	NOUN	I-EMP
 அதனை	AUX	O
-நீக்கியது	VERB	O
+நீக்கியது.	VERB	O
 
 எனினும்	ADV	O
 அமெரிக்கக்	ADV	B-COU
@@ -16040,11 +16036,11 @@ Telegraph	PROPN	O
 சட்டங்களை	NOUN	O
 விதிக்கப்	VERB	O
 பிரித்தானியப்	NOUN	B-COU
-பாராளுமன்றத்திற்கு	VERB	B-PLACE
+பாராளுமன்றத்திற்கு	VERB	B-LOC
 அதிகாரம்	NOUN	O
 உண்டெனப்	NOUN	O
 பிரித்தானியா	VERB	B-COU
-கூறியது	VERB	O
+கூறியது.	VERB	O
 
 முத்திரை	NOUN	B-LAW
 வரி	NOUN	I-LAW
@@ -16070,7 +16066,7 @@ Telegraph	PROPN	O
 சட்டங்கள்	NOUN	I-LAW
 சிலவற்றை	NOUN	O
 அமுல்	VERB	O
-செய்தது VERB	O
+செய்தது.	VERB	O
 
 இதற்கமைய	NOUN	O
 அமெரிக்காவிற்கு	PRON	B-COU
@@ -16084,7 +16080,7 @@ Telegraph	PROPN	O
 பொருள்களுக்கு	NOUN	O
 இறக்குமதி	NOUN	B-LAW
 வரியை	VERB	I-LAW
-விதித்தது   VERB	O
+விதித்தது.	VERB	O
 
 இந்த	DET	O
 வரியினை	NOUN	O
@@ -16095,17 +16091,17 @@ Telegraph	PROPN	O
 குடியேற்றவாசிகள்	NOUN	B-COM
 அதற்கு	PRON	O
 எதிர்ப்புத்	VERB	O
-தெரிவித்தனர்	PROPN	O
+தெரிவித்தனர்.	PROPN	O
 
 எனவே	ADV	O
-இரு NUM	B-NUM
+இரு	NUM	B-NUM
 சாராருக்கும்	ADJ	O
 இடையே	ADP	O
 மோதல்கள்	VERB	O
-ஏற்பட்டன    VERB	O
+ஏற்பட்டன.	VERB	O
 
 பொஸ்டன்	PROPN	B-COU
-துறைமுகத்தில்	NOUN	B-PLACE
+துறைமுகத்தில்	NOUN	B-LOC
 குடியேற்றவாசிகள்	NOUN	O
 காட்டிய	ADJ	O
 எகிர்ப்பிற்குப்	NOUN	O
@@ -16115,7 +16111,7 @@ Telegraph	PROPN	O
 பிரயோகம்	NOUN	O
 செய்ததால்	VERB	O
 ஐவர்	AUX	B-NUM
-உயிரிழந்தனர்	PROPN	O
+உயிரிழந்தனர்.	PROPN	O
 
 இவ்வாறான	ADJ	O
 செயல்களால்	NOUN	O
@@ -16125,7 +16121,7 @@ Telegraph	PROPN	O
 மீதான	ADJ	O
 எதிர்ப்பு	NOUN	O
 மேலும்	ADV	O
-அதிகரித்தது VERB	O
+அதிகரித்தது.	VERB	O
 
 குடியேற்றவாசிகள்	NOUN	B-COM
 பிரித்தானியப்	NOUN	B-COU
@@ -16146,7 +16142,7 @@ Telegraph	PROPN	O
 அனுபவிக்க	VERB	O
 வேண்டிய	ADJ	O
 நிலை	AUX	O
-ஏற்பட்டது   VERB	O
+ஏற்பட்டது.	VERB	O
 
 இதனால்	ADV	O
 1770	NUM	B-YEAR
@@ -16159,7 +16155,7 @@ Telegraph	PROPN	O
 இறக்குமதி	NOUN	O
 வரிகள்	NOUN	O
 அனைத்தும்	PRON	O
-நீக்கப்பட்டன	VERB	O
+நீக்கப்பட்டன.	VERB	O
 
 இலாபம்	NOUN	O
 பெறுவதை	NOUN	O
@@ -16173,11 +16169,11 @@ Telegraph	PROPN	O
 உண்டெனக்	NOUN	O
 காட்டும்	ADJ	O
 பொருட்டே	NOUN	O
-பிரித்தானிய	ADJ B-COU
+பிரித்தானிய	ADJ	B-COU
 அரசாங்கம்	NOUN	O
 தேயிலை	NOUN	B-LAW
 வரியை	VERB	I-LAW
-நீக்கவில்லை VERB	O
+நீக்கவில்லை.	VERB	O
 
 1773	NUM	B-YEAR
 ஆம்	AUX	I-YEAR
@@ -16194,7 +16190,7 @@ Telegraph	PROPN	O
 நிறுவனத்திற்கு	VERB	O
 மட்டும்	ADV	O
 பிரித்தானியா	VERB	B-COU
-வழங்கியது   VERB	O
+வழங்கியது.	VERB	O
 
 இதனால்	ADV	O
 அமெரிக்க	PROPN	B-COU
@@ -16202,7 +16198,7 @@ Telegraph	PROPN	O
 சம்பிரதாய	NOUN	O
 தேயிலை	NOUN	B-PRO
 வர்த்தகம்	VERB	O
-பாதிக்கப்பட்டது VERB	O
+பாதிக்கப்பட்டது.	VERB	O
 
 இதனால்	ADV	O
 கோபமுற்ற	ADJ	O
@@ -16215,7 +16211,7 @@ Telegraph	PROPN	O
 இறக்குமதி	VERB	O
 செய்வதற்குத்	NOUN	O
 தடை	AUX	O
-விதித்தனர்  PROPN	O
+விதித்தனர்.	PROPN	O
 
 1773	NUM	B-YEAR
 ஆம்	AUX	I-YEAR
@@ -16231,13 +16227,13 @@ Telegraph	PROPN	O
 தரித்து	_	O
 நுழைந்த	ADJ	O
 பொஸ்டன்	PROPN	B-COU
-மக்கள்	NOUN	I-COU
+மக்கள்	NOUN	O
 அதிலிருந்த	ADJ	O
 342	NUM	B-NUM
 தேயிலைப்	NOUN	B-PRO
 பெட்டிகளைக்	NOUN	I-PRO
 கடலில்	VERB	O
-வீசினர் PROPN	O
+வீசினர்.	PROPN	O
 
 பொஸ்டன்	PROPN	B-EVE
 தேநீர்	NOUN	I-EVE
@@ -16250,7 +16246,7 @@ Telegraph	PROPN	O
 சுதந்திரப்	NOUN	I-EVE
 போரின்	NOUN	I-EVE
 ஆரம்பமெனக்	VERB	O
-கருதப்படுகின்றது    VERB	O
+கருதப்படுகின்றது.	VERB	O
 
 பொஸ்டன்	PROPN	B-EVE
 நிகழ்விற்கு	NOUN	I-EVE
@@ -16263,7 +16259,7 @@ Telegraph	PROPN	O
 பிரித்தானிய	ADJ	B-COU
 அரசாங்கம்	NOUN	O
 நடவடிக்கை	VERB	O
-எடுத்தது	VERB	O
+எடுத்தது.	VERB	O
 
 இது	PRON	O
 தவிர	ADP	O
@@ -16281,7 +16277,7 @@ Telegraph	PROPN	O
 சீர்திருத்தி	NOUN	O
 அமைக்க	VERB	O
 நடவடிக்கை	VERB	O
-எடுக்கப்பட்டது  VERB	O
+எடுக்கப்பட்டது.	VERB	O
 
 பிரித்தானியா	PROPN	B-COU
 பின்பற்றிய	ADJ	O
@@ -16298,7 +16294,7 @@ Telegraph	PROPN	O
 ஒன்றுகூடி	NOUN	O
 மகாநாடு	NOUN	B-EVE
 ஒன்றினை	VERB	O
-நடத்தினர்	PROPN	O
+நடத்தினர்.	PROPN	O
 
 அமெரிக்க	PROPN	B-EVE
 சுதந்திரப்	NOUN	I-EVE
@@ -16319,7 +16315,7 @@ Telegraph	PROPN	O
 சுதந்திரப்	NOUN	I-EVE
 போரில்	NOUN	I-EVE
 முக்கிய	VERB	O
-கட்டமாகும்  PROPN	O
+கட்டமாகும்.	PROPN	O
 
 12	NUM	B-NUM
 குடியேற்றங்கள்	NOUN	O
@@ -16340,7 +16336,7 @@ Telegraph	PROPN	O
 அதிகாரம்	VERB	O
 இல்லை	AUX	O
 என	PART	O
-வெளியிடப்பட்டது	VERB	O
+வெளியிடப்பட்டது.	VERB	O
 
 அவ்வாறே	NOUN	O
 பிரித்தானியப்	NOUN	B-COU
@@ -16354,7 +16350,7 @@ Telegraph	PROPN	O
 இங்கு	NOUN	O
 கருத்து	_	O
 முன்வைக்கப்பட்டு	VERB	O
-நிறைவேறியது	VERB	O
+நிறைவேறியது.	VERB	O
 
 இதன்	PRON	O
 பின்னர்	ADV	O
@@ -16365,7 +16361,7 @@ Telegraph	PROPN	O
 இடையிலான	ADJ	O
 போர்	NOUN	O
 படிப்படியே	VERB	O
-வலுவடைந்தது	VERB	O
+வலுவடைந்தது.	VERB	O
 
 1775	NUM	B-YEAR
 ஆம்	AUX	I-YEAR
@@ -16380,7 +16376,7 @@ Telegraph	PROPN	O
 நடைபெற்று	VERB	O
 பல	ADJ	O
 மரணங்கள்	VERB	O
-ஏற்பட்டன	VERB	O
+ஏற்பட்டன.	VERB	O
 
 இதன்	PRON	O
 பின்னர்	ADV	O
@@ -16403,7 +16399,7 @@ Telegraph	PROPN	O
 தலைவர்	NOUN	B-POS
 பதவிக்கு	NOUN	I-POS
 ஜோர்ஜ்வொஷிங்டன்	VERB	B-PER
-நியமிக்கப்பட்டார்	PROPN	O
+நியமிக்கப்பட்டார்.	PROPN	O
 
 அமெரிக்க	PROPN	B-EVE
 சுதந்திரப்	NOUN	I-EVE
@@ -16413,7 +16409,7 @@ Telegraph	PROPN	O
 பெறும்பொருட்டுக்	NOUN	O
 குழு	NOUN	O
 ஒன்றும்	VERB	O
-நியமிக்கப்பட்டது    VERB	O
+நியமிக்கப்பட்டது.	VERB	O
 
 பிரித்தானியப்	NOUN	B-COU
 படையினருக்கு	NOUN	O
@@ -16431,12 +16427,13 @@ Telegraph	PROPN	O
 ஆண்டு	NOUN	I-YEAR
 ஜூலை	NOUN	B-MONTH
 மாதம்	NOUN	I-MONTH
-4ஆம்	NUM	B-DATE
+4	NUM	B-DATE
+ஆம்	AUX	I-DATE
 திகதி	NOUN	I-DATE
 அமெரிக்கச்	NOUN	B-LAW
 சுதந்திரப்	NOUN	I-LAW
 பிரகடனம்	VERB	I-LAW
-வெளியிடப்பட்டது	VERB	O
+வெளியிடப்பட்டது.	VERB	O
 
 பிறப்பிலேயே	NOUN	O
 மனிதனுக்கு	NOUN	O
@@ -16455,12 +16452,12 @@ Telegraph	PROPN	O
 அப்பிரகடனம்	NOUN	O
 மூலம்	ADP	O
 அமெரிக்கா	PROPN	B-COU
-பிரித்தானியப்	NOUN	I-COU
+பிரித்தானியப்	NOUN	B-COU
 பேரரசிலிருந்து	_	O
 விலகி	NOUN	O
 சுதந்திர	PROPN	O
 அரசாகப்	VERB	O
-பிரகடனப்படுத்தப்பட்டது  VERB	O
+பிரகடனப்படுத்தப்பட்டது.	VERB	O
 
 அதற்கு	PRON	O
 இணங்காத	ADJ	O
@@ -16469,12 +16466,12 @@ Telegraph	PROPN	O
 குடியேற்றங்களுக்கு	NOUN	O
 எதிராகப்	NOUN	O
 போரை	AUX	O
-ஆரம்பித்தது VERB	O
+ஆரம்பித்தது.	VERB	O
 
 அப்போர்	NOUN	O
 பல	ADJ	O
 ஆண்டுகள்	VERB	O
-நீடித்தது   VERB	O
+நீடித்தது.	VERB	O
 
 போர்	NOUN	O
 ஆரம்பமாகி	NOUN	O
@@ -16491,7 +16488,7 @@ Telegraph	PROPN	O
 பிரித்தானியப்	NOUN	B-TRO
 படை	NOUN	I-TRO
 தோல்வி	VERB	O
-கண்டது  VERB	O
+கண்டது.	VERB	O
 
 பல்லாயிரம்	NOUN	B-NUM
 மைல்கள்	NOUN	O
@@ -16506,7 +16503,7 @@ Telegraph	PROPN	O
 படையினர்	NOUN	I-TRO
 பெரும்	ADJ	O
 இன்னல்களை	VERB	O
-எதிர்நோக்கினர்  PROPN	O
+எதிர்நோக்கினர்.	PROPN	O
 
 இந்த	DET	O
 இரு	NUM	B-NUM
@@ -16516,7 +16513,7 @@ Telegraph	PROPN	O
 பிரான்ஸ்	PROPN	B-COU
 அமெரிக்காவுக்கு	PROPN	B-COU
 உதவ	VERB	O
-முன்வந்தது  VERB	O
+முன்வந்தது.	VERB	O
 
 பின்னர்	ADV	O
 ஸ்பானியா,	NOUN	B-COU
@@ -16525,13 +16522,13 @@ Telegraph	PROPN	O
 பிரித்தானியாவுக்கு	NOUN	B-COU
 எதிரான	ADP	O
 குழுவில்	VERB	O
-இணைந்தன VERB	O
+இணைந்தன.	VERB	O
 
 இதனால்	ADV	O
 பிரித்தானியாவுக்குப்	VERB	B-COU
 பாதகமான	ADJ	O
 நிலை	AUX	O
-ஏற்பட்டது   VERB	O
+ஏற்பட்டது.	VERB	O
 
 அமெரிக்காவில்	PROPN	B-COU
 நடைபெற்ற	ADJ	O
@@ -16544,7 +16541,7 @@ Telegraph	PROPN	O
 சமாதானப்	NOUN	O
 பேச்சு	NOUN	O
 வார்த்தைகளில்	VERB	O
-இறங்கியது   VERB	O
+இறங்கியது.	VERB	O
 
 அதன்	NOUN	O
 விளைவாக	ADV	O
@@ -16558,7 +16555,7 @@ Telegraph	PROPN	O
 சுதந்திர	PROPN	O
 அரசாகப்	NOUN	O
 பிரித்தானியாவால்	VERB	B-COU
-ஏற்றுக்கொள்ளப்பட்டது	VERB	O
+ஏற்றுக்கொள்ளப்பட்டது.	VERB	O
 
 இவ்வாறு	ADV	O
 அமெரிக்காவின்	PROPN	B-COU
@@ -16576,7 +16573,7 @@ Telegraph	PROPN	O
 தமது	NOUN	O
 அரசியல்	NOUN	O
 யாப்பினை	VERB	O
-உருவாக்கினர்	PROPN	O
+உருவாக்கினர்.	PROPN	O
 
 அதன்படி	ADV	O
 ஜோர்ஜ்	NOUN	B-PER
@@ -16606,7 +16603,7 @@ Telegraph	PROPN	O
 தலைப்பாக	ADV	O
 அமைவதைக்	NOUN	O
 காணக்கூடியதாக	VERB	O
-உள்ளது  VERB	O
+உள்ளது.	VERB	O
 
 1789	NUM	B-YEAR
 ஆம்	AUX	I-YEAR
@@ -16624,7 +16621,7 @@ Telegraph	PROPN	O
 ஏற்படுத்தியமை	NOUN	O
 பிரான்சியப்	NOUN	B-EVE
 புரட்சி	VERB	I-EVE
-எனப்படும்   PROPN	O
+எனப்படும்.	PROPN	O
 
 பிரான்சியப்	NOUN	B-EVE
 புரட்சியின்	NOUN	I-EVE
@@ -16642,7 +16639,7 @@ Telegraph	PROPN	O
 நாடுகளிலும்	ADJ	O
 அது	PRON	O
 தாக்கம்	VERB	O
-செலுத்தியது VERB	O
+செலுத்தியது.	VERB	O
 
 பதினெட்டாம்	NOUN	B-TIME
 நூற்றாண்டில்	NOUN	I-TIME
@@ -16651,7 +16648,7 @@ Telegraph	PROPN	O
 மிகுந்த	ADJ	O
 செல்வந்த	ADJ	O
 நாடாக	_	O
-விளங்கியது  VERB	O
+விளங்கியது.	VERB	O
 
 வெளிநாட்டு	PROPN	O
 வர்த்தகம்,	NOUN	O
@@ -16659,7 +16656,7 @@ Telegraph	PROPN	O
 என்பவற்றில்	NOUN	O
 அது	PRON	O
 முன்னணியில்	VERB	O
-இருந்தது    VERB	O
+இருந்தது.	VERB	O
 
 ஏனைய	NOUN	O
 நாடுகளைவிடப்	NOUN	O
@@ -16667,7 +16664,7 @@ Telegraph	PROPN	O
 விவசாயிகள்	NOUN	B-COM
 நல்ல	ADJ	O
 நிலையில்	VERB	O
-இருந்தனர்   PROPN	O
+இருந்தனர்.	PROPN	O
 
 அறிவிலும்,	NOUN	O
 சமூகப்	NOUN	O
@@ -16676,7 +16673,7 @@ Telegraph	PROPN	O
 பிரான்ஸ்	PROPN	B-COU
 ஐரோப்பாவில்	NOUN	B-CONT
 முன்னணியில்	VERB	O
-இருந்தது    VERB	O
+இருந்தது.	VERB	O
 
 எனினும்	ADV	O
 பிரான்சிய	ADJ	B-COU
@@ -16688,7 +16685,7 @@ Telegraph	PROPN	O
 சமூக,	NOUN	B-SEC
 பொருளாதாரத்	NOUN	B-SEC
 துறையில்	VERB	O
-வீழ்ச்சியடைந்திருந்தது	VERB	O
+வீழ்ச்சியடைந்திருந்தது.	VERB	O
 
 பிரான்சிய	ADJ	B-COU
 மன்னனான	ADJ	B-POS
@@ -16720,7 +16717,7 @@ Telegraph	PROPN	O
 உரிமையைப்	NOUN	O
 பெறுவதற்குப்	NOUN	O
 போராட்டத்தில்	VERB	O
-ஈடுபட்டனர்  PROPN	O
+ஈடுபட்டனர்.	PROPN	O
 
 மக்கள்	NOUN	O
 முடியாட்சியால்	NOUN	O
@@ -16733,7 +16730,7 @@ Telegraph	PROPN	O
 அவர்கள்	PRON	O
 முடியாட்சிக்கு	NOUN	O
 எதிராகப்	VERB	O
-போராடினர்   PROPN	O
+போராடினர்.	PROPN	O
 
 பிரான்சில்	NOUN	B-COU
 இவ்வாறான	ADJ	O
@@ -16755,8 +16752,8 @@ Telegraph	PROPN	O
 செய்த	ADJ	O
 அரச	NOUN	O
 மரபினர்	NOUN	O
-பூர்போன்	VERB	B-COM
-வம்சத்தவராவர்.	PROPN	I-COM
+பூர்போன்	VERB	B-NAME
+வம்சத்தவராவர்.	PROPN	O
 
 14	NUM	B-PER
 ஆம்	AUX	I-PER
@@ -16907,7 +16904,7 @@ Telegraph	PROPN	O
 விரிசல்	VERB	O
 காணப்பட்டது.	VERB	O
 
-மாளிகைக்குள்	NOUN	B-PLACE
+மாளிகைக்குள்	NOUN	B-LOC
 நுழைவதற்குச்	NOUN	O
 சாதாரண	NOUN	O
 மக்களுக்கு	NOUN	O
@@ -16930,7 +16927,7 @@ Telegraph	PROPN	O
 அறிந்து	VERB	O
 கொண்டான்.	PROPN	O
 
-பிரபுக்கள்	NOUN	b-com
+பிரபுக்கள்	NOUN	B-COM
 நாட்டைப்	NOUN	O
 பற்றியும்	ADJ	O
 மக்கள்	NOUN	O
@@ -16942,16 +16939,16 @@ Telegraph	PROPN	O
 மன்னனுக்கும்	ADJ	O
 மக்களுக்கும்	_	O
 இடையே	ADP	O
-தொடர்பின்மையானது    _   O
+தொடர்பின்மையானது	_	O
 புரட்சி	NOUN	O
 வரை	ADP	O
 செல்ல	VERB	O
 வழிவகுத்தது.	VERB	O
 
-தலைக்கனம்   NOUN	O
+தலைக்கனம்	NOUN	O
 கொண்ட	ADP	O
 வெளிநாட்டுப்	NOUN	O
-பெண்ணான ADJ	O
+பெண்ணான	ADJ	O
 இவள்	NOUN	O
 மன்னனின்	NOUN	O
 அதிகாரத்தையும்	ADJ	O
@@ -16996,9 +16993,9 @@ Telegraph	PROPN	O
 பிரதேச	NOUN	O
 நிருவாகத்தின்	NOUN	O
 பொருட்டு	NOUN	O
-இன்டென்டன்	PROPN	B-POS
+இன்டென்டன்	PROPN	B-NAME
 என்ற	PART	O
-அதிகாரிகளை	VERB	O
+அதிகாரிகளை	VERB	B-POS
 நியமித்தான்.	PROPN	O
 
 எனினும்	ADV	O
