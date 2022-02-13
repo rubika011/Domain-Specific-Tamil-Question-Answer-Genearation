@@ -1,148 +1,309 @@
-import codecs
-import os
+import pickle
+import warnings
+
+import sklearn_crfsuite
+import snowballstemmer
+import csv
+
+from sklearn.model_selection import train_test_split, StratifiedKFold, KFold
+from sklearn_crfsuite.metrics import flat_classification_report
+from sklearn_crfsuite.metrics import flat_accuracy_score
+from sklearn_crfsuite.metrics import flat_f1_score
+
+from FrontEnd import gazetteers
 import re
 
-import utils
+from FrontEnd import training_data, testing_data
 
-from indicnlp.tokenize import sentence_tokenize
-from rippletagger.tagger import Tagger
-from sklearn.model_selection import train_test_split, StratifiedKFold
+def lookup_search(lookup):
+    for key, value in gazetteers.gazetteerlist.items():
+        for v in value:
+            partnames = v.split(" ")
+            if lookup in partnames:
+                return key
+    return 'None'
 
-def write_new_split(corpus_name, test_size, filedir, filename,
-                    seed = 42, max_count = 2):
-    """ Do stratified random sampling for a given corpus given by corpus_name,
-    and save the results in file filename in directory filedir. Parameter
-    test_size indicates the number of sentences to be used in the test set.
-    For information on the parameter max_count, see the documentation for
-    function stratified_split.
-    For now, this only supports stratified_split at the sentence level.
-    >>> TRAIN, TEST = write_new_split('CADEC', 1000, filedir, 'cadec', max_count = 2)
-    >>> TRAIN, TEST = write_new_split('re3d', 200, filedir, 're3d', max_count = 2)
-    >>> TRAIN, TEST = write_new_split('GUM', 1000, filedir, 'gum', max_count = 2)
-    >>> TRAIN, TEST = write_new_split('MUC6', 1000, filedir, 'muc6', max_count = 2)
-    >>> TRAIN, TEST = write_new_split('NIST_IEER99', 690, filedir, 'nist', max_count = 2)
-    >>> TRAIN, TEST = write_new_split('BBN', 10000, filedir, 'bbn', max_count = 2)
-    >>> TRAIN, TEST = write_new_split('GMB1', 1000, filedir, 'gmb1', max_count = 2)
-    """
-    r = utils.read_conll(corpus_name)
-    sentences = list(r)
-    train_data, test_data = stratified_split(sentences,
-                                             test_size,
-                                             seed = seed,
-                                             max_count = max_count)
+def isyearformat(word):
+    return (re.match('^[1-2][0-9]{3}(?:இல்|ல்|ஆம்|ம்){0,1}', word) != 'None')
 
-    writefile(train_data, os.path.join(filedir,'train'), 'train.conll')
-    writefile(test_data, os.path.join(filedir,'test'), 'test.conll')
+def checkifordinalnumericword(word):
+    return word in gazetteers.previousword.get('ORDINAL')
 
-    return train_data, test_data
+def checkprefixword(word):
+    if word in gazetteers.previousword.get('LOC'):
+        return 'location'
+    if word in gazetteers.previousword.get('COU'):
+        return 'country'
+    if word in gazetteers.previousword.get('ORG'):
+        return 'org'
+    if word in gazetteers.previousword.get('TIME'):
+        return 'time'
 
-def writefile(sentences, filedir, filename, sep='\t'):
-    """ Write the sentences, in CONLL-format, to a file given by filename
-    located in directory filedir.
-    """
-    DIR = filedir
-    WRITEFILE = os.path.join(DIR, filename)
-    if not os.path.exists(DIR):
-            os.makedirs(DIR)
-    if os.path.isfile(WRITEFILE):
-        raise ValueError("The file already exists!")
-    with codecs.open(WRITEFILE,'a+',encoding='utf-8') as fd:
-        for sent in sentences:
-            fd.write('\n')
-            for tok in sent:
-                fd.write(tok[0][0] + sep + tok[1]+'\n')
+    return 'None'
+
+def checkifwordendswithcomma(word):
+    return word.endswith(',')
+
+def wordisaconjunction(word):
+    common_conj_words = ['மற்றும்', 'ஆகிய',  'ஆகியன', 'போன்ற', 'போன்றன', 'போன்றவை', 'ஆகியவை',
+                         'என்பன', 'என்பவை', 'ஆகியோர்', 'போன்றோர்']
+    return word in common_conj_words
+
+def checkifwordisnumber(word):
+    if word.isdigit():
+        return True
+    for key, value in gazetteers.numbers.items():
+        for v in value:
+            if word == v:
+                return True
+    return False
+
+def checkcluewordlist(word, key):
+    stemmer = snowballstemmer.stemmer('tamil')
+    stemword = stemmer.stemWords(word.split())
+    if word in gazetteers.cluewords.get(key) or stemword in gazetteers.cluewords.get(key):
+        return True
+
+    return False
+
+def getstemword(word):
+    stemmer = snowballstemmer.stemmer('tamil')
+    return stemmer.stemWords(word.split())
+
+def iswordcontainshyphen(word):
+    return re.search(r'-', word) != 'None'
+
+def ishyphen(word):
+    return word == '-'
+
+def isclueword(word):
+    if checkcluewordlist(word, 'CITY'):
+        return 'city'
+
+    elif checkcluewordlist(word, 'COU'):
+        return 'country'
+
+    elif checkcluewordlist(word, 'CON'):
+        return 'continent'
+
+    elif checkcluewordlist(word, 'PER'):
+        return 'person'
+
+    elif checkcluewordlist(word, 'ORG'):
+        return 'org'
+
+    elif checkcluewordlist(word, 'TIME'):
+        return 'time'
+
+    elif checkcluewordlist(word, 'NUM'):
+        return 'quantity'
+
+    elif checkcluewordlist(word, 'TRO'):
+        return 'troop'
+
+    elif checkcluewordlist(word, 'EVE'):
+        return 'event'
+
+    elif checkcluewordlist(word, 'GPE'):
+        return 'gpe'
+
+    elif checkcluewordlist(word, 'GOV'):
+        return 'gov'
+
+    else:
+        return 'None'
+
+def gazettercheck(word):
+    return lookup_search(word)
+
+def word2features(sent, i):
+    word = sent[i][0]
+    postag = sent[i][1]
+
+    features = {
+        'bias': 1.0,
+        'word[-2:]': word[-2:],
+        'isnumber': checkifwordisnumber(word),
+        'postag': postag,
+        'clueword': isclueword(word),
+        'gazetteerword': gazettercheck(word),
+        'isordinal': checkifordinalnumericword(word),
+        'isyearformat': isyearformat(word),
+        'endwithcomma': checkifwordendswithcomma(word),
+        'containhyphen': iswordcontainshyphen(word),
+        'ishyphen': ishyphen(word),
+        'stemword': getstemword(word)
+    }
+
+    if i > 0:
+        pword1 = sent[i-1][0]
+        postag1 = sent[i-1][1]
+        features.update({
+            '-1:word': pword1,
+            '-1:postag': postag1,
+            '-1:clueword': isclueword(pword1),
+            '-1:isnumber': checkifwordisnumber(pword1),
+            '-1:gazetteerword': gazettercheck(pword1),
+            '-1:isordinal': checkifordinalnumericword(pword1),
+            '-1:isyearformat': isyearformat(pword1),
+            '-1:isconjunction': wordisaconjunction(pword1),
+            '-1:endwithcomma': checkifwordendswithcomma(pword1),
+            '-1:prefixword': checkprefixword(pword1),
+            '-1:stemword': getstemword(pword1),
+            '-1:ishyphen': ishyphen(word),
+        })
+        if i > 1:
+            pword2 = sent[i-2][0]
+            postag2 = sent[i-2][1]
+            features.update({
+                '-2:word': pword2,
+                '-2:postag': postag2,
+                '-2:gazetteerword': gazettercheck(pword2),
+                '-2:isyearformat': isyearformat(pword2),
+                '-2:clueword': isclueword(pword2),
+                '-2:endwithcomma': checkifwordendswithcomma(pword2)
+            })
+    else:
+        features['BOS'] = True
+
+    if i < len(sent) - 1:
+        nword1 = sent[i+1][0]
+        postag1 = sent[i+1][1]
+        features.update({
+            '+1:word': nword1,
+            '+1:postag': postag1,
+            '+1:clueword': isclueword(nword1),
+            '+1:gazetteerword': gazettercheck(nword1),
+            '+1:isnumber': checkifwordisnumber(nword1),
+            '+1:isconjunction': wordisaconjunction(nword1),
+            '+1:endwithcomma': checkifwordendswithcomma(nword1),
+            '+1:ishyphen': ishyphen(word),
+            '+1:stemword': getstemword(nword1)
+        })
+        if i < len(sent) - 2:
+            nword2 = sent[i+2][0]
+            postag2 = sent[i+2][1]
+            features.update({
+                '+2:word': nword2,
+                '+2:postag': postag2,
+                '+2:gazetteerword': gazettercheck(nword2),
+                '+2:clueword': isclueword(nword2),
+                '+2:isconjunction': wordisaconjunction(nword2),
+                '+2:endwithcomma': checkifwordendswithcomma(nword2)
+            })
+
+    else:
+        features['EOS'] = True
+
+    return features
+
+def sent2features(sent):
+    return [word2features(sent, i) for i in range(len(sent))]
+
+def sent2labels(sent):
+    return [label for token, postag, label in sent]
+
+def sent2tokens(sent):
+    return [token for token, postag, label in sent]
+
+def trainandtest():
+    sentences = read_conll_as_list()
+    X = [sent2features(sentence) for sentence in sentences]
+    y = [sent2labels(sentence) for sentence in sentences]
+
+    #X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+
+    #stratified_split = StratifiedKFold(n_splits=5)
+
+    #for train_index, test_index in stratified_split.split(X, y):
+    #    print("TRAIN:", train_index, "TEST:", test_index)
+    #    X_train, X_test = X[train_index], X[test_index]
+    #    y_train, y_test = y[train_index], y[test_index]
+    str_fold = KFold(n_splits=5)
+    # fold = KFold(n_splits=4, random_state=0, shuffle=False)
+
+    # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+    crf = sklearn_crfsuite.CRF(
+        algorithm='lbfgs',
+        c1=0.1,
+        c2=0.1,
+        max_iterations=20,
+        all_possible_transitions=True,
+    )
+
+    for train_index, test_index in str_fold.split(X, y):
+        print("TRAIN:", train_index, "TEST:", test_index)
+
+        X_train, X_test = X[int(train_index)], X[int(test_index)]
+        y_train, y_test = y[train_index], y[test_index]
+
+        crf.fit(X_train, y_train)
+
+        filename = 'crf_model.sav'
+        # joblib.dump(crf, filename)
+        pickle.dump(crf, open(filename, 'wb'))
+
+        # obtaining metrics such as accuracy, etc. on the train set
+        labels = list(crf.classes_)
+        labels.remove('O')
+        print(labels)
+
+        # y_pred_train = crf.predict(X_train)
+        # print('F1 score on the train set = {}\n'.format(flat_f1_score(y_train, y_pred_train, average='weighted', labels=labels)))
+        # print('Accuracy on the train set = {}\n'.format(flat_accuracy_score(y_train, y_pred_train)))
+        #
+        # sorted_labels = sorted(labels, key=lambda name: (name[1:], name[0]))
+        # print('Train set classification report: \n\n{}'.format(flat_classification_report(y_train, y_pred_train, labels=sorted_labels, digits=3)))
+
+        # obtaining metrics such as accuracy, etc. on the test set
+        y_pred_test = crf.predict(X_test)
+        print('F1 score on the test set = {}\n'.format(flat_f1_score(y_test, y_pred_test, average='weighted', labels=labels)))
+        print('Accuracy on the test set = {}\n'.format(flat_accuracy_score(y_test, y_pred_test)))
+
+        with warnings.catch_warnings():
+            # ignore all caught warnings
+            warnings.filterwarnings("ignore")
+
+        sorted_labels = sorted(labels, key=lambda name: (name[1:], name[0]))
+        print('Test set classification report: \n\n{}'.format(flat_classification_report(y_test, y_pred_test, labels=sorted_labels, digits=3)))
+
+def convertToList():
+    sentence_list_string = ""
+    sentence_list = []
+    tag_list = []
+
+    with open("C:\\Users\ASUS\PycharmProjects\QuestionAnswerGeneration\FrontEnd\dataset\\tagged_dataset\\tagged_data.conll",
+                        encoding="utf-8") as file:
+        lines = file.readlines()
+
+        for line in lines:
+            data_tags = csv.reader(line, delimiter='\t')
+            tag_list.append(i for i in data_tags)
+
+            if line == '.   PUNCT   O\n':
+                sentence_list.append(tag_list)
+                sentence_list_string = sentence_list_string + str(tag_list) + ',\n'
+                tag_list = []
+
+    return sentence_list_string
 
 
-def tag_dataset(filename, sep='\t'):
-    dataset_file = open(filename, encoding="utf-8")
-    sentences = dataset_file.read()
-    tokenized_sentences = sentence_tokenize.sentence_split(sentences, lang='tam')
-
-    writefile = open("dataset/dataset.conll", mode="a+", encoding="utf-8")
-
-    for sentence in tokenized_sentences:
-        sentence = ' '.join(sentence.split())
-        sentence = re.sub('\u200c', '', sentence)
-        tagger = Tagger(language='tam')
-        pos_tag = tagger.tag(sentence)
-        for (word, tag) in pos_tag:
-            writefile.write(word + sep + tag + sep + 'O' + "\n")
-
-    writefile.close()
-
-def stratified_split(sentences, test_size, max_count = 2, seed = 42):
-    """
-    Uses 'train_test_split' with stratification from scikit learn. However,
-    since we want to split on the sentences level, we first map label
-    occurrence statistics (only counting B- labels) to integer categories.
-    max_count specifies the maximum label count we are interested in from
-    the point of view of keeping the classes balanced. For example, say
-    max_count = 2, the label set is [B-ADVERSE, B-DISEASE]. Then a sentence
-    with 3 counts of B-ADVERSE and 2 counts of B-DISEASE is placed in the same
-    bin as sentences with 2 counts of B-ADVERSE and 2 counts of B-DISEASE.
-    If a bin only has one element, 'train_test_split' will fail, so in this
-    event the element is mapped to the class of sentences with no labels.
-    """
-    labels = [[iob for (x,iob) in d] for d in sentences]
-    tags = list(set([i for s in labels for i in s if i[0]=='B']))
-    inds = range(len(labels))
-
-    Y = [_map_labels(l, tags, max_count) for l in labels]
-
-    # Quick fix: if any element in Y only appears once, change it to 0
-    ##################################################################
-    if len(tags) < 20:
-        maxnum = (max_count+1)**len(tags) - 1
-        Yfreq = [Y.count(i) for i in range(maxnum+1)]
-        fixcounts = [i for i,x in enumerate(Yfreq) if x==1]
-        for c in fixcounts:
-            Y[Y.index(c)] = 0
-    else: # Due to memory issues:
-        cc = [Y.count(Y[i]) for i in range(len(Y))]
-        for i in range(len(cc)):
-            if cc[i] == 1:
-                Y[i] = 0
-    ###################################################################
-
-    inds_train, inds_test, Y_train, Y_test = train_test_split(inds, Y,
-        test_size = test_size, random_state=seed, stratify=Y)
-
-    train_data = [sentences[i] for i in inds_train]
-    test_data = [sentences[i] for i in inds_test]
-
-    return train_data, test_data
 
 
-def check_label_ratios(train_data, test_data, orig_data, tags):
-    """ This function can be used to compare the entity class proportions
-    before and after the test/train split was made. tags is the set of
-    entity class tags to compare.
-    """
-    train_tagcounts =  [ sum([len([i for i in T if i[1] == tag]) for T in train_data]) for tag in tags]
-    test_tagcounts =  [ sum([len([i for i in T if i[1] == tag]) for T in test_data]) for tag in tags]
-    orig_tagcounts =  [ sum([len([i for i in T if i[1] == tag]) for T in orig_data]) for tag in tags]
+def read_conll_as_list():
+    with open("C:\\Users\ASUS\PycharmProjects\QuestionAnswerGeneration\FrontEnd\dataset\\tagged_dataset\\tagged_data.conll",
+            encoding="utf-8") as file:
 
-    train_ratios = [float(i)/sum(train_tagcounts) for i in train_tagcounts]
-    test_ratios = [float(i)/sum(test_tagcounts) for i in test_tagcounts]
-    orig_ratios = [float(i)/sum(orig_tagcounts) for i in orig_tagcounts]
+        raw_docs = file.read().split('\n\n')
+        sentence_list = []
+        for doc in raw_docs:
+            tags = []
+            for line in doc.split('\n'):
+                token, pos_tag, ner_tag = line.split('\t')
+                tags.append((token, pos_tag, ner_tag))
+                print(tags)
 
-    return train_ratios, test_ratios, orig_ratios
+            sentence_list.append(tags)
+            print(tags)
 
-
-def _map_labels(labels, tags, max_count = 2):
-    """
-    Parameters
-    ----------
-    labels are the labels of one sentence
-    tags : list
-        Must all start with B-
-    """
-    base = max_count + 1
-    counts = [labels.count(t) for t in tags]
-    # Any counts greater than max_count are put in the same 'bin' as max_count
-    for i in range(len(counts)):
-        if counts[i] > max_count:
-            counts[i] = max_count
-
-    Y = int("".join(map(str, counts)), base = base)
-    return Y
+    return sentence_list
