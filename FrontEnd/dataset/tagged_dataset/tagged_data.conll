@@ -117,7 +117,7 @@
 கண்டி	NOUN	B-KIN
 இராச்சியத்தின்	NOUN	I-KIN
 முதல்	ADJ	B-NUM
-மன்னனாக	ADV	B-POS
+மன்னனாக	ADV	B-DES
 இவன்	AUX	O
 கருதப்படுகின்றான்.	PROPN	O
 
@@ -145,7 +145,7 @@
 
 அவன்	NOUN	O
 சீதாவாக்கை	NOUN	B-KIN
-மன்னனான	ADJ	B-POS
+மன்னனான	ADJ	B-DES
 மாயாதுன்னையின்	VERB	B-PER
 நண்பனாவான்.	PROPN	O
 
@@ -182,14 +182,14 @@
 கரலியத்த	ADJ	B-PER
 பண்டாரனின்	NOUN	I-PER
 இக்கொள்கையையிட்டு	PROPN	O
-கண்டிப்	VERB	B-POS
-பிரதானிகள்	NOUN	I-POS
+கண்டிப்	VERB	B-DES
+பிரதானிகள்	NOUN	I-DES
 அதிருப்தியுற்றிருந்தனர்.	PROPN	O
 
 ஆகையால்	NOUN	O
 அவர்கள்	PRON	O
 சீதாவாக்கை	NOUN	B-KIN
-மன்னன்	NOUN	B-POS
+மன்னன்	NOUN	B-DES
 இராஜசிங்கனுக்குத்	NOUN	B-PER
 தமது	NOUN	O
 ஆதரவை	VERB	O
@@ -198,7 +198,7 @@
 அக்கால	NOUN	O
 கண்டி	NOUN	B-KIN
 இராச்சிய	ADJ	I-KIN
-பிரதானியான	ADJ	B-POS
+பிரதானியான	ADJ	B-DES
 பேராதனையின்	NOUN	B-CITY
 வீரசுந்தர	NOUN	B-PER
 பண்டார,	NOUN	I-PER
@@ -385,7 +385,7 @@
 பண்டாரவின்	NOUN	I-PER
 பின்னர்	ADV	O
 மலைநாட்டு	PROPN	B-TER
-மன்னனான	ADJ	B-POS
+மன்னனான	ADJ	B-DES
 முதலாம்	NOUN	B-PER
 விமலதர்மசூரிய	ADJ	I-PER
 மன்னன்	NOUN	I-PER
@@ -760,7 +760,7 @@
 வெளியேற்றுதல்;	NOUN	O
 கண்டி	NOUN	B-KIN
 இராச்சியப்	NOUN	I-KIN
-பிரபுக்களிடமிருந்து	_	B-POS
+பிரபுக்களிடமிருந்து	_	B-DES
 ஏற்பட்ட	ADJ	O
 எதிர்ப்புகளைக்	NOUN	O
 கட்டுப்படுத்தல்;	NOUN	O
@@ -995,7 +995,7 @@
 இதனால்	ADV	O
 கண்டி	NOUN	B-KIN
 இராச்சியப்	NOUN	I-KIN
-பிரதானிகள்	NOUN	B-POS
+பிரதானிகள்	NOUN	B-DES
 இக்காலத்தில்	NOUN	O
 தமது	NOUN	O
 அதிகாரத்தைப்	NOUN	O
@@ -1104,7 +1104,7 @@
 இதனால்	ADV	O
 கண்டி	NOUN	B-KIN
 இராச்சியத்தின்	NOUN	I-KIN
-பிரதானிகள்	NOUN	B-POS
+பிரதானிகள்	NOUN	B-DES
 தமது	NOUN	O
 அதிகாரத்தை	NOUN	O
 மேலும்	ADV	O
@@ -1341,8 +1341,8 @@
 ஸ்ரீ	PROPN	I-PER
 சரணங்கர	NOUN	I-PER
 பிக்குவிற்கு	VERB	I-PER
-‘சங்க	VERB	B-POS
-ராஜா'	NOUN	I-POS
+‘சங்க	VERB	B-DES
+ராஜா'	NOUN	I-DES
 பதவியை	NOUN	O
 வழங்கி,	NOUN	O
 பௌத்த	ADJ	B-REL
@@ -1407,7 +1407,7 @@
 இதுவரை	ADV	O
 கண்டி	NOUN	B-KIN
 இராச்சியப்	NOUN	I-KIN
-பிரதானிகளுக்கும்	ADJ	O
+பிரதானிகளுக்கும்	ADJ	B-DES
 நாயக்க	VERB	B-NORP
 மன்னருக்கும்	ADJ	O
 இடையிலான	ADJ	O
@@ -1445,14 +1445,14 @@
 மரணத்தின்	NOUN	O
 பின்னர்	ADV	O
 அப்போது	ADV	O
-பிரதம	NOUN	B-POS
-பிரதானியாக	ADV	I-POS
+பிரதம	NOUN	B-DES
+பிரதானியாக	ADV	I-DES
 இருந்த	ADJ	O
 பிலிமத்தலாவையின்	NOUN	B-PER
 தேவைக்காக,	NOUN	O
 கண்ணசாமி	NOUN	B-PER
 எனும்	ADJ	O
-இளவரசன்,	NOUN	B-POS
+இளவரசன்,	NOUN	B-DES
 ஸ்ரீ	PROPN	B-PER
 விக்கிரம	NOUN	I-PER
 இராஜசிங்கன்	NOUN	I-PER
@@ -1585,12 +1585,12 @@
 அரசரின்	NOUN	O
 தலைமையில்கூடும்	ADJ	O
 அச்சபைக்கு	NOUN	O
-பிரதானிகள்,	NOUN	B-POS
-திசாவைகள்,	NOUN	B-POS
-தலைமைச்	NOUN	B-POS
-செயலாளர்,	NOUN	I-POS
-பிரதேச	NOUN	B-POS
-செயலாளர்கள்	NOUN	I-POS
+பிரதானிகள்,	NOUN	B-DES
+திசாவைகள்,	NOUN	B-DES
+தலைமைச்	NOUN	B-DES
+செயலாளர்,	NOUN	I-DES
+பிரதேச	NOUN	B-DES
+செயலாளர்கள்	NOUN	I-DES
 என்போர்	VERB	O
 சமுகமளித்தனர்.	PROPN	O
 
@@ -1612,8 +1612,8 @@
 ரட்டவசம	NOUN	B-TER
 எனும்	ADJ	O
 பிரதேசங்கள்	NOUN	O
-பிரதம	NOUN	B-POS
-பிரதானி	PROPN	I-POS
+பிரதம	NOUN	B-DES
+பிரதானி	PROPN	I-DES
 மூலம்	ADP	O
 நிர்வகிக்கப்பட்டது.	VERB	O
 
@@ -1633,26 +1633,26 @@
 பிரதான	VERB	O
 அங்கங்களாயிருந்தன.	VERB	O
 
-பிரதம	NOUN	B-POS
-பிரதானி,	NOUN	I-POS
-இரண்டாவது	ADJ	B-POS
-பிரதம	NOUN	I-POS
-பிரதானி	PROPN	I-POS
+பிரதம	NOUN	B-DES
+பிரதானி,	NOUN	I-DES
+இரண்டாவது	ADJ	B-DES
+பிரதம	NOUN	I-DES
+பிரதானி	PROPN	I-DES
 என	PART	O
 இரு	NUM	B-NUM
 பதவிகள்	VERB	O
 இருந்துவந்தன.	VERB	O
 
-பிரதம	NOUN	B-POS
-பிரதானி	PROPN	I-POS
-பல்லேகம்பா	NOUN	B-POS
-பிரதானி	PROPN	I-POS
+பிரதம	NOUN	B-DES
+பிரதானி	PROPN	I-DES
+பல்லேகம்பா	NOUN	B-DES
+பிரதானி	PROPN	I-DES
 என்றும்	_	O
-இரண்டாவது	ADJ	B-POS
-பிரதம	NOUN	I-POS
-பிரதானி	PROPN	I-POS
-உடகம்பா	NOUN	B-POS
-பிரதானி	PROPN	I-POS
+இரண்டாவது	ADJ	B-DES
+பிரதம	NOUN	I-DES
+பிரதானி	PROPN	I-DES
+உடகம்பா	NOUN	B-DES
+பிரதானி	PROPN	I-DES
 என்றும்	_	O
 அழைக்கப்பட்டனர்.	PROPN	O
 
@@ -1663,7 +1663,7 @@
 அதிகாரிகளுக்குக்	NOUN	O
 கொண்டு	VERB	O
 சென்றவர்கள்	_	O
-கடுபுள்ளே	NOUN	B-POS
+கடுபுள்ளே	NOUN	B-DES
 எனக்	PART	O
 குறிப்பிடப்பட்டனர்.	PROPN	O
 
@@ -1717,37 +1717,37 @@
 மாளிகையின்	NOUN	O
 அந்தந்தப்	NOUN	O
 பொறுப்புக்களுக்கு	NOUN	O
-நிலமே	NOUN	B-POS
+நிலமே	NOUN	B-DES
 என்போர்	NOUN	O
 மற்றும்	CONJ	O
-முகாந்திரங்கள்	NOUN	B-POS
+முகாந்திரங்கள்	NOUN	B-DES
 இருந்து	ADP	O
 வந்தனர்.	PROPN	O
 
 யானைகளுக்குப்	NOUN	O
 பொறுப்பான	ADJ	O
-கஜநாயக்க	PROPN	B-POS
-நிலமே	PROPN	I-POS
-பிரதம	NOUN	B-POS
-செயலாளர்,	NOUN	I-POS
-களஞ்சியப்	NOUN	B-POS
-பொறுப்பாளர்,	NOUN	I-POS
+கஜநாயக்க	PROPN	B-DES
+நிலமே	PROPN	I-DES
+பிரதம	NOUN	B-DES
+செயலாளர்,	NOUN	I-DES
+களஞ்சியப்	NOUN	B-DES
+பொறுப்பாளர்,	NOUN	I-DES
 புனித	NOUN	B-ANT
 தந்ததாதுவிற்குப்	NOUN	I-ANT
 பொறுப்பான	ADJ	O
-தியவடன	NOUN	B-POS
-நிலமே,	NOUN	I-POS
+தியவடன	NOUN	B-DES
+நிலமே,	NOUN	I-DES
 ஆடையணிகளுக்குப்	NOUN	B-PRO
 பொறுப்பான	ADJ	O
-சலுவடன	NOUN	B-POS
-நிலமே,	NOUN	I-POS
+சலுவடன	NOUN	B-DES
+நிலமே,	NOUN	I-DES
 உணவு	NOUN	B-PRO
 வழங்கலுக்குப்	NOUN	O
 பொறுப்பான	ADJ	O
-பத்வடன	NOUN	B-POS
-நிலமே,	NOUN	I-POS
-குதிரைலாய	NOUN	B-POS
-முகாந்திரம்,	NOUN	I-POS
+பத்வடன	NOUN	B-DES
+நிலமே,	NOUN	I-DES
+குதிரைலாய	NOUN	B-DES
+முகாந்திரம்,	NOUN	I-DES
 கவியரங்கிற்குப்	NOUN	O
 பொறுப்பான	ADJ	O
 முகாந்திரம்	NOUN	O
@@ -1801,17 +1801,17 @@
 பிரதேசங்களுக்குப்	NOUN	O
 பொறுப்பான	ADJ	O
 அதிகாரிகள்	NOUN	O
-ரட்டே	NOUN	B-POS
-ரால	NOUN	I-POS
+ரட்டே	NOUN	B-DES
+ரால	NOUN	I-DES
 அல்லது	CONJ	O
-ரட்டே	NOUN	B-POS
-மஹத்தயா	VERB	I-POS
+ரட்டே	NOUN	B-DES
+மஹத்தயா	VERB	I-DES
 எனப்பட்டனர்.	PROPN	O
 
 அவர்களுக்குக்	NOUN	O
 கீழ்	NOUN	O
-லியனரால,	NOUN	B-POS
-உண்டியரால	NOUN	B-POS
+லியனரால,	NOUN	B-DES
+உண்டியரால	NOUN	B-DES
 ஆகியோருடன்	NOUN	O
 மற்றும்	CONJ	O
 சிறு	NOUN	O
@@ -1821,7 +1821,7 @@
 
 திசாவைகளுக்குப்	NOUN	B-TER
 பொறுப்பானவர்கள்	NOUN	O
-திஸாவைகள்	VERB	B-POS
+திஸாவைகள்	VERB	B-DES
 எனப்பட்டனர்.	PROPN	O
 
 திசாவைகள்	NOUN	B-TER
@@ -1834,13 +1834,13 @@
 கோறளைக்குப்	NOUN	B-TER
 பொறுப்பான	ADJ	O
 அதிகாரி	NOUN	O
-கோறளை	VERB	B-POS
+கோறளை	VERB	B-DES
 எனப்பட்டார்.	PROPN	O
 
 கோறளையில்	NOUN	B-TER
 ஒவ்வொரு	NOUN	O
 குலத்தவருக்கும்	ADJ	O
-முகாந்திரங்கள்	NOUN	B-POS
+முகாந்திரங்கள்	NOUN	B-DES
 இருந்ததோடு	NOUN	O
 அவர்களுக்குக்	NOUN	O
 கீழ்	NOUN	O
@@ -1848,7 +1848,7 @@
 கிராமத்தின்	NOUN	O
 ஒழுங்குக்குப்	NOUN	O
 பொறுப்பாக	ADV	O
-விதானைகளும்	VERB	B-POS
+விதானைகளும்	VERB	B-DES
 இருந்தனர்.	PROPN	O
 
 அரசியல்	NOUN	O
@@ -1878,7 +1878,7 @@
 இறுதிக்	NOUN	O
 காலத்தில்	NOUN	O
 அது	PRON	O
-திசாவைமாரின்	NOUN	B-POS
+திசாவைமாரின்	NOUN	B-DES
 கீழ்	AUX	O
 செயற்பட்டது.	VERB	O
 
@@ -2305,7 +2305,7 @@
 
 கண்டி	NOUN	B-KIN
 இராச்சிய	ADJ	I-KIN
-மன்னர்களாவன	NOUN	B-POS
+மன்னர்களாவன	NOUN	B-DES
 சேனா	NOUN	B-PER
 சம்மத	NOUN	I-PER
 விக்கிரமபாகு	NOUN	I-PER
@@ -2686,8 +2686,8 @@
 தீபவம்சத்தைப்	NOUN	B-LIT
 போலவே	NOUN	O
 மகாவம்சத்திலும்	ADJ	B-LIT
-புத்த	ADJ	B-GOD
-பெருமானின்	NOUN	I-GOD
+புத்த	ADJ	O
+பெருமானின்	NOUN	O
 இலங்கை	PROPN	B-COU
 வருகை	NOUN	O
 முதல்	ADJ	O
@@ -3276,7 +3276,7 @@
 உருவம்	NOUN	O
 பதித்த	ADJ	O
 நாணயம்,	NOUN	B-SOU
-இலக்ஷ்மியின்	NOUN	B-GOD
+இலக்ஷ்மியின்	NOUN	O
 உருவம்	NOUN	O
 பதித்த	ADJ	O
 நாணயம்	NOUN	B-SOU
@@ -3440,9 +3440,9 @@
 பற்றி	NOUN	O
 அறிந்து	_	O
 கொள்வதற்கு	VERB	O
-சித்திரம்,	NOUN	B-SOU
-சிற்பம்,	NOUN	B-SOU
-செதுக்கல்	NOUN	B-SOU
+சித்திரம்,	NOUN	B-SKILL
+சிற்பம்,	NOUN	B-SKILL
+செதுக்கல்	NOUN	B-SKILL
 போன்ற	ADP	O
 கலையம்சங்கள்	NOUN	O
 பெரிதும்	ADV	O
@@ -4105,7 +4105,7 @@ Ribeiro	NOUN	I-PER
 இராணுவத்தில்	NOUN	O
 கடமையாற்றிய	ADJ	O
 இவர்	PRON	O
-கப்பித்தானாகவும்	PRON	B-POS
+கப்பித்தானாகவும்	PRON	B-DES
 பதவியுயர்வு	VERB	O
 பெற்றார்.	PROPN	O
 
@@ -4213,8 +4213,8 @@ Knox	NOUN	I-PER
 -	PUNCT	O
 1720	NUM	B-YEAR
 )	PUNCT	O
-கப்பல்	NOUN	B-POS
-மாலுமி	NOUN	I-POS
+கப்பல்	NOUN	B-DES
+மாலுமி	NOUN	I-DES
 ஒருவரின்	VERB	O
 மகனாவார்.	PROPN	O
 
@@ -4329,8 +4329,8 @@ Queiroz	NOUN	I-PER
 )	PUNCT	O
 இயேசு	PROPN	B-ORG
 சபையின்	NOUN	I-ORG
-சமய	NOUN	B-POS
-போதகராக	VERB	I-POS
+சமய	NOUN	B-DES
+போதகராக	VERB	I-DES
 இருந்தார்.	PROPN	O
 
 1688	NUM	B-YEAR
@@ -5160,8 +5160,8 @@ Ceylon	NOUN	I-LIT
 முக்கிய	ADJ	O
 இடம்	ADP	O
 வத்த	ADJ	O
-இயேசுநாதர்,	NOUN	B-GOD
-கன்னிமரியாள்	NOUN	B-GOD
+இயேசுநாதர்,	NOUN	O
+கன்னிமரியாள்	NOUN	O
 என்போரின்	NOUN	O
 உருவங்கள்	VERB	O
 வரையப்பட்டன.	VERB	O
@@ -5202,10 +5202,10 @@ Ceylon	NOUN	I-LIT
 விளங்கினார்.	PROPN	O
 
 அவர்	PRON	O
-கவிஞராகவும்	PRON	B-POS
-பாடகராகவும்	PRON	B-POS
-விஞ்ஞானியாகவும்	PRON	B-POS
-பொறியியலாளராகவும்	VERB	B-POS
+கவிஞராகவும்	PRON	B-DES
+பாடகராகவும்	PRON	B-DES
+விஞ்ஞானியாகவும்	PRON	B-DES
+பொறியியலாளராகவும்	VERB	B-DES
 இருந்தார்.	PROPN	O
 
 அவரது	PRON	O
@@ -5407,10 +5407,10 @@ Ceylon	NOUN	I-LIT
 ஆராய	AUX	O
 முற்பட்டனர்.	PROPN	O
 
-புவி,	NOUN	B-AST
-சூரியன்,	NOUN	B-AST
-சந்திரன்,	NOUN	B-AST
-நட்சத்தரங்கள்	NOUN	B-AST
+புவி,	NOUN	O
+சூரியன்,	NOUN	O
+சந்திரன்,	NOUN	O
+நட்சத்திரங்கள்	NOUN	O
 போன்ற	ADP	O
 அனைத்தையும்	ADJ	O
 அவர்கள்	PRON	O
@@ -5428,13 +5428,13 @@ Ceylon	NOUN	I-LIT
 முன்னேற்றம்	VERB	O
 ஏற்பட்டது.	VERB	O
 
-புவி	NOUN	B-AST
+புவி	NOUN	O
 கோள	NOUN	O
 வடிவமானது	NOUN	O
 எனவும்	_	O
 ஏனைய	NOUN	O
-கோள்கள்	NOUN	B-AST
-சூரியனைச்	NOUN	B-AST
+கோள்கள்	NOUN	O
+சூரியனைச்	NOUN	O
 சுற்றி	NOUN	O
 வருவதாகவும்	_	O
 அவர்	PRON	O
@@ -5461,11 +5461,11 @@ Ceylon	NOUN	I-LIT
 அதனை	NOUN	O
 முன்னெடுத்துச்	NOUN	O
 சென்றதுடன்,	NOUN	O
-ஞாயிற்றுத்	NOUN	B-AST
-தொகுதிக்	NOUN	I-AST
-கோள்கள்	NOUN	I-AST
+ஞாயிற்றுத்	NOUN	O
+தொகுதிக்	NOUN	O
+கோள்கள்	NOUN	O
 அனைத்தும்	PRON	O
-சூரியனை	NOUN	B-AST
+சூரியனை	NOUN	O
 நீள்வட்டப்	NOUN	O
 பாதையில்	NOUN	O
 சுற்றி	NOUN	O
@@ -5475,7 +5475,7 @@ Ceylon	NOUN	I-LIT
 இத்தாலியரான	ADJ	B-COU
 கலிலியோ	NOUN	B-PER
 கலிலி	NOUN	I-PER
-தொலைநோக்கியைக்	VERB	B-APP
+தொலைநோக்கியைக்	VERB	B-EQUIP
 கண்டுபிடித்தார்.	PROPN	O
 
 இதன்	PRON	O
@@ -5483,9 +5483,9 @@ Ceylon	NOUN	I-LIT
 வானியல்	NOUN	O
 ஆராய்ச்சியில்	NOUN	O
 ஈடுபட்டு	VERB	O
-வியாழனைச்	NOUN	B-AST
+வியாழனைச்	NOUN	O
 சூழ	NOUN	O
-உபகோள்கள்	NOUN	B-AST
+உபகோள்கள்	NOUN	O
 உள்ளன	AUX	O
 எனக்	PART	O
 கண்டுபிடித்தார்.	PROPN	O
@@ -5505,8 +5505,8 @@ Ceylon	NOUN	I-LIT
 சேர்ந்த	ADJ	O
 ஐசக்	NOUN	B-PER
 நியுட்டன்	PROPN	I-PER
-புவியீர்ப்புச்	NOUN	B-AST
-சக்தியைக்	VERB	I-AST
+புவியீர்ப்புச்	NOUN	B-SUB
+சக்தியைக்	VERB	I-SUB
 கண்டுபிடித்தார்.	PROPN	O
 
 மறுமலர்ச்சிக்	NOUN	B-TIME
@@ -5536,7 +5536,7 @@ Ceylon	NOUN	I-LIT
 
 சுவிஸ்	PROPN	B-NORP
 இனத்தவரான	ADJ	I-NORP
-பெரசல்சஸ்	PROPN	B-per
+பெரசல்சஸ்	PROPN	B-PER
 நோய்கள்	NOUN	O
 ஏற்படுவதற்கான	ADJ	O
 காரணங்களையும்	ADJ	O
@@ -5583,7 +5583,7 @@ Ceylon	NOUN	I-LIT
 ஜொஹேன்ஸ்	PROPN	B-PER
 கூடன்	NOUN	I-PER
 பேர்க்	NOUN	I-PER
-அச்சியந்திரத்தைக்	VERB	B-APP
+அச்சியந்திரத்தைக்	VERB	B-EQUIP
 கண்டுபிடித்தார்.	PROPN	O
 
 நிலமானிய	ADJ	B-TIME
@@ -5592,12 +5592,12 @@ Ceylon	NOUN	I-LIT
 பிரதேசங்களையும்	ADJ	O
 ஆட்சிசெய்யும்	ADJ	O
 அதிகாரம்	NOUN	O
-பிரதேச	NOUN	B-POS
-ஆட்சியாளர்களிடம்	VERB	I-POS
+பிரதேச	NOUN	B-DES
+ஆட்சியாளர்களிடம்	VERB	I-DES
 ஒப்படைக்கப்பட்டிருந்தது.	VERB	O
 
-பிரதேச	NOUN	B-POS
-ஆட்சியாளராக	ADV	I-POS
+பிரதேச	NOUN	B-DES
+ஆட்சியாளராக	ADV	I-DES
 பரம்பரையான	ADJ	O
 நிலப்பிரபுக்கள்	VERB	O
 செயற்பட்டனர்.	PROPN	O
@@ -5612,8 +5612,8 @@ Ceylon	NOUN	I-LIT
 
 அக்கால	NOUN	O
 மக்கள்	NOUN	O
-பிரதேச	NOUN	B-POS
-ஆட்சியாளர்களின்	NOUN	I-POS
+பிரதேச	NOUN	B-DES
+ஆட்சியாளர்களின்	NOUN	I-DES
 கீழ்	NOUN	O
 இருந்ததால்	VERB	O
 தமது	NOUN	O
@@ -5703,8 +5703,8 @@ Ceylon	NOUN	I-LIT
 வலிமை	NOUN	O
 பெற்றதுடன்	NOUN	O
 அதுவரை	NOUN	O
-நில	NOUN	B-POS
-உரிமையாளர்களாக	ADV	I-POS
+நில	NOUN	B-DES
+உரிமையாளர்களாக	ADV	I-DES
 இருந்த	ADJ	O
 பிரபுக்களின்	NOUN	O
 அதிகாரங்களும்	ADJ	O
@@ -5913,10 +5913,10 @@ Ceylon	NOUN	I-LIT
 பாதுகாப்பாக	ADV	O
 கடற்பிரயாணம்	NOUN	O
 செய்யக்கூடிய	ADJ	O
-இசையறி	NOUN	B-APP
-கருவி,	NOUN	I-APP
-வட	NOUN	B-APP
-நட்சத்திரமானி	PROPN	I-APP
+திசையறி	NOUN	B-EQUIP
+கருவி,	NOUN	I-EQUIP
+வட	NOUN	B-EQUIP
+நட்சத்திரமானி	PROPN	I-EQUIP
 என்பன	VERB	O
 கண்டுபிடிக்கப்பட்டது.	VERB	O
 
@@ -6000,7 +6000,7 @@ Ceylon	NOUN	I-LIT
 
 பின்னர்	ADV	O
 போர்த்துக்கல்	NOUN	B-COU
-மன்னனால்	NOUN	B-POS
+மன்னனால்	NOUN	B-DES
 நன்னம்பிக்கை	NOUN	B-LOC
 முனை	NOUN	I-LOC
 என	PART	O
@@ -6037,8 +6037,8 @@ Ceylon	NOUN	I-LIT
 அனுசரணையுடன்	NOUN	O
 கிறிஸ்டோபர்	NOUN	B-PER
 கொலம்பஸ்	PROPN	I-PER
-மேற்கிந்திய	ADJ	B-TER
-தீவுகளைக்	VERB	I-TER
+மேற்கிந்திய	ADJ	B-COU
+தீவுகளைக்	VERB	I-COU
 கண்டுபிடித்தான்.	PROPN	O
 
 அமெரிக்கோ	NOUN	B-PER
@@ -6347,10 +6347,10 @@ Ceylon	NOUN	I-LIT
 இராச்சியக்	NOUN	I-KIN
 காலத்தில்	NOUN	O
 இருந்த	ADJ	O
-அதிகாரம்,	NOUN	B-POS
-திஸாவை,	NOUN	B-POS
-மொஹொட்டால,	NOUN	B-POS
-கோறளை	NOUN	B-POS
+அதிகாரம்,	NOUN	B-DES
+திஸாவை,	NOUN	B-DES
+மொஹொட்டால,	NOUN	B-DES
+கோறளை	NOUN	B-DES
 போன்ற	ADP	O
 மரபு	NOUN	O
 ரீதியான	ADJ	O
@@ -6518,7 +6518,7 @@ Ceylon	NOUN	I-LIT
 மாற்றங்களுக்கு	VERB	O
 எடுத்துக்காட்டுகளாகும்.	PROPN	O
 
-அச்சியந்திரம்	NOUN	B-APP
+அச்சியந்திரம்	NOUN	B-EQUIP
 இலங்கையில்	PROPN	B-COU
 அறிமுகம்	NOUN	O
 செய்யப்பட்டமையானது	_	O
@@ -6529,7 +6529,7 @@ Ceylon	NOUN	I-LIT
 மற்றுமொரு	VERB	O
 சந்தர்ப்பமாகும்.	PROPN	O
 
-அச்சியந்திரம்	NOUN	B-APP
+அச்சியந்திரம்	NOUN	B-EQUIP
 ஒல்லாந்தரால்	NOUN	B-NORP
 இங்கு	NOUN	O
 அறிமுகம்	NOUN	O
@@ -7063,9 +7063,9 @@ Ceylon	NOUN	I-LIT
 ஏற்பட்டன.	VERB	O
 
 அதாவது	_	O
-நில	NOUN	B-POS
-உடைமையாளர்களால்	NOUN	I-POS
-விவசாயிகளின்	NOUN	B-POS
+நில	NOUN	B-DES
+உடைமையாளர்களால்	NOUN	I-DES
+விவசாயிகளின்	NOUN	B-DES
 சிறிய	ADJ	O
 நிலங்கள்	NOUN	O
 ஒன்று	NUM	O
@@ -7076,12 +7076,12 @@ Ceylon	NOUN	I-LIT
 உருவாக்கப்பட்டன.	VERB	O
 
 இது	PRON	O
-நில	NOUN	B-ORG
-அடைப்பு	NOUN	I-ORG
-இயக்கம்	NOUN	I-ORG
+நில	NOUN	B-TRO
+அடைப்பு	NOUN	I-TRO
+இயக்கம்	NOUN	I-TRO
 அல்லது	CONJ	O
-வேலியடைப்பு	NOUN	B-ORG
-இயக்கம்	VERB	I-ORG
+வேலியடைப்பு	NOUN	B-TRO
+இயக்கம்	VERB	I-TRO
 எனப்பட்டது.	VERB	O
 
 இதனால்	ADV	O
@@ -7089,8 +7089,8 @@ Ceylon	NOUN	I-LIT
 விவசாய	PROPN	B-FAC
 நிலங்களை	NOUN	I-FAC
 இழந்த	ADJ	O
-கிராமிய	ADJ	B-POS
-விவசாயிகள்	NOUN	I-POS
+கிராமிய	ADJ	B-DES
+விவசாயிகள்	NOUN	I-DES
 வேலை	NOUN	O
 வாய்ப்புத்	NOUN	O
 தேடி	NOUN	O
@@ -7103,8 +7103,8 @@ Ceylon	NOUN	I-LIT
 யுத்தங்கள்	NOUN	I-EVE
 முடிவடைந்த	ADJ	O
 பின்னர்	ADV	O
-நிலமானிய	ADJ	B-POS
-அடிமைகள்	NOUN	I-POS
+நிலமானிய	ADJ	B-COM
+அடிமைகள்	NOUN	I-COM
 தமது	NOUN	O
 பண்ணைகளுக்குச்	NOUN	O
 செல்லாமல்	VERB	O
@@ -7303,8 +7303,8 @@ Ceylon	NOUN	I-LIT
 வேண்டிய	ADJ	O
 தேவை	NOUN	O
 அந்நாட்டுப்	NOUN	O
-புடைவை	NOUN	B-POS
-உற்பத்தியாளர்களுக்குச்	NOUN	I-POS
+புடைவை	NOUN	B-DES
+உற்பத்தியாளர்களுக்குச்	NOUN	I-DES
 சவாலாக	VERB	O
 அமைந்தது.	VERB	O
 
@@ -7314,8 +7314,8 @@ Ceylon	NOUN	I-LIT
 ஜோன்	NOUN	B-PER
 கே	NOUN	I-PER
 என்பவரால்	NOUN	O
-பறக்கும்	ADJ	B-APP
-நூனாழி	NOUN	I-APP
+பறக்கும்	ADJ	B-EQUIP
+நூனாழி	NOUN	I-EQUIP
 கண்டுபிடிக்கப்பட்டமையால்	PROPN	O
 நெசவு	NOUN	O
 செய்யும்	VERB	O
@@ -7446,9 +7446,9 @@ Ceylon	NOUN	I-LIT
 பயன்படுத்த	VERB	O
 முடிந்தது.	VERB	O
 
-ஜெனி	PROPN	B-APP
-இயந்திரம்,	NOUN	I-APP
-நீர்ச்சக்கரம்	NOUN	B-APP
+ஜெனி	PROPN	B-EQUIP
+இயந்திரம்,	NOUN	I-EQUIP
+நீர்ச்சக்கரம்	NOUN	B-EQUIP
 இரண்டினதும்	ADJ	O
 அடிப்படையில்	NOUN	O
 சாமுவெல்	NOUN	B-PER
@@ -7459,8 +7459,8 @@ Ceylon	NOUN	I-LIT
 ஆண்டில்	NOUN	O
 நூல்	NOUN	O
 நூற்கும்	ADJ	O
-மியூல்	NOUN	B-APP
-இயந்திரத்தைக்	VERB	I-APP
+மியூல்	NOUN	B-EQUIP
+இயந்திரத்தைக்	VERB	I-EQUIP
 கண்டுபிடித்தார்.	PROPN	O
 
 அதன்	NOUN	O
@@ -7480,8 +7480,8 @@ Ceylon	NOUN	I-LIT
 காட்	NOUN	I-PER
 ரைட்	NOUN	I-PER
 என்பவரால்	NOUN	O
-மியூல்	NOUN	B-APP
-இயந்திரத்தை	NOUN	I-APP
+மியூல்	NOUN	B-EQUIP
+இயந்திரத்தை	NOUN	I-EQUIP
 நீராவியால்	NOUN	O
 இயங்கச்	NOUN	O
 செய்யும்	VERB	O
@@ -7523,10 +7523,10 @@ Ceylon	NOUN	I-LIT
 புரட்சிக்கு	NOUN	I-EVE
 முன்னரே	NOUN	O
 அங்கு	ADV	O
-போர்	NOUN	O
-ஆயுதங்கள்,	NOUN	B-PRO
-விவசாய	PROPN	B-PRO
-உபகரணங்கள்	NOUN	I-PRO
+போர்	NOUN	B-EQUIP
+ஆயுதங்கள்,	NOUN	I-EQUIP
+விவசாய	PROPN	B-EQUIP
+உபகரணங்கள்	NOUN	I-EQUIP
 வீட்டுப்பாவனைப்	NOUN	B-PRO
 பொருள்கள்	NOUN	I-PRO
 என்பவற்றைத்	NOUN	O
@@ -7597,8 +7597,8 @@ Ceylon	NOUN	I-LIT
 கோட்	NOUN	I-PER
 என்பவர்	NOUN	O
 கண்டுபிடித்த	ADJ	O
-ரோலர்	NOUN	B-APP
-இயந்திரம்	NOUN	I-APP
+ரோலர்	NOUN	B-EQUIP
+இயந்திரம்	NOUN	I-EQUIP
 மூலம்	ADP	O
 பதப்படுத்தப்பட்ட	ADJ	O
 இரும்பை	NOUN	B-PRO
@@ -7627,9 +7627,9 @@ Ceylon	NOUN	I-LIT
 1860	NUM	B-YEAR
 ஆம்	AUX	O
 ஆண்டு	NOUN	O
-திறந்த	ADJ	B-APP
-இரும்பு	NOUN	I-APP
-உலை	NOUN	I-APP
+திறந்த	ADJ	B-EQUIP
+இரும்பு	NOUN	I-EQUIP
+உலை	NOUN	I-EQUIP
 கண்டறியப்பட்டதன்	NOUN	O
 மூலம்	ADP	O
 உயர்	ADJ	O
@@ -7659,8 +7659,8 @@ Ceylon	NOUN	I-LIT
 என்பவர்	NOUN	O
 இரும்புத்தாதை	NOUN	B-PRO
 உருக்கக்கூடிய	ADJ	O
-மின்	NOUN	B-APP
-அடுப்பைக்	VERB	I-APP
+மின்	NOUN	B-EQUIP
+அடுப்பைக்	VERB	I-EQUIP
 கண்டுபிடித்தார்.	PROPN	O
 
 இப்புதிய	ADJ	O
@@ -7780,14 +7780,14 @@ Ceylon	NOUN	I-LIT
 வோட்	NOUN	I-PER
 என்பவர்	NOUN	O
 நியூகொமனின்	NOUN	B-PER
-நீராவி	NOUN	B-APP
-இயந்திரத்தை	NOUN	I-APP
+நீராவி	NOUN	B-EQUIP
+இயந்திரத்தை	NOUN	I-EQUIP
 விருத்தி	NOUN	O
 செய்து	AUX	O
 செயற்றிறன்	NOUN	O
 மிக்க	VERB	O
-நீராவி	NOUN	B-APP
-இயந்திரத்தைக்	VERB	I-APP
+நீராவி	NOUN	B-EQUIP
+இயந்திரத்தைக்	VERB	I-EQUIP
 கண்டறிந்தார்.	PROPN	O
 
 அது	PRON	O
@@ -7813,8 +7813,8 @@ Ceylon	NOUN	I-LIT
 
 அதுவரை	NOUN	O
 காலமும்	_	O
-செப்புக்	NOUN	B-APP
-கம்பிகளைப்	NOUN	I-APP
+செப்புக்	NOUN	B-EQUIP
+கம்பிகளைப்	NOUN	I-EQUIP
 பயன்படுத்திப்	NOUN	O
 பெண்களும்	ADJ	O
 சிறுவர்களுமே	NOUN	O
@@ -7828,9 +7828,9 @@ Ceylon	NOUN	I-LIT
 1839	NUM	B-YEAR
 ஆம்	AUX	O
 ஆண்டு	NOUN	O
-இரும்புக்	NOUN	B-APP
-கேபிள்	NOUN	I-APP
-கம்பிகள்	NOUN	I-APP
+இரும்புக்	NOUN	B-EQUIP
+கேபிள்	NOUN	I-EQUIP
+கம்பிகள்	NOUN	I-EQUIP
 கண்டுபிடிக்கப்பட்ட	ADJ	O
 பின்னர்	ADV	O
 அதன்	NOUN	O
@@ -8071,8 +8071,8 @@ Ceylon	NOUN	I-LIT
 நீராவியின்	NOUN	O
 சத்தியால்	NOUN	O
 இயங்கக்கூடிய	ADJ	O
-புகையிரத	NOUN	B-APP
-என்ஜினைக்	NOUN	I-APP
+புகையிரத	NOUN	B-EQUIP
+என்ஜினைக்	NOUN	I-EQUIP
 கண்டுபிடித்தமை	NOUN	O
 கைத்தொழில்	NOUN	B-EVE
 புரட்சியின்	NOUN	I-EVE
@@ -8114,8 +8114,8 @@ Ceylon	NOUN	I-LIT
 செலவும்	VERB	O
 குறைந்தது.	VERB	O
 
-புகையிரத	NOUN	B-APP
-என்ஜினைக்	NOUN	I-APP
+புகையிரத	NOUN	B-EQUIP
+என்ஜினைக்	NOUN	I-EQUIP
 கண்டுபிடித்ததன்	NOUN	O
 மூலம்	ADP	O
 போக்குவரத்துத்	NOUN	B-SEC
@@ -8152,7 +8152,7 @@ Ceylon	NOUN	I-LIT
 இனத்தவரான	ADJ	I-NORP
 ரொபட்	NOUN	B-PER
 புல்டன்	PROPN	I-PER
-புகைப்படகைக்	VERB	B-APP
+புகைப்படகைக்	VERB	B-EQUIP
 கண்டுபிடித்தார்.	PROPN	O
 
 பயணிகளைக்	NOUN	O
@@ -8163,12 +8163,12 @@ Ceylon	NOUN	I-LIT
 ஆண்டு	NOUN	O
 ஹென்றி	PROPN	B-PER
 பெல்	NOUN	I-PER
-புகைக்	NOUN	B-APP
-கப்பலைக்	VERB	I-APP
+புகைக்	NOUN	B-EQUIP
+கப்பலைக்	VERB	I-EQUIP
 கண்டுபிடித்தார்.	PROPN	O
 
-புகைக்	NOUN	B-APP
-கப்பலுக்கான	ADJ	I-APP
+புகைக்	NOUN	B-EQUIP
+கப்பலுக்கான	ADJ	I-EQUIP
 எரிபொருளாக	ADV	O
 ஆரம்பத்தில்	NOUN	O
 விறகும்	ADJ	B-PRO
@@ -8181,8 +8181,8 @@ Ceylon	NOUN	I-LIT
 ஆண்டு	NOUN	O
 ஜேர்மனியரான	ADJ	B-NORP
 டெம்லர்	NOUN	B-PER
-மோட்டார்	NOUN	B-APP
-வண்டியைக்	NOUN	I-APP
+மோட்டார்	NOUN	B-EQUIP
+வண்டியைக்	NOUN	I-EQUIP
 கண்டுபிடித்ததுடன்	PROPN	O
 1903	NUM	B-YEAR
 ஆம்	AUX	O
@@ -8268,10 +8268,10 @@ Ceylon	NOUN	I-LIT
 எந்தவொரு	NOUN	O
 பகுதிக்கும்	ADJ	O
 ஒரு	ADJ	B-NUM
-பெனீ	NOUN	B-CUR
+பெனீ	NOUN	O
 அல்லது	CONJ	O
 ஒரு	ADJ	B-NUM
-பென்ஸ்	PROPN	B-CUR
+பென்ஸ்	PROPN	O
 செலவில்	NOUN	O
 கடிதமொன்றை	NOUN	O
 அனுப்ப	VERB	O
@@ -8315,7 +8315,7 @@ Ceylon	NOUN	I-LIT
 கண்டுபிடிக்கப்பட்டது.	VERB	O
 
 அது	PRON	O
-தொலைபேசி	VERB	B-APP
+தொலைபேசி	VERB	B-EQUIP
 எனப்பட்டது.	VERB	O
 
 அதனைக்	NOUN	O
@@ -8392,12 +8392,12 @@ Telegraph	PROPN	O
 செய்திப்	NOUN	O
 பரிமாற்றம்	NOUN	O
 செய்யும்	VERB	O
-வானொலியைக்	NOUN	B-APP
+வானொலியைக்	NOUN	B-EQUIP
 கண்டுபிடித்தமையும்	ADJ	O
 ஜோன்	NOUN	B-PER
 லொகி	NOUN	I-PER
 பெயாட்	NOUN	I-PER
-தொலைக்காட்சியைக்	NOUN	B-APP
+தொலைக்காட்சியைக்	NOUN	B-EQUIP
 கண்டுபிடித்தமையும்	ADJ	O
 பாரிய	VERB	O
 புரட்சிகளாகும்.	PROPN	O
@@ -8447,8 +8447,8 @@ Telegraph	PROPN	O
 புறங்களில்	NOUN	O
 எஞ்சியிருந்த	ADJ	O
 சிறு	NOUN	O
-நில	NOUN	B-POS
-உரிமையாளர்களுக்கும்	ADJ	I-POS
+நில	NOUN	B-DES
+உரிமையாளர்களுக்கும்	ADJ	I-DES
 தமது	NOUN	O
 விவசாய	PROPN	B-FAC
 நிலங்களை	NOUN	I-FAC
@@ -8473,9 +8473,9 @@ Telegraph	PROPN	O
 உருவாக்கப்பட்டன.	VERB	O
 
 இது	PRON	O
-நில	NOUN	B-ORG
-அடைப்பு	NOUN	I-ORG
-இயக்கம்	VERB	I-ORG
+நில	NOUN	B-TRO
+அடைப்பு	NOUN	I-TRO
+இயக்கம்	VERB	I-TRO
 எனப்பட்டது.	VERB	O
 
 இவ்விவசாயப்	NOUN	O
@@ -8893,10 +8893,10 @@ Telegraph	PROPN	O
 வகுப்பினரும்	VERB	I-NORP
 உருவாகினர்.	PROPN	O
 
-பணக்கார	NOUN	B-POS
-முதலாளிமார்	NOUN	I-POS
-ஏழைத்	NOUN	B-POS
-தொழிலாளரின்	NOUN	I-POS
+பணக்கார	NOUN	B-DES
+முதலாளிமார்	NOUN	I-DES
+ஏழைத்	NOUN	B-DES
+தொழிலாளரின்	NOUN	I-DES
 உழைப்பைச்சுரண்டி	NOUN	O
 அவர்களுக்குக்	NOUN	O
 குறைந்த	ADJ	O
@@ -8908,7 +8908,7 @@ Telegraph	PROPN	O
 அடைந்தனர்.	PROPN	O
 
 எனவே	ADV	O
-தொழிலாளர்களின்	NOUN	B-POS
+தொழிலாளர்களின்	NOUN	B-DES
 வாழ்க்கைத்	NOUN	O
 தரம்	NOUN	O
 மிகவும்	PRON	O
@@ -8918,8 +8918,8 @@ Telegraph	PROPN	O
 
 இதன்	PRON	O
 காரணமாக	ADV	O
-முதலாளி,	NOUN	B-POS
-தொழிலாளி	NOUN	B-POS
+முதலாளி,	NOUN	B-DES
+தொழிலாளி	NOUN	B-DES
 வர்க்கங்களிடையே	NOUN	O
 முரண்பாடுகள்	VERB	O
 ஏற்பட்டன.	VERB	O
@@ -9054,8 +9054,8 @@ Telegraph	PROPN	O
 மாற்றங்களாகும்.	PROPN	O
 
 எனவே	ADV	O
-தொழிற்சாலை	NOUN	B-POS
-உரிமையாளர்களான	ADJ	I-POS
+தொழிற்சாலை	NOUN	B-DES
+உரிமையாளர்களான	ADJ	I-DES
 பணக்கார	NOUN	B-NORP
 வர்க்கமும்	_	I-NORP
 வர்த்தக	PROPN	B-NORP
@@ -9066,14 +9066,14 @@ Telegraph	PROPN	O
 
 சிறுநில	NOUN	O
 உடைமையாளர்களான	ADJ	O
-விவசாயிகளுக்குத்	NOUN	B-POS
+விவசாயிகளுக்குத்	NOUN	B-DES
 தமது	NOUN	O
 தொழிலை	NOUN	O
 மேற்கொள்ள	VERB	O
 முடியாது	AUX	O
 போகவே	NOUN	O
 கைத்தொழிற்சாலைகளில்	NOUN	B-FAC
-தொழிலாளர்களாக	ADV	B-POS
+தொழிலாளர்களாக	ADV	B-DES
 நகரங்களுக்கு	NOUN	O
 செல்ல	VERB	O
 வேண்டிய	ADJ	O
@@ -9146,15 +9146,15 @@ Telegraph	PROPN	O
 இவ்வர்த்தத	NOUN	O
 நடவடிக்கைகளுக்கான	ADJ	O
 முதலீடுகளைத்	NOUN	O
-தனிப்பட்ட	ADJ	B-POS
-முயற்சியாளர்களால்	NOUN	I-POS
+தனிப்பட்ட	ADJ	B-DES
+முயற்சியாளர்களால்	NOUN	I-DES
 மேற்கொள்ள	VERB	O
 முடியாத	ADJ	O
 நிலை	AUX	O
 ஏற்பட்டது.	VERB	O
 
 எனவே	ADV	O
-முயற்சியாளர்கள்	NOUN	B-POS
+முயற்சியாளர்கள்	NOUN	B-DES
 சிலர்	NOUN	O
 ஒன்றிணைந்து	_	O
 தனித்தனி	PROPN	O
@@ -9189,7 +9189,7 @@ Telegraph	PROPN	O
 நிறுவனங்கள்	VERB	O
 ஆரம்பத்தில்	NOUN	O
 உள்நாட்டு	PROPN	O
-வர்த்தகர்களைக்	NOUN	B-POS
+வர்த்தகர்களைக்	NOUN	B-DES
 கொண்டமைந்த	ADJ	O
 போதிலும்	_	O
 19	NUM	B-TIME
@@ -9217,7 +9217,7 @@ Telegraph	PROPN	O
 
 அதன்	NOUN	O
 மூலம்	ADP	O
-வர்த்தகர்களுக்கு	NOUN	B-POS
+வர்த்தகர்களுக்கு	NOUN	B-DES
 கடன்	NOUN	O
 வசதிகள்	NOUN	O
 வழங்கப்பட்டதுடன்,	NOUN	O
@@ -9317,12 +9317,12 @@ Telegraph	PROPN	O
 காலப்	NOUN	O
 பகுதியில்	NOUN	O
 சனத்தொகை	PROPN	O
-20%	NUM	B-PERCENT
+20%	NUM	B-NUM
 இனால்	NOUN	O
 வளர்ச்சியடைந்த	ADJ	O
 போதிலும்	ADJ	O
 வீடமைப்பு	NOUN	O
-11.5%	NUM	B-PERCENT
+11.5%	NUM	B-NUM
 மாத்திரமே	NOUN	O
 வளர்ச்சி	VERB	O
 கண்டது.	VERB	O
@@ -9369,8 +9369,8 @@ Telegraph	PROPN	O
 நாடுகளிலும்	ADJ	O
 பொருளாதார	PROPN	O
 நடவடிக்கைகள்	NOUN	O
-கைத்தொழிற்சாலை	NOUN	B-POS
-உரிமையாளர்களான	ADJ	I-POS
+கைத்தொழிற்சாலை	NOUN	B-DES
+உரிமையாளர்களான	ADJ	I-DES
 செல்வந்தர்களாலே	VERB	O
 மேற்கொள்ளப்பட்டன.	VERB	O
 
@@ -9380,18 +9380,18 @@ Telegraph	PROPN	O
 பிரிவினர்களாகக்	VERB	O
 காணப்பட்டனர்.	PROPN	O
 
-நில	NOUN	B-POS
-உடைமைப்	NOUN	I-POS
-பிரபுக்கள்,	NOUN	I-POS
+நில	NOUN	B-DES
+உடைமைப்	NOUN	I-DES
+பிரபுக்கள்,	NOUN	I-DES
 மத்தியதர	NOUN	B-NORP
 வகுப்பினரான	ADJ	I-NORP
-வர்த்தகர்கள்,	NOUN	B-POS
-தொழிற்சாலை	NOUN	B-POS
-உரிமையாளர்கள்,	NOUN	I-POS
-வங்கியாளர்கள்,	NOUN	B-POS
-பொறியியலாளர்கள்,	NOUN	B-POS
-சட்டத்தரணிகள்,	NOUN	B-POS
-ஒப்பந்தக்காரர்கள்	NOUN	B-POS
+வர்த்தகர்கள்,	NOUN	B-DES
+தொழிற்சாலை	NOUN	B-DES
+உரிமையாளர்கள்,	NOUN	I-DES
+வங்கியாளர்கள்,	NOUN	B-DES
+பொறியியலாளர்கள்,	NOUN	B-DES
+சட்டத்தரணிகள்,	NOUN	B-DES
+ஒப்பந்தக்காரர்கள்	NOUN	B-DES
 போன்ற	ADP	O
 வகுப்பினர்	NOUN	O
 குறைந்த	ADJ	O
@@ -9460,7 +9460,7 @@ Telegraph	PROPN	O
 வேலை	AUX	O
 செய்தனர்.	PROPN	O
 
-தொழிலாளர்கள்	NOUN	B-POS
+தொழிலாளர்கள்	NOUN	B-DES
 தமது	NOUN	O
 தொழிற்சாலைகளுக்கு	NOUN	B-FAC
 அருகிலே	NOUN	O
@@ -9492,7 +9492,7 @@ Telegraph	PROPN	O
 இவ்வாறு	ADV	O
 சமூகத்தின்	NOUN	O
 பெரும்பான்மையான	ADJ	O
-தொழிலாளர்கள்	NOUN	B-POS
+தொழிலாளர்கள்	NOUN	B-DES
 வறுமை,	NOUN	O
 குறைந்த	ADJ	O
 சம்பளம்,	NOUN	O
@@ -9693,13 +9693,13 @@ Telegraph	PROPN	O
 நோர்த்	NOUN	I-PER
 அவர்களால்	PRON	O
 கோப்பி	NOUN	B-FOOD
-விதைகளைப்	NOUN	I-FOOD
+விதைகளைப்	NOUN	O
 பிரித்தெடுக்கும்	ADJ	O
 தொழிற்சாலையொன்று	VERB	B-FAC
 ஆரம்பிக்கப்பட்டது.	VERB	O
 
 தேயிலைக்	NOUN	B-FOOD
-கொழுந்தை	NOUN	I-FOOD
+கொழுந்தை	NOUN	O
 உலர்த்துதல்	NOUN	O
 முதல்	ADJ	O
 ஏற்றுமதிக்காகத்	PROPN	O
@@ -9736,10 +9736,10 @@ Telegraph	PROPN	O
 இலங்கையிலும்	VERB	B-COU
 தோற்றம்பெற்றது.	VERB	O
 
-பெருந்தோட்ட	ADJ	B-POS
-உடைமையாளர்களும்	ADJ	I-POS
-தொழிற்சாலை	NOUN	B-POS
-உரிமையாளர்களும்	ADJ	I-POS
+பெருந்தோட்ட	ADJ	B-DES
+உடைமையாளர்களும்	ADJ	I-DES
+தொழிற்சாலை	NOUN	B-DES
+உரிமையாளர்களும்	ADJ	I-DES
 பணக்கார	NOUN	B-NORP
 வகுப்பினராக	ADV	I-NORP
 உருவானதுடன்	NOUN	O
@@ -10054,7 +10054,7 @@ Telegraph	PROPN	O
 
 இதற்கமைய	NOUN	O
 பிரித்தானிய	ADJ	B-NORP
-மகாராணி	NOUN	B-POS
+மகாராணி	NOUN	B-DES
 1	NUM	B-PER
 ஆம்	AUX	I-PER
 எலிசபெத்	NOUN	I-PER
@@ -10064,9 +10064,9 @@ Telegraph	PROPN	O
 ஒன்றைப்	NOUN	O
 பெற்றுக்	VERB	O
 கொண்டு,	NOUN	O
-ஆங்கிலேய	NOUN	B-POS
-வணிகக்	ADV	I-POS
-குழு	NOUN	I-POS
+ஆங்கிலேய	NOUN	B-DES
+வணிகக்	ADV	I-DES
+குழு	NOUN	I-DES
 ஒன்று	NUM	O
 1600	NUM	B-YEAR
 டிசெம்பரில்	NOUN	B-MON
@@ -10080,9 +10080,9 @@ Telegraph	PROPN	O
 
 அவ்வர்த்தகக்	ADV	O
 கம்பனியின்	NOUN	O
-முதலாவது	_	B-POS
-கப்பல்	NOUN	I-POS
-குழுவினர்	NOUN	I-POS
+முதலாவது	_	B-DES
+கப்பல்	NOUN	I-DES
+குழுவினர்	NOUN	I-DES
 சுமாத்ரா	NOUN	B-TER
 தீவுக்குச்	NOUN	I-TER
 சென்று	VERB	O
@@ -10098,8 +10098,8 @@ Telegraph	PROPN	O
 ஹோகின்ஸ்	PROPN	I-PER
 தலைமையில்	NOUN	O
 இன்னொரு	NOUN	O
-கப்பல்	NOUN	B-POS
-குழுவினர்	NOUN	I-POS
+கப்பல்	NOUN	B-DES
+குழுவினர்	NOUN	I-DES
 இந்தியாவிற்கு	VERB	B-COU
 வந்து	AUX	O
 அப்போதைய	NOUN	O
@@ -10619,11 +10619,11 @@ Telegraph	PROPN	O
 இருந்த	ADJ	O
 ஆங்கிலேயரிடமும்	_	B-NORP
 பிரான்சியரிடமும்	_	B-NORP
-தூதுவர்கள்	VERB	B-POS
+தூதுவர்கள்	VERB	B-DES
 அனுப்பப்பட்டனர்.	PROPN	O
 
 ஆங்கிலேயத்	NOUN	B-NORP
-தூதுவர்கள்	NOUN	B-POS
+தூதுவர்கள்	NOUN	B-DES
 கண்டிக்கு	NOUN	B-CITY
 வருகை	NOUN	O
 தருவதற்கான	ADJ	O
@@ -10639,7 +10639,7 @@ Telegraph	PROPN	O
 கொள்வதற்கு	VERB	O
 முன்னர்	ADV	O
 அவர்களுடைய	NOUN	O
-தூதுவர்கள்	NOUN	B-POS
+தூதுவர்கள்	NOUN	B-DES
 மூவர்	NOUN	O
 காலத்திற்குக்	NOUN	O
 காலம்	NOUN	O
@@ -10678,11 +10678,11 @@ Telegraph	PROPN	O
 மன்னன்	NOUN	I-PER
 கண்டி	NOUN	B-KIN
 இராச்சியத்தின்	VERB	I-KIN
-ஆட்சியாளராவார்.	PROPN	B-POS
+ஆட்சியாளராவார்.	PROPN	B-DES
 
 அடுத்த	NOUN	O
 ஆங்கிலேயத்	NOUN	B-NORP
-தூதுவர்கள்	NOUN	B-POS
+தூதுவர்கள்	NOUN	B-DES
 இருவரினதும்	ADJ	O
 வருகைகள்	NOUN	O
 இடம்பெற்றது	_	O
@@ -11019,7 +11019,7 @@ Telegraph	PROPN	O
 மாதம்	NOUN	O
 இந்நாட்டு	PROPN	O
 ஒல்லாந்த	ADJ	B-COU
-ஆளுநரான	ADJ	B-POS
+ஆளுநரான	ADJ	B-DES
 பன்	NOUN	B-PER
 எங்கல்	NOUN	I-PER
 பெக்கிற்கு	VERB	I-PER
@@ -11035,7 +11035,7 @@ Telegraph	PROPN	O
 படையைப்	NOUN	I-TRO
 பிரவேசிக்கச்	NOUN	O
 செய்வதற்கு	VERB	O
-ஆளுநர்	VERB	B-POS
+ஆளுநர்	VERB	B-DES
 பின்வாங்கினார்.	PROPN	O
 
 இதனால்	ADV	O
@@ -11145,8 +11145,8 @@ Telegraph	PROPN	O
 நிருவாக	ADV	O
 நடவடிக்கைகளில்	NOUN	O
 இயன்றளவு	NOUN	O
-சுதேச	NOUN	B-POS
-உத்தியோகத்தர்களையும்	ADJ	I-POS
+சுதேச	NOUN	B-DES
+உத்தியோகத்தர்களையும்	ADJ	I-DES
 பயன்படுத்திக்	VERB	O
 கொண்டனர்.	PROPN	O
 
@@ -11190,21 +11190,21 @@ Telegraph	PROPN	O
 (	PUNCT	O
 ரெசிடன்	PROPN	O
 )	PUNCT	O
-வதிவிடப்	PROPN	B-POS
-பிரதிநிதி	NOUN	I-POS
+வதிவிடப்	PROPN	B-DES
+பிரதிநிதி	NOUN	I-DES
 ஒருவர்	VERB	O
 நியமிக்கப்பட்டார்.	PROPN	O
 
 அவரால்	NOUN	O
 வரி	NOUN	O
 வசூலிப்பதற்கு	VERB	O
-உதவிப்	NOUN	B-POS
-பரிசோதகர்கள்	NOUN	I-POS
+உதவிப்	NOUN	B-DES
+பரிசோதகர்கள்	NOUN	I-DES
 பலர்	AUX	O
 நியமிக்கப்பட்டனர்.	PROPN	O
 
 இவர்கள்	NOUN	O
-கலெக்டர்	VERB	B-POS
+கலெக்டர்	VERB	B-DES
 எனப்பட்டனர்.	PROPN	O
 
 இவர்களின்	NOUN	O
@@ -11219,14 +11219,14 @@ Telegraph	PROPN	O
 முறை	AUX	O
 ஆரம்பிக்கப்பட்டது.	VERB	O
 
-கலெக்டர்களுக்கு	NOUN	B-POS
+கலெக்டர்களுக்கு	NOUN	B-DES
 உதவியாக	ADV	O
 மேலும்	ADV	O
 அதிகாரிகள்	NOUN	O
 பலர்	NOUN	O
 நியமிக்கப்பட்டிருந்ததோடு	NOUN	O
 அவர்கள்	PRON	O
-அவுமில்தார்கள்	VERB	B-POS
+அவுமில்தார்கள்	VERB	B-DES
 எனப்பட்டனர்.	PROPN	O
 
 இவர்களின்	NOUN	O
@@ -11237,7 +11237,7 @@ Telegraph	PROPN	O
 
 இவ்வதிகாரிகள்	NOUN	O
 அனைவரும்	PRON	O
-கலெக்டர்மாரின்	NOUN	B-POS
+கலெக்டர்மாரின்	NOUN	B-DES
 மேற்பார்வையின்	NOUN	O
 கீழ்	NOUN	O
 வரிவசூலிக்கும்	ADJ	O
@@ -11252,8 +11252,8 @@ Telegraph	PROPN	O
 கீழ்	NOUN	O
 முதலியார்	NOUN	B-NAME
 எனப்பட்ட	ADJ	O
-சுதேச	NOUN	B-POS
-உத்தியோகத்தர்கள்	NOUN	I-POS
+சுதேச	NOUN	B-DES
+உத்தியோகத்தர்கள்	NOUN	I-DES
 கவனிப்பாரற்று	VERB	O
 விடப்பட்டனர்.	PROPN	O
 
@@ -11287,8 +11287,8 @@ Telegraph	PROPN	O
 போன்ற	ADP	O
 பொறுப்புக்கள்	NOUN	O
 ஒப்படைக்கப்பட்டிருந்தபடியால்	NOUN	O
-நிர்வாக	PROPN	B-POS
-அதிகாரிகளுக்கும்	ADJ	I-POS
+நிர்வாக	PROPN	B-DES
+அதிகாரிகளுக்கும்	ADJ	I-DES
 பொதுமக்களுக்கும்	ADJ	O
 இடையிலிருந்த	ADJ	O
 இடைவெளி	NOUN	O
@@ -11363,8 +11363,8 @@ Telegraph	PROPN	O
 தென்னை	NOUN	O
 மரத்திற்கு	VERB	O
 ஒரு	ADJ	B-NUM
-வெள்ளிக்	NOUN	B-CUR
-காசு	NOUN	I-CUR
+வெள்ளிக்	NOUN	O
+காசு	NOUN	O
 வீதம்	NOUN	O
 வரி	AUX	O
 செலுத்தவேண்டியிருந்தது.	VERB	O
@@ -11442,8 +11442,8 @@ Telegraph	PROPN	O
 ஒன்று	NUM	B-NUM
 நியமிக்கப்பட்டது.	VERB	O
 
-பிரிகேடியர்	NOUN	B-POS
-ஜெனரல்	VERB	I-POS
+பிரிகேடியர்	NOUN	B-DES
+ஜெனரல்	VERB	I-DES
 டீ.	AUX	B-PER
 மியூரன்	NOUN	I-PER
 தலைமையில்	NOUN	O
@@ -11507,12 +11507,12 @@ Telegraph	PROPN	O
 மேற்கொள்வதற்கு	VERB	O
 பிரித்தானிய	ADJ	B-COU
 அரசால்,	NOUN	O
-ஆளுநர்	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
 ஒருவர்	VERB	O
 நியமிக்கப்பட்டார்.	PROPN	O
 
 முதலாவது	_	B-NUM
-ஆளுநராக	ADV	B-POS
+ஆளுநராக	ADV	B-DES
 பிரட்றிக்	NOUN	B-PER
 நோர்த்	NOUN	I-PER
 இலங்கைக்கு	VERB	B-COU
@@ -11562,7 +11562,7 @@ Telegraph	PROPN	O
 
 இரட்டை	NOUN	O
 ஆட்சியில்	NOUN	O
-ஆளுநர்	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
 பிரித்தானிய	ADJ	B-COU
 முடிக்குப்	NOUN	O
 பொறுப்புச்	NOUN	O
@@ -11571,18 +11571,18 @@ Telegraph	PROPN	O
 இருந்ததோடு,	NOUN	O
 வர்த்தகக்	ADV	B-ORG
 கம்பனியின்	NOUN	I-ORG
-பணிப்பாளர்	NOUN	B-POS
+பணிப்பாளர்	NOUN	B-DES
 சபையின்	NOUN	O
 ஆலோசனைகளையும்	ADJ	O
 பின்பற்ற	ADJ	O
 வேண்டியவராக	VERB	O
 இருந்தார்.	PROPN	O
 
-ஆளுநர்	NOUN	B-POS
-நோர்த்திற்கு	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
+நோர்த்திற்கு	NOUN	B-DES
 வர்த்தகக்	ADV	B-ORG
 கம்பனி	PROPN	I-ORG
-உத்தியோகத்தர்களின்	NOUN	B-POS
+உத்தியோகத்தர்களின்	NOUN	B-DES
 ஒத்துழைப்பு	NOUN	O
 போதிய	ADJ	O
 அளவில்	VERB	O
@@ -11627,8 +11627,8 @@ Telegraph	PROPN	O
 அரசியல்	NOUN	O
 சிம்மாசனத்திற்கு	VERB	O
 உரிமையாளர்களாக	ADV	O
-நாயக்கர்	NOUN	B-POS
-இளவரசர்கள்	NOUN	B-POS
+நாயக்கர்	NOUN	B-DES
+இளவரசர்கள்	NOUN	B-DES
 இருவர்	NOUN	O
 இருந்துள்ளதாகத்	PROPN	O
 தெரிய	VERB	O
@@ -11643,21 +11643,21 @@ Telegraph	PROPN	O
 அப்போது	ADV	O
 கண்டி	NOUN	B-CITY
 அரசின்	NOUN	O
-தலைமைப்	NOUN	B-POS
-பிரதானியான	ADJ	I-POS
+தலைமைப்	NOUN	B-DES
+பிரதானியான	ADJ	I-DES
 பிலிமத்தலாவையின்	NOUN	B-PER
 ஏற்பாட்டிற்கமைய	NOUN	O
 கண்ணுசாமி	NOUN	B-PER
-இளவரசன்	NOUN	B-POS
-ஸ்ரீ	PROPN	B-POS
-விக்கிரம	NOUN	I-POS
-இராஜசிங்க	VERB	I-POS
+இளவரசன்	NOUN	B-DES
+ஸ்ரீ	PROPN	B-DES
+விக்கிரம	NOUN	I-DES
+இராஜசிங்க	VERB	I-DES
 என்னும்	ADJ	O
 நாமத்துடன்	VERB	O
 மன்னராக்கப்பட்டார்.	PROPN	O
 
 முத்துசாமி	NOUN	B-PER
-இளவரசர்,	NOUN	B-POS
+இளவரசர்,	NOUN	B-DES
 பாதுகாப்புக்கருதி	NOUN	O
 ஆங்கிலேயரிடம்	NOUN	B-NORP
 தஞ்சம்	VERB	O
@@ -11683,12 +11683,12 @@ Telegraph	PROPN	O
 
 பிரட்றிக்	NOUN	B-PER
 நோர்த்	NOUN	I-PER
-ஆளுநரின்	NOUN	B-POS
+ஆளுநரின்	NOUN	B-DES
 கொள்கை	NOUN	O
 இதில்	ADV	O
 முக்கியமானதாகும்.	PROPN	O
 
-ஆளுநர்	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
 நோர்த்	NOUN	B-PER
 ஆரம்ப	NOUN	O
 காலத்தில்	NOUN	O
@@ -11708,7 +11708,7 @@ Telegraph	PROPN	O
 ஆண்டு	NOUN	O
 மார்ச்	NOUN	B-MON
 மாதத்தில்	NOUN	I-MON
-தளபதி	NOUN	B-POS
+தளபதி	NOUN	B-DES
 மெக்டோவலின்	NOUN	B-PER
 தலைமையில்	NOUN	O
 கண்டிக்கு	NOUN	B-CITY
@@ -11716,13 +11716,13 @@ Telegraph	PROPN	O
 ஒன்றை	NUM	O
 அனுப்புவதற்கான	ADJ	O
 ஏற்பாடுகளை	NOUN	O
-ஆளுநர்	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
 நோர்த்	VERB	B-PER
 மேற்கொண்டார்.	PROPN	O
 
 1164	NUM	B-NUM
-இராணுவ	NOUN	B-POS
-வீரர்களையும்	_	I-POS
+இராணுவ	NOUN	B-DES
+வீரர்களையும்	_	I-DES
 8	NUM	B-NUM
 பீரங்கிகளையும்	ADJ	O
 கொண்ட	ADP	O
@@ -11758,8 +11758,8 @@ Telegraph	PROPN	O
 இடையில்	NOUN	O
 நிறுத்தி	NOUN	O
 விட்டு,	NOUN	O
-தூதுக்	NOUN	B-POS
-குழுவினர்	NOUN	I-POS
+தூதுக்	NOUN	B-DES
+குழுவினர்	NOUN	I-DES
 மட்டும்	ADV	O
 மன்னனைச்	NOUN	O
 சந்திக்க	VERB	O
@@ -11768,8 +11768,8 @@ Telegraph	PROPN	O
 மெக்டோவல்	NOUN	B-PER
 கண்டிக்குச்	NOUN	B-CITY
 சென்று	VERB	O
-மன்னனுடனும்	ADJ	B-POS
-பிரதானிகளுடனும்	ADJ	B-POS
+மன்னனுடனும்	ADJ	B-DES
+பிரதானிகளுடனும்	ADJ	B-DES
 பேச்சுவார்த்தைகளில்	NOUN	O
 ஈடுபட்டாலும்	ADJ	O
 ஆங்கிலேயரின்	NOUN	B-NORP
@@ -11796,7 +11796,7 @@ Telegraph	PROPN	O
 வர	AUX	O
 முடியாது	AUX	O
 போனமையால்,	NOUN	O
-ஆளுநர்	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
 நோர்த்	NOUN	B-PER
 மனச்	AUX	O
 சஞ்சலமுற்றார்.	PROPN	O
@@ -11847,7 +11847,7 @@ Telegraph	PROPN	O
 கிளர்ச்சி	NOUN	O
 ஏற்படுகையில்	NOUN	O
 அவர்களுக்கு	PRON	O
-மன்னர்	NOUN	B-POS
+மன்னர்	NOUN	B-DES
 ஆதரவு	NOUN	O
 வழங்குவதும்	ADJ	O
 ஆங்கிலேயர்	NOUN	B-NORP
@@ -11939,7 +11939,7 @@ Telegraph	PROPN	O
 எதிர்பார்த்த	ADJ	O
 பலனை	NOUN	O
 அடையாததால்	VERB	O
-ஆளுநர்	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
 நோர்த்	NOUN	B-PER
 கண்டிக்குப்	NOUN	B-CITY
 படையெடுக்கத்	VERB	O
@@ -11979,8 +11979,8 @@ Telegraph	PROPN	O
 விக்கிரம	NOUN	I-PER
 இராஜசிங்க	NOUN	I-PER
 மன்னனும்	ADJ	I-PER
-நகர	NOUN	B-POS
-மக்களும்	ADJ	I-POS
+நகர	NOUN	B-DES
+மக்களும்	ADJ	I-DES
 பாதுகாப்பு	NOUN	O
 உத்தியாக	ADV	O
 நகரத்தைக்	NOUN	O
@@ -11994,9 +11994,9 @@ Telegraph	PROPN	O
 கண்டிக்கு	NOUN	B-CITY
 அழைத்துச்	VERB	O
 செல்லப்பட்ட	ADJ	O
-இளவரசன்	NOUN	B-POS
+இளவரசன்	NOUN	B-DES
 முத்துசாமி	NOUN	B-PER
-மன்னராகப்	NOUN	B-POS
+மன்னராகப்	NOUN	B-DES
 பிரகடனம்	VERB	O
 செய்யப்பட்டார்.	PROPN	O
 
@@ -12073,7 +12073,7 @@ Telegraph	PROPN	O
 பொம்மை	NOUN	O
 ஆட்சியாளனான	ADJ	O
 முத்துசாமி	NOUN	B-PER
-இளவரசன்	NOUN	B-POS
+இளவரசன்	NOUN	B-DES
 கொல்லப்பட்டதிலிருந்து	_	O
 ஆங்கிலேயர்	NOUN	B-NORP
 அடைந்த	ADJ	O
@@ -12083,7 +12083,7 @@ Telegraph	PROPN	O
 
 இப்படையெடுப்புக்கு	NOUN	O
 முன்னர்	ADV	O
-ஆளுநர்	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
 நோர்த்துக்கு	NOUN	B-PER
 கண்டி	NOUN	B-KIN
 இராச்சியம்	NOUN	I-KIN
@@ -12129,7 +12129,7 @@ Telegraph	PROPN	O
 1805	NUM	B-YEAR
 ஆம்	AUX	O
 ஆண்டில்	NOUN	O
-ஆளுநர்	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
 நோர்த்தின்	NOUN	B-PER
 பதவிக்	NOUN	O
 காலம்	NOUN	O
@@ -12138,7 +12138,7 @@ Telegraph	PROPN	O
 தோமஸ்	PROPN	B-PER
 மெயிட்லண்ட்,	NOUN	I-PER
 இந்நாட்டின்	NOUN	O
-ஆளுநராக	VERB	B-POS
+ஆளுநராக	VERB	B-DES
 நியமிக்கப்பட்டார்.	PROPN	O
 
 நோர்த்தைப்	NOUN	B-PER
@@ -12165,8 +12165,8 @@ Telegraph	PROPN	O
 ஜோன்	NOUN	B-PER
 டொயிலி	NOUN	I-PER
 என்ற	PART	O
-அரச	NOUN	B-POS
-உத்தியோகத்தரைப்	NOUN	I-POS
+அரச	NOUN	B-DES
+உத்தியோகத்தரைப்	NOUN	I-DES
 பயன்படுத்திக்	VERB	O
 கொண்டார்.	PROPN	O
 
@@ -12174,7 +12174,7 @@ Telegraph	PROPN	O
 டொயிலி	NOUN	I-PER
 கேம்ப்பிரிட்ஜ்	NOUN	B-LOC
 பல்கலைக்கழகத்தின்	NOUN	I-LOC
-பட்டதாரி	VERB	B-POS
+பட்டதாரி	VERB	B-DES
 ஆவார்.	PROPN	O
 
 இலங்கைக்கு	NOUN	B-COU
@@ -12194,8 +12194,8 @@ Telegraph	PROPN	O
 அவர்,	NOUN	O
 கரதொட்ட	ADJ	B-PER
 தர்மராம	NOUN	I-PER
-பௌத்த	ADJ	B-POS
-பிக்குவிடம்	NOUN	I-POS
+பௌத்த	ADJ	B-DES
+பிக்குவிடம்	NOUN	I-DES
 சிங்கள	PROPN	B-LAN
 மொழி	AUX	I-LAN
 பயின்றார்.	PROPN	O
@@ -12233,7 +12233,7 @@ Telegraph	PROPN	O
 பொதுமக்களிடம்	NOUN	O
 மட்டுமல்லாமல்	VERB	O
 கண்டிப்	NOUN	B-CITY
-பிரதானிகளிடமும்	_	B-POS
+பிரதானிகளிடமும்	_	B-DES
 செல்வாக்குப்	NOUN	O
 பெற்றவராகத்	VERB	O
 திகழ்ந்தார்.	PROPN	O
@@ -12254,7 +12254,7 @@ Telegraph	PROPN	O
 ஜோன்	NOUN	B-PER
 டொயிலி,	NOUN	I-PER
 கண்டிப்	NOUN	B-CITY
-பிரதானிகளுடன்	NOUN	B-POS
+பிரதானிகளுடன்	NOUN	B-DES
 இரகசியத்	NOUN	O
 தொடர்புகளைக்	NOUN	O
 கொண்டிருந்து	_	O
@@ -12268,10 +12268,10 @@ Telegraph	PROPN	O
 காண்பித்தார்.	PROPN	O
 
 அத்தோடு	NOUN	O
-வியாபாரிகள்,	NOUN	B-POS
-அறிஞர்கள்,	NOUN	B-POS
-சமய	NOUN	B-POS
-குருமார்	NOUN	I-POS
+வியாபாரிகள்,	NOUN	B-DES
+அறிஞர்கள்,	NOUN	B-DES
+சமய	NOUN	B-DES
+குருமார்	NOUN	I-DES
 போன்று	NOUN	O
 வேடம்	NOUN	O
 பூண்ட	ADJ	O
@@ -12367,19 +12367,19 @@ Telegraph	PROPN	O
 
 கண்டியின்	NOUN	B-CITY
 இறுதிப்	NOUN	O
-பிரதம	NOUN	B-POS
-பிரதானிகள்	NOUN	I-POS
+பிரதம	NOUN	B-DES
+பிரதானிகள்	NOUN	I-DES
 இருவரும்	ADJ	O
-மன்னருடன்	NOUN	B-POS
+மன்னருடன்	NOUN	B-DES
 முரண்பட்டவர்களாய்	VERB	O
 இருந்தனர்.	PROPN	O
 
 தன்னை	NOUN	O
-மன்னனாக்கிய,	NOUN	B-POS
+மன்னனாக்கிய,	NOUN	B-DES
 பிலிமத்தலாவை	NOUN	B-PER
 என்ற	PART	O
-பிரதம	NOUN	B-POS
-பிரதானியுடன்	NOUN	I-POS
+பிரதம	NOUN	B-DES
+பிரதானியுடன்	NOUN	I-DES
 மோதல்	NOUN	O
 உருவாகி,	NOUN	O
 அதன்	NOUN	O
@@ -12395,8 +12395,8 @@ Telegraph	PROPN	O
 நியமிக்கப்பட்ட	NOUN	O
 எஹலபொல	NOUN	B-PER
 என்ற	PART	O
-பிரதம	NOUN	B-POS
-பிரதானியுடனும்	ADJ	I-POS
+பிரதம	NOUN	B-DES
+பிரதானியுடனும்	ADJ	I-DES
 முரண்பாடுகள்	NOUN	O
 தோன்றத்	VERB	O
 தொடங்கின.	VERB	O
@@ -12414,8 +12414,8 @@ Telegraph	PROPN	O
 
 இதனால்	ADV	O
 பெரும்பாலான	ADJ	O
-பிரதானிகள்	NOUN	B-POS
-அரசனுக்கு	NOUN	B-POS
+பிரதானிகள்	NOUN	B-DES
+அரசனுக்கு	NOUN	B-DES
 எதிராகச்	NOUN	O
 செயற்படும்	ADJ	O
 நிலை	NOUN	O
@@ -12443,13 +12443,13 @@ Telegraph	PROPN	O
 செயற்பட்டவர்கள்	VERB	O
 இப்பிரதானிகளேயாவர்.	PROPN	O
 
-அரசனால்	NOUN	B-POS
-பிக்குகள்	NOUN	B-POS
+அரசனால்	NOUN	B-DES
+பிக்குகள்	NOUN	B-DES
 பலர்	NOUN	O
 கொலை	NOUN	O
 செய்யப்பட்டமையால்	NOUN	O
-அரசனுடன்	NOUN	B-POS
-பிக்குகளுக்கு	NOUN	B-POS
+அரசனுடன்	NOUN	B-DES
+பிக்குகளுக்கு	NOUN	B-DES
 இருந்த	ADJ	O
 நல்லுறவு	VERB	O
 பாதிப்புற்றிருந்தது.	VERB	O
@@ -12517,7 +12517,7 @@ Telegraph	PROPN	O
 அதில்	PRON	O
 நூற்றுக்கு	NOUN	B-NUM
 மேற்பட்ட	ADJ	O
-கலவரக்காரர்கள்	VERB	B-POS
+கலவரக்காரர்கள்	VERB	B-DES
 மரணித்தனர்.	PROPN	O
 
 இக்கலவரத்தின்	NOUN	O
@@ -12603,7 +12603,7 @@ Telegraph	PROPN	O
 சார்பாகப்	NOUN	O
 பயன்படுத்திக்	VERB	O
 கொண்ட	ADP	O
-ஆளுநர்	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
 பிரௌன்றிக்,	NOUN	B-PER
 1815	NUM	B-YEAR
 ஆம்	AUX	O
@@ -12638,7 +12638,7 @@ Telegraph	PROPN	O
 செய்திகளை	NOUN	O
 மக்களிடையே	NOUN	O
 பரப்புவதற்கு	VERB	O
-ஆளுநர்	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
 பிரௌன்றிக்	NOUN	B-PER
 நடவடிக்கைகளை	VERB	O
 மேற்கொண்டிருந்தார்.	PROPN	O
@@ -12673,14 +12673,14 @@ Telegraph	PROPN	O
 ஆந்	NOUN	I-DATE
 திகதி	NOUN	I-DATE
 மக்கள்	NOUN	O
-மன்னரையும்	ADJ	B-POS
-மகாராணியையும்	ADJ	B-POS
+மன்னரையும்	ADJ	B-DES
+மகாராணியையும்	ADJ	B-DES
 பிடித்து	_	O
 ஆங்கிலேயரிடம்	VERB	B-NORP
 ஒப்படைத்தனர்.	PROPN	O
 
 இவ்வாறு	ADV	O
-மன்னர்	NOUN	B-POS
+மன்னர்	NOUN	B-DES
 கைதுசெய்யப்பட்டமையால்	NOUN	O
 ஏனைய	NOUN	O
 எந்தவொரு	NOUN	O
@@ -12694,7 +12694,7 @@ Telegraph	PROPN	O
 கொண்டனர்.	PROPN	O
 
 என்றாலும்	ADJ	O
-மன்னர்	NOUN	B-POS
+மன்னர்	NOUN	B-DES
 கைதுசெய்யப்பட்டதுடன்	NOUN	O
 மலைநாடு	ADV	B-TER
 அடிமைப்பட்டுவிடும்	ADJ	O
@@ -12704,12 +12704,12 @@ Telegraph	PROPN	O
 தயாராக	ADV	O
 இருக்கவில்லை.	VERB	O
 
-கண்டிப்	NOUN	B-POS
-பிரதானிகள்	NOUN	I-POS
+கண்டிப்	NOUN	B-DES
+பிரதானிகள்	NOUN	I-DES
 ஆங்கிலேயருக்கு	NOUN	B-NORP
 வழங்கிய	ADJ	O
 ஒத்துழைப்பினாலேயே	NOUN	O
-மன்னரைக்	NOUN	B-POS
+மன்னரைக்	NOUN	B-DES
 கைதுசெய்ய	VERB	O
 முடிந்தது.	VERB	O
 
@@ -12741,7 +12741,7 @@ Telegraph	PROPN	O
 ஆங்கிலேய	NOUN	B-NORP
 ஆட்சியின்	NOUN	O
 சார்பாக	ADV	O
-ஆளுநர்	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
 பிரௌன்றிக்	NOUN	B-PER
 கண்டி	NOUN	B-CITY
 மக்கள்	NOUN	O
@@ -12794,7 +12794,7 @@ Telegraph	PROPN	O
 சில	ADJ	O
 தகவல்களின்	NOUN	O
 பிரகாரம்	NOUN	O
-ஆளுநர்	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
 பிரௌன்றிக்கும்	ADJ	B-PER
 பிரதானிகள்	NOUN	O
 சிலரும்	ADJ	O
@@ -12846,7 +12846,7 @@ Telegraph	PROPN	O
 ஆட்சிக்குட்பட்டது	_	O
 என்பதுடன்	NOUN	O
 மலைநாட்டு	PROPN	B-TER
-பிரதானிகளின்	NOUN	B-POS
+பிரதானிகளின்	NOUN	B-DES
 உரிமைகளும்	ADJ	O
 சலுகைகளும்	ADJ	O
 பாதுகாக்கப்படும்	ADJ	O
@@ -12863,8 +12863,8 @@ Telegraph	PROPN	O
 சமயமும்	_	I-REL
 தடையின்றிச்	NOUN	O
 செயற்படுவதுடன்	NOUN	O
-புத்த	ADJ	B-POS
-பிக்குகளும்	ADJ	I-POS
+புத்த	ADJ	B-DES
+பிக்குகளும்	ADJ	I-DES
 விஹாரைகளும்	ADJ	B-FAC
 தேவாலயங்களும்	NOUN	I-FAC
 பாதுகாக்கப்படும்	ADJ	O
@@ -12909,9 +12909,9 @@ Telegraph	PROPN	O
 மலைநாட்டுப்	NOUN	B-TER
 பிரதேச	NOUN	O
 நிருவாகத்திற்காக	ADV	O
-ஆளுநரின்	NOUN	B-POS
-வதிவிடப்	NOUN	B-POS
-பிரதிநிதியாக	ADV	I-POS
+ஆளுநரின்	NOUN	B-DES
+வதிவிடப்	NOUN	B-DES
+பிரதிநிதியாக	ADV	I-DES
 ஜோன்	NOUN	B-PER
 டொயிலி	NOUN	I-PER
 என்பவரை	VERB	O
@@ -12933,7 +12933,7 @@ Telegraph	PROPN	O
 ஆட்சியின்கீழ்	NOUN	O
 பணியாற்ற	VERB	O
 விரும்பிய	ADJ	O
-பிரதானிகளுக்கு	NOUN	B-POS
+பிரதானிகளுக்கு	NOUN	B-DES
 ஆங்கிலேய	NOUN	B-NORP
 ஆட்சியால்	NOUN	O
 பதவிகள்	VERB	O
@@ -13004,7 +13004,7 @@ Telegraph	PROPN	O
 செல்வதற்கு	VERB	O
 முன்னரை	NOUN	O
 கண்டி	NOUN	B-CITY
-மக்கள்	NOUN	B-POS
+மக்கள்	NOUN	B-DES
 விளங்கிக்	VERB	O
 கொண்டனர்.	PROPN	O
 
@@ -13149,7 +13149,7 @@ Telegraph	PROPN	O
 அரசரை	NOUN	O
 கண்டி	NOUN	B-KIN
 இராச்சியத்திற்கும்	ADJ	I-KIN
-அரசர்	NOUN	B-POS
+அரசர்	NOUN	B-DES
 எனப்	NOUN	O
 பிரகடனப்படுத்தப்பட்டிருந்தாலும்	ADJ	O
 மக்கள்	NOUN	O
@@ -13180,12 +13180,12 @@ Telegraph	PROPN	O
 முன்வைத்து	_	O
 நிவாரணம்	NOUN	O
 பெறக்கூடிய	ADJ	O
-மன்னர்	VERB	B-POS
+மன்னர்	VERB	B-DES
 ஒருவரையாகும்.	PROPN	O
 
 இவ்வாறான	ADJ	O
 இடத்தில்	NOUN	O
-மன்னர்	NOUN	B-POS
+மன்னர்	NOUN	B-DES
 ஒருவர்	NOUN	O
 இல்லாமையால்	NOUN	O
 தாங்கள்	NOUN	O
@@ -13200,12 +13200,12 @@ Telegraph	PROPN	O
 அக்காலத்தில்	NOUN	O
 மலைநாட்டில்	NOUN	B-TER
 வாழ்ந்த	ADJ	O
-பிக்கு	NOUN	B-POS
+பிக்கு	NOUN	B-DES
 ஒருவர்	NOUN	O
 பாடியதாக	ADV	O
 கூறப்படும்	ADJ	O
 கவிதையில்	NOUN	O
-அரசர்	NOUN	B-POS
+அரசர்	NOUN	B-DES
 ஒருவர்	NOUN	O
 இல்லாமையால்	NOUN	O
 அவர்கள்	PRON	O
@@ -13228,7 +13228,7 @@ Telegraph	PROPN	O
 வெளிநாட்டவர்களால்,	NOUN	O
 பௌத்தத்தைப்	NOUN	B-REL
 பின்பற்றும்	ADJ	O
-அரசர்	NOUN	B-POS
+அரசர்	NOUN	B-DES
 ஒருவரால்	NOUN	O
 வழங்கப்படும்	ADJ	O
 பாதுகாப்புக்	NOUN	O
@@ -13259,8 +13259,8 @@ Telegraph	PROPN	O
 நன்கு	VERB	O
 விளங்குகின்றது.	VERB	O
 
-பௌத்த	ADJ	B-POS
-குருமார்	NOUN	I-POS
+பௌத்த	ADJ	B-DES
+குருமார்	NOUN	I-DES
 போராட்டத்திற்கு	VERB	O
 உதவியமையும்	ADJ	O
 இதற்கு	PRON	O
@@ -13319,7 +13319,7 @@ Telegraph	PROPN	O
 நகரில்	NOUN	O
 காணப்பட்ட	ADJ	O
 ஆங்கிலேய	NOUN	B-NORP
-அதிகாரிகள்	NOUN	B-POS
+அதிகாரிகள்	NOUN	B-DES
 அவ்வாறான	ADJ	O
 சம்பிரதாயங்களைக்	NOUN	O
 கொண்டவர்கள்	VERB	O
@@ -13358,7 +13358,7 @@ Telegraph	PROPN	O
 தொடர்ந்தும்	ADJ	O
 பேணி	NOUN	O
 வந்தாலும்	ADJ	O
-பிரதானிகளின்	NOUN	B-POS
+பிரதானிகளின்	NOUN	B-DES
 அதிகாரமும்	_	O
 சமூக	NOUN	O
 நிலைமையும்	ADJ	O
@@ -13373,7 +13373,7 @@ Telegraph	PROPN	O
 மரியாதையை	NOUN	O
 வழங்குவதில்லை	NOUN	O
 என்று	PART	O
-பிரதானிகள்	NOUN	B-POS
+பிரதானிகள்	NOUN	B-DES
 டொயிலியிடம்	NOUN	B-PER
 முறைப்பாடு	VERB	O
 செய்திருந்தனர்.	PROPN	O
@@ -13390,7 +13390,7 @@ Telegraph	PROPN	O
 கடவைகளுக்கான	ADJ	I-TAX
 வரியை	NOUN	I-TAX
 அகற்றியமையால்,	NOUN	O
-பிரதானிகள்	NOUN	B-POS
+பிரதானிகள்	NOUN	B-DES
 அதன்	NOUN	O
 மூலம்	ADP	O
 பெற்று	VERB	O
@@ -13400,7 +13400,7 @@ Telegraph	PROPN	O
 இதற்கு	PRON	O
 உதாரணமாகும்.	PROPN	O
 
-பிரதானிகளுக்கு	NOUN	B-POS
+பிரதானிகளுக்கு	NOUN	B-DES
 பாரம்பரியமாக	ADV	O
 உரிமையாக	ADV	O
 இருந்த	ADJ	O
@@ -13416,8 +13416,8 @@ Telegraph	PROPN	O
 கடமைகளுக்குப்	NOUN	O
 பொறுப்பாக	ADV	O
 இருந்த	ADJ	O
-மடிகே	NOUN	B-POS
-முகாந்திரம்	NOUN	I-POS
+மடிகே	NOUN	B-DES
+முகாந்திரம்	NOUN	I-DES
 பதவிக்கு	NOUN	O
 இதுவரை	ADV	O
 சிங்களவர்களே	NOUN	B-NORP
@@ -13436,7 +13436,7 @@ Telegraph	PROPN	O
 என்ற	PART	O
 முஸ்லிம்	NOUN	B-NORP
 ஒருவரை	NOUN	O
-முகாந்திரம்	NOUN	B-POS
+முகாந்திரம்	NOUN	B-DES
 பதவிக்கு	VERB	O
 நியமித்திருந்தனர்.	PROPN	O
 
@@ -13444,7 +13444,7 @@ Telegraph	PROPN	O
 ஊவா	NOUN	B-TER
 வெல்லஸ்ஸ	NOUN	I-TER
 பிரதேசப்	NOUN	O
-பிரதானிகளிடையே	NOUN	B-POS
+பிரதானிகளிடையே	NOUN	B-DES
 பெரும்	ADJ	O
 மனச்சஞ்சலம்	VERB	O
 ஏற்பட்டிருந்தது.	VERB	O
@@ -13485,8 +13485,8 @@ Telegraph	PROPN	O
 கொகுகும்புரை	NOUN	B-PER
 ரட்டேரால	NOUN	I-PER
 போன்ற	ADP	O
-பிராந்தியத்	NOUN	B-POS
-தலைவர்களின்	NOUN	I-POS
+பிராந்தியத்	NOUN	B-DES
+தலைவர்களின்	NOUN	I-DES
 உதவியுடன்	NOUN	O
 அரசுரிமையைப்	NOUN	O
 பெற்றுக்	VERB	O
@@ -13495,8 +13495,8 @@ Telegraph	PROPN	O
 ஒன்று	NUM	O
 திரட்டுவதாக	ADV	O
 பதுளையின்	NOUN	B-CITY
-அரச	NOUN	B-POS
-அதிபரான	ADJ	I-POS
+அரச	NOUN	B-DES
+அதிபரான	ADJ	I-DES
 டக்லஸ்	PROPN	B-PER
 வில்சன்	NOUN	I-PER
 அறிந்து	VERB	O
@@ -13520,7 +13520,7 @@ Telegraph	PROPN	O
 சென்ற	ADJ	O
 வேளையில்	NOUN	O
 அவர்கள்	PRON	O
-போராளிகளால்	NOUN	B-POS
+போராளிகளால்	NOUN	B-DES
 கொலை	AUX	O
 செய்யப்பட்டனர்.	PROPN	O
 
@@ -13531,13 +13531,13 @@ Telegraph	PROPN	O
 சென்ற	ADJ	O
 வேளையில்	NOUN	O
 அவரும்	ADJ	O
-போராளிகளின்	NOUN	B-POS
+போராளிகளின்	NOUN	B-DES
 தாக்குதல்களால்	VERB	O
 உயிரிழந்தார்.	PROPN	O
 
 வெல்லஸ்ஸப்	NOUN	B-TER
 பிரதேச	NOUN	O
-மக்கள்	NOUN	B-POS
+மக்கள்	NOUN	B-DES
 துரைசாமியைச்	NOUN	B-PER
 சூழ	NOUN	O
 ஒன்றுபடுவதைக்	NOUN	O
@@ -13560,7 +13560,7 @@ Telegraph	PROPN	O
 படையைத்	NOUN	I-TRO
 திருப்பியனுப்பி	NOUN	O
 விட்டு,	NOUN	O
-போராளிகளுடன்	NOUN	B-POS
+போராளிகளுடன்	NOUN	B-DES
 சேர்ந்து	VERB	O
 கொண்டார்.	PROPN	O
 
@@ -13570,7 +13570,7 @@ Telegraph	PROPN	O
 முன்னெடுப்பதற்கு	VERB	O
 முன்வந்ததுடன்	NOUN	O
 கண்டிப்	NOUN	B-CITY
-பிரதானிகள்	NOUN	B-POS
+பிரதானிகள்	NOUN	B-DES
 பலரும்	ADJ	O
 போராட்டத்தில்	NOUN	O
 பங்கெடுக்க	VERB	O
@@ -13595,16 +13595,16 @@ Telegraph	PROPN	O
 
 கெப்பட்டிப்பொலவின்	NOUN	B-PER
 வழிநடத்தலில்,	NOUN	O
-போராளிகளால்	NOUN	B-POS
+போராளிகளால்	NOUN	B-DES
 துரைசாமி	NOUN	B-PER
 கண்டியின்	NOUN	B-CITY
-மன்னராகப்	VERB	B-POS
+மன்னராகப்	VERB	B-DES
 பிரகடனப்படுத்தப்பட்டார்.	PROPN	O
 
 அதன்படி	ADV	O
-மன்னரின்	NOUN	B-POS
+மன்னரின்	NOUN	B-DES
 மகாதிகாரமாக	ADV	O
-பிரதானியான	ADJ	B-POS
+பிரதானியான	ADJ	B-DES
 கெப்பட்டிப்பொல	NOUN	B-PER
 நியமனம்	VERB	O
 செய்யப்பட்டார்.	PROPN	O
@@ -13630,12 +13630,12 @@ Telegraph	PROPN	O
 கொள்ளாதுவிடினும்	ADJ	O
 போராட்டத்தை	NOUN	O
 முன்னெடுக்கும்	ADJ	O
-பிரதானிகளுடன்	NOUN	B-POS
+பிரதானிகளுடன்	NOUN	B-DES
 நெருங்கிய	ADJ	O
 தொடர்பைக்	NOUN	O
 கொண்டிருப்பதாக	_	O
 ஆங்கிலேய	NOUN	B-NORP
-அதிகாரிகள்	NOUN	B-POS
+அதிகாரிகள்	NOUN	B-DES
 சந்தேகமுறத்	VERB	O
 தொடங்கினர்.	PROPN	O
 
@@ -13657,7 +13657,7 @@ Telegraph	PROPN	O
 1818	NUM	B-YEAR
 பெப்பிரவரி	NOUN	B-MON
 மாதத்தில்	NOUN	I-MON
-ஆளுநர்	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
 கண்டிப்	NOUN	B-TER
 பிரதேசத்திற்கு	VERB	O
 இராணுவச்	NOUN	O
@@ -13707,12 +13707,12 @@ Telegraph	PROPN	O
 போராட்டம்	NOUN	O
 ஒன்றிற்கு	VERB	O
 முகங்கொடுக்க	VERB	O
-போராளிகளால்	VERB	B-POS
+போராளிகளால்	VERB	B-DES
 இயலவில்லை.	VERB	O
 
 இதனால்	ADV	O
-போராட்டத்	VERB	B-POS
-தலைவர்கள்	NOUN	I-POS
+போராட்டத்	VERB	B-DES
+தலைவர்கள்	NOUN	I-DES
 பலரையும்	ADJ	O
 கைது	NOUN	O
 செய்வதற்கு	VERB	O
@@ -13829,7 +13829,7 @@ Telegraph	PROPN	O
 நாசமாக்கி,	NOUN	O
 ஆங்கிலப்	NOUN	B-TRO
 படையால்	NOUN	I-TRO
-போராளிகள்	NOUN	B-POS
+போராளிகள்	NOUN	B-DES
 துரத்தியடிக்கப்பட்ட	ADJ	O
 பின்னர்	ADV	O
 வேறொரு	NOUN	O
@@ -13851,7 +13851,7 @@ Telegraph	PROPN	O
 போராட்டம்	NOUN	O
 ஒன்றை	NUM	O
 முன்னெடுப்பதற்கு	VERB	O
-போராளிகளால்	NOUN	B-POS
+போராளிகளால்	NOUN	B-DES
 முடியாமல்	VERB	O
 போனது.	VERB	O
 
@@ -13933,13 +13933,13 @@ Telegraph	PROPN	O
 
 இன்னும்	ADV	O
 பல	ADJ	O
-பிரதானிகளின்	NOUN	B-POS
+பிரதானிகளின்	NOUN	B-DES
 சொத்துக்கள்	VERB	O
 அரசுடைமையாக்கப்பட்டன.	VERB	O
 
 போராட்டத்தை	NOUN	O
 ஆதரித்த	ADJ	O
-தலைவர்கள்	NOUN	B-POS
+தலைவர்கள்	NOUN	B-DES
 பலர்	NOUN	O
 நாடு	AUX	O
 கடத்தப்பட்டனர்.	PROPN	O
@@ -13947,7 +13947,7 @@ Telegraph	PROPN	O
 அரசிற்கு	NOUN	O
 எதிராகச்	NOUN	O
 செயற்பட்ட	ADJ	O
-தலைவர்களுக்கு	NOUN	B-POS
+தலைவர்களுக்கு	NOUN	B-DES
 இவ்வாறு	ADV	O
 பல்வேறு	ADJ	O
 தண்டனைகள்	NOUN	O
@@ -13957,7 +13957,7 @@ Telegraph	PROPN	O
 மொல்லிகொட,	NOUN	B-PER
 எக்னெலிகொட	NOUN	B-PER
 போன்ற	ADP	O
-பிரதானிகளுக்கு	NOUN	B-POS
+பிரதானிகளுக்கு	NOUN	B-DES
 பல்வேறு	ADJ	O
 சலுகைகளையும்	ADJ	O
 ஆங்கிலேய	NOUN	B-NORP
@@ -13978,7 +13978,7 @@ Telegraph	PROPN	O
 கொள்ள	VERB	O
 முடியுமாயிருந்தது.	VERB	O
 
-ஆளுநர்	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
 பிரௌவுன்றிக்	NOUN	B-PER
 1818	NUM	B-YEAR
 நவம்பர்	NOUN	B-MON
@@ -14004,12 +14004,12 @@ Telegraph	PROPN	O
 இந்த	DET	O
 கண்டிப்	NOUN	B-CITY
 பிரகடனத்தில்	NOUN	O
-பிரதானிகளின்	NOUN	B-POS
+பிரதானிகளின்	NOUN	B-DES
 அதிகாரங்கள்	VERB	O
 குறைக்கப்பட்டன.	VERB	O
 
 அதுவரை	NOUN	O
-பிரதானிகளிடம்	NOUN	B-POS
+பிரதானிகளிடம்	NOUN	B-DES
 காணப்பட்ட	ADJ	O
 நீதி	NOUN	O
 அதிகாரங்களும்	ADJ	O
@@ -14279,8 +14279,8 @@ Telegraph	PROPN	O
 
 இவ்வாறான	ADJ	O
 காரணிகளினால்	NOUN	O
-கிராமிய	ADJ	B-POS
-மக்கள்	NOUN	I-POS
+கிராமிய	ADJ	B-DES
+மக்கள்	NOUN	I-DES
 துன்பத்திற்கு	VERB	O
 ஆளாகினர்.	PROPN	O
 
@@ -14288,8 +14288,8 @@ Telegraph	PROPN	O
 நீதிமன்ற	ADJ	B-LAW
 சீர்திருத்தங்களுக்கு	NOUN	I-LAW
 அமைய	NOUN	O
-கிராமிய	ADJ	B-POS
-மக்களின்	NOUN	I-POS
+கிராமிய	ADJ	B-DES
+மக்களின்	NOUN	I-DES
 சிறு	_	O
 பிரச்சினைகளுக்குக்	NOUN	O
 கூட	PART	O
@@ -14342,8 +14342,8 @@ Telegraph	PROPN	O
 செலவிட	NOUN	O
 வேண்டி	NOUN	O
 இருந்தமையாலும்	ADJ	O
-கிராமிய	ADJ	B-POS
-மக்கள்	NOUN	I-POS
+கிராமிய	ADJ	B-DES
+மக்கள்	NOUN	I-DES
 இடர்பாடுகளை	VERB	O
 எதிர்நோக்கினர்.	PROPN	O
 
@@ -14358,8 +14358,8 @@ Telegraph	PROPN	O
 கோல்புறூக்கின்	PROPN	B-PER
 சிபாரிசுகளுக்கு	NOUN	O
 அமைய	NOUN	O
-சிவில்	NOUN	B-POS
-சேவையாளர்களின்	NOUN	I-POS
+சிவில்	NOUN	B-DES
+சேவையாளர்களின்	NOUN	I-DES
 தொகையைக்	NOUN	O
 குறைத்தமையும்	ADJ	O
 அவர்களுக்குப்	NOUN	O
@@ -14378,8 +14378,8 @@ Telegraph	PROPN	O
 அமைந்தன.	VERB	O
 
 இதற்கமைய	NOUN	O
-நிருவாக	ADV	B-POS
-உத்தியோகத்தர்களின்	NOUN	I-POS
+நிருவாக	ADV	B-DES
+உத்தியோகத்தர்களின்	NOUN	I-DES
 நிருவாகப்	NOUN	O
 பிரதேசம்	NOUN	O
 முன்பை	NOUN	O
@@ -14418,8 +14418,8 @@ Telegraph	PROPN	O
 முறையாக	ADV	O
 அறிக்கைப்படுத்தப்படாததினால்	NOUN	O
 அரசுக்கும்	ADJ	O
-பொது	ADJ	B-POS
-மக்களுக்கும்	_	I-POS
+பொது	ADJ	B-DES
+மக்களுக்கும்	_	I-DES
 இடையிலான	ADJ	O
 தொடர்புகள்	NOUN	O
 தடைப்பட்டுப்	NOUN	O
@@ -14429,7 +14429,7 @@ Telegraph	PROPN	O
 
 இலங்கையில்	PROPN	B-COU
 ஆங்கிலேய	NOUN	B-NORP
-ஆளுநரான	ADJ	B-POS
+ஆளுநரான	ADJ	B-DES
 டொரிங்டனினால்	NOUN	B-PER
 1848	NUM	B-YEAR
 ஆம்	AUX	O
@@ -14459,7 +14459,7 @@ Telegraph	PROPN	O
 இருந்து	ADP	O
 வசூலித்துக்	NOUN	O
 கொள்வதற்காக	_	O
-ஆளுநரால்	NOUN	B-POS
+ஆளுநரால்	NOUN	B-DES
 வரிச்	NOUN	B-LAW
 சீர்திருத்தங்கள்	VERB	I-LAW
 மேற்கொள்ளப்பட்டன.	VERB	O
@@ -14485,7 +14485,7 @@ Telegraph	PROPN	O
 இவ்வரி	NOUN	O
 வகைகள்	NOUN	O
 அனைத்திற்கும்	ADJ	O
-பொதுமக்களின்	NOUN	B-POS
+பொதுமக்களின்	NOUN	B-DES
 எதிர்ப்பு	NOUN	O
 இருந்து	ADP	O
 வந்ததோடு	NOUN	O
@@ -14499,9 +14499,9 @@ Telegraph	PROPN	O
 எதிர்ப்பு	VERB	O
 உருவாகியது.	VERB	O
 
-கிராமிய	ADJ	B-POS
-மக்கள்	NOUN	I-POS
-துப்பாக்கியைப்	NOUN	B-PRO
+கிராமிய	ADJ	B-DES
+மக்கள்	NOUN	I-DES
+துப்பாக்கியைப்	NOUN	B-EQUIP
 பாவித்தது	_	O
 தமது	NOUN	O
 பயிர்ச்	NOUN	O
@@ -14521,7 +14521,7 @@ Telegraph	PROPN	O
 இருந்தது.	VERB	O
 
 இதற்காக	ADV	O
-மக்கள்	NOUN	B-POS
+மக்கள்	NOUN	B-DES
 அரச	NOUN	O
 அலுவலகங்களுக்குச்	NOUN	O
 செல்லவேண்டி	NOUN	O
@@ -14537,9 +14537,9 @@ Telegraph	PROPN	O
 செலவும்	VERB	O
 ஏற்பட்டது.	VERB	O
 
-துப்பாக்கிக்காகச்	NOUN	B-PRO
+துப்பாக்கிக்காகச்	NOUN	B-EQUIP
 செலவிடப்பட்ட	ADJ	O
-பணம்,	NOUN	B-PRO
+பணம்,	NOUN	O
 அதன்	NOUN	O
 பெறுமதியை	NOUN	O
 விடவும்	ADV	O
@@ -14580,7 +14580,7 @@ Telegraph	PROPN	O
 விதிக்கப்பட்டது.	VERB	O
 
 இதற்கும்	ADJ	O
-பொதுமக்களின்	NOUN	B-POS
+பொதுமக்களின்	NOUN	B-DES
 எதிர்ப்புக்	VERB	O
 காணப்பட்டது.	VERB	O
 
@@ -14597,7 +14597,7 @@ Telegraph	PROPN	O
 காணப்பட்டமையால்	NOUN	O
 இதன்	PRON	O
 மீதும்	_	O
-பொதுமக்களின்	NOUN	B-POS
+பொதுமக்களின்	NOUN	B-DES
 எதிர்ப்புக்	VERB	O
 காணப்பட்டது.	VERB	O
 
@@ -14611,7 +14611,7 @@ Telegraph	PROPN	O
 புத்தகத்திற்கான	ADJ	O
 தகவல்களைப்	NOUN	O
 பெற	VERB	O
-குடிமக்கள்	NOUN	B-POS
+குடிமக்கள்	NOUN	B-DES
 தொடர்பான	ADJ	O
 புள்ளி	NOUN	O
 விவரங்களைச்	NOUN	O
@@ -14624,7 +14624,7 @@ Telegraph	PROPN	O
 வரிக்கான	NOUN	O
 எத்தனம்	NOUN	O
 என்று	PART	O
-பொதுமக்கள்	NOUN	B-POS
+பொதுமக்கள்	NOUN	B-DES
 சந்தேகப்பட	VERB	O
 ஆரம்பித்தனர்.	PROPN	O
 
@@ -14636,7 +14636,7 @@ Telegraph	PROPN	O
 பொதுமக்கள்	NOUN	O
 ஒன்றுபட்டதுடன்,	NOUN	O
 அரசுக்கும்	ADJ	O
-மக்களுக்கும்	_	B-POS
+மக்களுக்கும்	_	B-DES
 இடையே	ADP	O
 மோதல்கள்	VERB	O
 ஆரம்பமாகின.	VERB	O
@@ -14651,15 +14651,15 @@ Telegraph	PROPN	O
 ஒன்றுகூடியதுடன்,	NOUN	O
 ஆங்கில	NOUN	O
 அரசின்	NOUN	O
-சிவில்	NOUN	B-POS
-உத்தியோகத்தர்களுக்கு	NOUN	I-POS
+சிவில்	NOUN	B-DES
+உத்தியோகத்தர்களுக்கு	NOUN	I-DES
 எதிராகவும்	PRON	O
 எதிர்ப்பு	VERB	O
 வலுத்தது.	VERB	O
 
 பதுளையில்	NOUN	B-TER
 திரண்ட	ADJ	O
-விவசாயிகளில்	NOUN	B-POS
+விவசாயிகளில்	NOUN	B-DES
 சிலர்,	NOUN	O
 துப்பாக்கி	NOUN	B-TAX
 வரிக்கு	NOUN	I-TAX
@@ -14670,7 +14670,7 @@ Telegraph	PROPN	O
 அதிபரின்	NOUN	O
 முன்பாகவே	NOUN	O
 தமது	NOUN	O
-துப்பாக்கிகளை	NOUN	B-PRO
+துப்பாக்கிகளை	NOUN	B-EQUIP
 நிலத்தில்	NOUN	O
 அடித்து	VERB	O
 உடைத்தெறிந்தனர்.	PROPN	O
@@ -14688,11 +14688,11 @@ Telegraph	PROPN	O
 நடாத்துவதற்கு	VERB	O
 ஆயத்தமாயினர்.	PROPN	O
 
-பொலிசாருக்கு	NOUN	B-POS
+பொலிசாருக்கு	NOUN	B-DES
 இவர்களைக்	NOUN	O
 கட்டுப்படுத்துவது	_	O
 சிரமமாயிருக்கவே	NOUN	O
-இராணுவத்தை	NOUN	B-POS
+இராணுவத்தை	NOUN	B-DES
 அழைக்க	VERB	O
 நேர்ந்தது.	VERB	O
 
@@ -14749,7 +14749,7 @@ Telegraph	PROPN	O
 செல்ல	VERB	O
 முன்வந்தனர்.	PROPN	O
 
-போராளிகளில்	NOUN	B-POS
+போராளிகளில்	NOUN	B-DES
 சிலர்	NOUN	O
 தம்புள்ளை	NOUN	B-LOC
 விகாரையில்	NOUN	I-LOC
@@ -14799,11 +14799,11 @@ Telegraph	PROPN	O
 நடவடிக்கைகளை	VERB	O
 மேற்கொண்டனர்.	PROPN	O
 
-ஆளுநர்	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
 டொரிங்டனால்	NOUN	B-PER
-இராணுவத்தைப்	NOUN	B-POS
+இராணுவத்தைப்	NOUN	B-DES
 பிரயோகித்து,	NOUN	O
-போராட்டக்காரர்களை	NOUN	B-POS
+போராட்டக்காரர்களை	NOUN	B-DES
 ஒன்று	NUM	O
 சேராது	_	O
 தடுத்து	VERB	O
@@ -14818,7 +14818,7 @@ Telegraph	PROPN	O
 இரு	NUM	B-NUM
 மாதங்களுக்கிடையில்	NOUN	O
 அதன்	NOUN	O
-தலைவர்கள்	NOUN	B-POS
+தலைவர்கள்	NOUN	B-DES
 பலரையும்	ADJ	O
 கைதுசெய்யக்கூடியதாயிருந்தது.	VERB	O
 
@@ -14860,7 +14860,7 @@ Telegraph	PROPN	O
 விதிக்கப்பட்டமைக்காக	ADV	O
 அரசாங்கத்தின்	NOUN	O
 மீது	ADP	O
-பொதுமக்கள்	NOUN	B-POS
+பொதுமக்கள்	NOUN	B-DES
 கடும்	ADJ	O
 அதிருப்தி	VERB	O
 கொண்டனர்.	PROPN	O
@@ -14936,7 +14936,7 @@ Telegraph	PROPN	O
 1848	NUM	B-YEAR
 போராட்டம்	NOUN	O
 நடக்கும்போது	ADV	O
-ஆளுநராகக்	ADV	B-POS
+ஆளுநராகக்	ADV	B-DES
 கடமையாற்றிய	ADJ	O
 டொரிங்டனின்	NOUN	B-PER
 செயற்பாடு	NOUN	O
@@ -14956,7 +14956,7 @@ Telegraph	PROPN	O
 நியமித்தது.	VERB	O
 
 அதற்கமைய	NOUN	O
-ஆளுநர்	NOUN	B-POS
+ஆளுநர்	NOUN	B-DES
 டொரிங்டன்	PROPN	B-PER
 பிரித்தானியாவுக்குத்	NOUN	B-COU
 திருப்பி	VERB	O
@@ -15011,7 +15011,7 @@ Telegraph	PROPN	O
 முன்வந்தது.	VERB	O
 
 இந்நாட்டு	PROPN	O
-விவசாயிகளின்	NOUN	B-POS
+விவசாயிகளின்	NOUN	B-DES
 பிரச்சினைகளைத்	NOUN	O
 தீர்ப்பதற்கு	VERB	O
 1850	NUM	B-YEAR
@@ -15066,7 +15066,7 @@ Telegraph	PROPN	O
 
 பின்னர்	ADV	O
 ஜேர்மனிய	ADJ	B-NORP
-நிலவியலாளர்	NOUN	B-POS
+நிலவியலாளர்	NOUN	B-DES
 ஒருவரால்	NOUN	O
 அப்பிரதேசம்	NOUN	O
 அமெரிக்கா	PROPN	B-COU
@@ -15362,7 +15362,7 @@ Telegraph	PROPN	O
 அந்தந்தக்	NOUN	O
 குடியேற்றங்களுக்கு	NOUN	O
 நியமிக்கப்பட்ட	ADJ	O
-ஆளுநர்களால்	NOUN	B-POS
+ஆளுநர்களால்	NOUN	B-DES
 முன்னெடுத்துச்	VERB	O
 செல்லப்பட்டது.	VERB	O
 
@@ -15450,7 +15450,7 @@ Telegraph	PROPN	O
 பிரித்தானிய	ADJ	B-COU
 குடியேற்றங்களுக்கு	NOUN	O
 வடக்கில்	NOUN	B-TER
-பிரான்சியரின்	NOUN	B-COU
+பிரான்சியரின்	NOUN	B-NORP
 ஆதிக்கம்	NOUN	O
 இருந்ததாலும்,	NOUN	O
 அவர்கள்	PRON	O
@@ -15460,7 +15460,7 @@ Telegraph	PROPN	O
 செய்ய	AUX	O
 முயன்றதாலும்	ADJ	O
 குடியேற்றவாசிகளுக்கு	NOUN	B-COM
-பிரித்தானியரின்	NOUN	B-COU
+பிரித்தானியரின்	NOUN	B-NORP
 பாதுகாப்புத்	VERB	O
 தேவைப்பட்டது.	VERB	O
 
@@ -15723,7 +15723,7 @@ Telegraph	PROPN	O
 
 இதனால்	ADV	O
 பிரித்தானியப்	NOUN	B-COU
-பிரதமர்	NOUN	B-POS
+பிரதமர்	NOUN	B-DES
 ஜோன்	NOUN	B-PER
 கதிரன்வில்	NOUN	I-PER
 அமெரிக்க	PROPN	B-COU
@@ -15816,17 +15816,17 @@ Telegraph	PROPN	O
 சட்டரீதியான	ADJ	O
 அனைத்து	ADJ	O
 ஆவணங்களுக்கும்	ADJ	O
-முத்திரை	NOUN	B-LAW
-வரி	NOUN	I-LAW
+முத்திரை	NOUN	B-TAX
+வரி	NOUN	I-TAX
 அறவிட	NOUN	O
 வேண்டுமென	VERB	O
 விதிக்கப்பட்டது.	VERB	O
 
 முத்திரை	NOUN	B-TAX
 வரி	NOUN	I-TAX
-வர்த்தகர்கள்,	NOUN	B-POS
-சட்டத்தரணிகள்,	NOUN	B-POS
-அச்சிடுவோர்	NOUN	B-POS
+வர்த்தகர்கள்,	NOUN	B-DES
+சட்டத்தரணிகள்,	NOUN	B-DES
+அச்சிடுவோர்	NOUN	B-DES
 போன்ற	ADP	O
 உயர்நிலையில்	NOUN	O
 இருந்தோரையும்	ADJ	O
@@ -15978,7 +15978,7 @@ Telegraph	PROPN	O
 பிரித்தானியப்	NOUN	B-COU
 பாராளுமன்றத்தில்	NOUN	B-FAC
 குடியேற்றவாசிகளின்	NOUN	B-COM
-பிரதிநிதிகள்	VERB	B-POS
+பிரதிநிதிகள்	VERB	B-DES
 இருக்கவில்லை.	VERB	O
 
 எனவே	ADV	O
@@ -16079,8 +16079,8 @@ Telegraph	PROPN	O
 தேயிலை	NOUN	B-PRO
 ஆகிய	ADJ	O
 பொருள்களுக்கு	NOUN	O
-இறக்குமதி	NOUN	B-LAW
-வரியை	VERB	I-LAW
+இறக்குமதி	NOUN	B-TAX
+வரியை	VERB	I-TAX
 விதித்தது.	VERB	O
 
 இந்த	DET	O
@@ -16197,7 +16197,7 @@ Telegraph	PROPN	O
 அமெரிக்க	PROPN	B-COU
 வர்த்தகர்களின்	NOUN	B-COM
 சம்பிரதாய	NOUN	O
-தேயிலை	NOUN	B-PRO
+தேயிலை	NOUN	B-CROP
 வர்த்தகம்	VERB	O
 பாதிக்கப்பட்டது.	VERB	O
 
@@ -16207,7 +16207,7 @@ Telegraph	PROPN	O
 பிரித்தானிய	ADJ	B-NORP
 வர்த்தக	PROPN	O
 நிறுவனங்களின்	NOUN	O
-தேயிலையை	NOUN	B-PRO
+தேயிலையை	NOUN	B-CROP
 அமெரிக்காவில்	PROPN	B-COU
 இறக்குமதி	VERB	O
 செய்வதற்குத்	NOUN	O
@@ -16222,7 +16222,7 @@ Telegraph	PROPN	O
 பொஸ்டன்	PROPN	B-LOC
 துறைமுகத்தில்	NOUN	I-LOC
 தரித்திருந்த	ADJ	O
-தேயிலையுடன்கூடிய	ADJ	B-PRO
+தேயிலையுடன்கூடிய	ADJ	B-CROP
 கப்பலில்	NOUN	O
 மாறுவேடம்	NOUN	O
 தரித்து	_	O
@@ -16397,8 +16397,8 @@ Telegraph	PROPN	O
 தீர்மானித்ததுடன்	NOUN	O
 அந்தப்	DET	O
 படையின்	NOUN	O
-தலைவர்	NOUN	B-POS
-பதவிக்கு	NOUN	I-POS
+தலைவர்	NOUN	B-DES
+பதவிக்கு	NOUN	I-DES
 ஜோர்ஜ்வொஷிங்டன்	VERB	B-PER
 நியமிக்கப்பட்டார்.	PROPN	O
 
@@ -16580,7 +16580,7 @@ Telegraph	PROPN	O
 ஜோர்ஜ்	NOUN	B-PER
 வொஷிங்டன்	PROPN	I-PER
 முதல்	VERB	O
-ஜனாதிபதியானார்.	PROPN	B-POS
+ஜனாதிபதியானார்.	PROPN	B-DES
 
 அமெரிக்க	PROPN	B-LAW
 சுதந்திரப்	NOUN	I-LAW
@@ -16689,7 +16689,7 @@ Telegraph	PROPN	O
 வீழ்ச்சியடைந்திருந்தது.	VERB	O
 
 பிரான்சிய	ADJ	B-COU
-மன்னனான	ADJ	B-POS
+மன்னனான	ADJ	B-DES
 16	NUM	B-PER
 ஆம்	AUX	I-PER
 லூயி	NOUN	I-PER
@@ -16794,7 +16794,7 @@ Telegraph	PROPN	O
 14	NUM	B-PER
 ஆம்	AUX	I-PER
 லூயி	NOUN	I-PER
-மன்னன்	NOUN	B-POS
+மன்னன்	NOUN	B-DES
 “நானே	_	O
 அரசு'	NOUN	O
 எனக்	PART	O
@@ -16996,7 +16996,7 @@ Telegraph	PROPN	O
 பொருட்டு	NOUN	O
 இன்டென்டன்	PROPN	B-NAME
 என்ற	PART	O
-அதிகாரிகளை	VERB	B-POS
+அதிகாரிகளை	VERB	B-DES
 நியமித்தான்.	PROPN	O
 
 எனினும்	ADV	O
@@ -17067,8 +17067,8 @@ Telegraph	PROPN	O
 
 பிரபுக்களும்	ADJ	B-COM
 குருமாரும்	ADJ	B-COM
-மேல்	NOUN	B-POS
-சபையினராகத்	_	I-POS
+மேல்	NOUN	B-DES
+சபையினராகத்	_	I-DES
 தனியாகக்	ADV	O
 கூட	PART	O
 வேண்டுமெனப்	NOUN	O
@@ -17087,7 +17087,7 @@ Telegraph	PROPN	O
 நோக்கமாக	VERB	O
 இருந்தது.	VERB	O
 
-மன்னன்	NOUN	B-POS
+மன்னன்	NOUN	B-DES
 பிரபுக்களின்	NOUN	B-COM
 கருத்துக்களுக்குச்	NOUN	O
 சார்பாக	ADV	O
@@ -17195,7 +17195,7 @@ Telegraph	PROPN	O
 
 16ஆம்	NUM	B-PER
 லூயி	NOUN	I-PER
-மன்னனால்	NOUN	B-POS
+மன்னனால்	NOUN	B-DES
 இதனைக்	NOUN	O
 கட்டுப்படுத்த	VERB	O
 முடியவில்லை.	VERB	O
@@ -17212,7 +17212,7 @@ Telegraph	PROPN	O
 கைக்கு	VERB	O
 வந்தது.	VERB	O
 
-புரட்சியாளர்	NOUN	B-POS
+புரட்சியாளர்	NOUN	B-DES
 லாபெயிற்	NOUN	B-PER
 என்ற	PART	O
 தலைவரின்	NOUN	O
@@ -17235,7 +17235,7 @@ Telegraph	PROPN	O
 16	NUM	B-PER
 ஆம்	AUX	I-PER
 லூயி	NOUN	I-PER
-மன்னனுக்கும்	ADJ	B-POS
+மன்னனுக்கும்	ADJ	B-DES
 அவன்	NOUN	O
 மனைவி	NOUN	O
 மாரி	NOUN	B-PER
@@ -17371,8 +17371,8 @@ Telegraph	PROPN	O
 1799	NUM	B-YEAR
 ஆம்	AUX	I-YEAR
 ஆண்டு	NOUN	I-YEAR
-இராணுவ	NOUN	B-POS
-அதிகாரியான	ADJ	I-POS
+இராணுவ	NOUN	B-DES
+அதிகாரியான	ADJ	I-DES
 நெப்போலியன்	NOUN	B-PER
 பொனாபட்	NOUN	I-PER
 பிரான்சின்	NOUN	B-COU
@@ -17454,7 +17454,7 @@ Telegraph	PROPN	O
 பொருளாதார	PROPN	O
 முறையில்	NOUN	O
 சனத்தொகையில்	NOUN	O
-97%	NUM	B-PERCENT
+97%	NUM	B-NUM
 மான	NOUN	O
 விவசாயிகளும்	ADJ	B-COM
 பத்தொன்பதாம்	NOUN	B-TIME
@@ -17690,8 +17690,8 @@ Telegraph	PROPN	O
 இருந்ததுடன்	NOUN	O
 அவர்களில்	NOUN	O
 அதிகமானோர்	NOUN	O
-அரசாங்க	VERB	B-POS
-சேவையாளர்	VERB	I-POS
+அரசாங்க	VERB	B-DES
+சேவையாளர்	VERB	I-DES
 ஆவர்.	PROPN	O
 
 இவ்வாறான	ADJ	O
@@ -17928,7 +17928,7 @@ Telegraph	PROPN	O
 இணைந்து	VERB	O
 கொண்டது.	VERB	O
 
-மன்னரால்	NOUN	B-POS
+மன்னரால்	NOUN	B-DES
 மக்களின்	NOUN	B-COM
 எதிர்ப்பைக்	NOUN	O
 கட்டுப்படுத்த	VERB	O
@@ -17937,7 +17937,7 @@ Telegraph	PROPN	O
 இதனால்	ADV	O
 1917ஆம்	NUM	B-YEAR
 ஆண்டு	NOUN	I-YEAR
-மன்னன்	NOUN	B-POS
+மன்னன்	NOUN	B-DES
 பதவி	NOUN	O
 துறக்க	VERB	O
 வேண்டிய	ADJ	O
@@ -17946,7 +17946,7 @@ Telegraph	PROPN	O
 
 கெரென்ஸ்தி	NOUN	B-NAME
 என்ற	PART	O
-தலைவரின்	NOUN	B-POS
+தலைவரின்	NOUN	B-DES
 இளர்ச்சி	NOUN	O
 அணியின்	NOUN	O
 கைக்கு	NOUN	O
@@ -18349,7 +18349,7 @@ Telegraph	PROPN	O
 பதிலாகத்	PROPN	O
 தொழிலாளர்களினதும்	ADJ	B-COM
 விவசாயிகளினதும்	ADJ	B-COM
-பிரதிநிதிகளைக்	NOUN	B-POS
+பிரதிநிதிகளைக்	NOUN	B-DES
 கொண்ட	ADP	O
 சோவியற்	NOUN	B-ORG
 சபையின்	NOUN	I-ORG
@@ -18665,7 +18665,7 @@ Telegraph	PROPN	O
 பிஸ்மார்க்	NOUN	I-PER
 என்னும்	ADJ	O
 திறமையான	ADJ	O
-தலைவன்	VERB	B-POS
+தலைவன்	VERB	B-DES
 உருவாக்கினான்.	PROPN	O
 
 1870	NUM	B-YEAR
@@ -18723,7 +18723,7 @@ Telegraph	PROPN	O
 எனினும்	ADV	O
 1887இல்	NUM	B-YEAR
 ஜேர்மன்	NOUN	B-COU
-பேரரசனான	ADJ	B-POS
+பேரரசனான	ADJ	B-DES
 (	PUNCT	O
 கெய்சர்	PROPN	B-PER
 )	PUNCT	O
@@ -18825,8 +18825,8 @@ Telegraph	PROPN	O
 ஐக்கிய	PROPN	B-COU
 ஜேர்மனி	PROPN	I-COU
 உருவானபின்	NOUN	O
-கைத்தொழில்	NOUN	B-IND
-துறையில்	NOUN	I-IND
+கைத்தொழில்	NOUN	B-SEC
+துறையில்	NOUN	I-SEC
 துரித	VERB	O
 வளர்ச்சியடைந்தது.	VERB	O
 
@@ -18919,7 +18919,7 @@ Telegraph	PROPN	O
 வரும்"	NOUN	O
 என	PART	O
 ஜேர்மனிய	ADJ	B-COU
-சேனாதிபதியாகிய	ADJ	B-POS
+சேனாதிபதியாகிய	ADJ	B-DES
 வொன்	NOUN	B-PER
 வோல்	NOUN	I-PER
 கே	AUX	I-PER
@@ -19128,7 +19128,7 @@ Telegraph	PROPN	O
 வேளையில்,	NOUN	O
 ஆஸ்திரியாவின்	NOUN	B-COU
 முடிக்குரிய	ADJ	O
-இளவரசனாகிய	ADJ	B-POS
+இளவரசனாகிய	ADJ	B-DES
 பிரான்சிஸ்	PROPN	B-PER
 பேர்டினன்ட்டும்	ADJ	I-PER
 அவரது	PRON	O
@@ -19776,7 +19776,7 @@ Telegraph	PROPN	O
 
 ஐக்கிய	PROPN	B-COU
 அமெரிக்காவின்	PROPN	I-COU
-ஜனாதிபதி	NOUN	B-POS
+ஜனாதிபதி	NOUN	B-DES
 வூட்ரோ	NOUN	B-PER
 வில்சன்	NOUN	I-PER
 அதற்காக	ADV	O
@@ -20369,7 +20369,7 @@ Telegraph	PROPN	O
 போரிட்டார்.	PROPN	O
 
 வைமார்	NOUN	B-GOV
-ஆட்சிக்	NOUN	O
+ஆட்சிக்	NOUN	I-GOV
 காலத்தில்	NOUN	O
 அரசுக்கு	NOUN	O
 எதிராகச்	NOUN	O
@@ -20421,7 +20421,7 @@ Kampf	PROPN	I-LIT
 அதிகாரத்தைக்	PROPN	I-LAW
 கைப்பற்றி	NOUN	O
 ஜேர்மனியின்	VERB	B-COU
-சான்சலரானார்.	PROPN	B-POS
+சான்சலரானார்.	PROPN	B-DES
 
 ஹிட்லரின்	NOUN	B-PER
 கட்சி	NOUN	O
@@ -20512,14 +20512,14 @@ Kampf	PROPN	I-LIT
 அதிகாரத்தை	NOUN	O
 உறுதிப்படுத்திக்	NOUN	O
 கொண்டதோடு	NOUN	O
-சர்வாதிகாரியாகத்	PROPN	B-POS
+சர்வாதிகாரியாகத்	PROPN	B-DES
 தன்னை	NOUN	O
 நிலைநிறுத்திக்	VERB	O
 கொண்டார்.	PROPN	O
 
 அவர்	PRON	O
 ஜேர்மனியின்	NOUN	B-COU
-சான்சலர்	NOUN	B-POS
+சான்சலர்	NOUN	B-DES
 பதவிக்கு	NOUN	O
 நியமிக்கப்படும்போது	ADV	O
 வொன்	NOUN	B-PER
@@ -20527,19 +20527,19 @@ Kampf	PROPN	I-LIT
 பர்க்	NOUN	I-PER
 என்பவர்	NOUN	O
 ஜேர்மனியின்	NOUN	B-COU
-ஜனாதிபதியாகப்	NOUN	B-POS
+ஜனாதிபதியாகப்	NOUN	B-DES
 பதவி	AUX	O
 வகித்தார்.	PROPN	O
 
 வயோதிப	NOUN	O
-ஜனாதிபதியாகிய	ADJ	B-POS
+ஜனாதிபதியாகிய	ADJ	B-DES
 ஹின்டன்	PROPN	B-PER
 பர்க்	NOUN	I-PER
 சிறிது	_	O
 காலத்தில்	NOUN	O
 இறக்கவே	NOUN	O
 ஹிட்லர்	NOUN	B-PER
-ஜனாதிபதியின்	NOUN	B-POS
+ஜனாதிபதியின்	NOUN	B-DES
 அதிகாரங்கள்	NOUN	O
 அனைத்தையும்	ADJ	O
 தன்வசப்படுத்திக்	VERB	O
@@ -20604,7 +20604,7 @@ Kampf	PROPN	I-LIT
 இருந்த	ADJ	O
 கொபெல்ஸ்	PROPN	B-PER
 என்ற	PART	O
-அமைச்சர்	NOUN	B-POS
+அமைச்சர்	NOUN	B-DES
 ஊடக	PROPN	O
 தர்மங்கள்	PROPN	O
 அனைத்தையும்	ADJ	O
@@ -20839,7 +20839,7 @@ Kampf	PROPN	I-LIT
 மற்றும்	CONJ	O
 நாசிச	NOUN	B-NORP
 வாதிகளின்	NOUN	I-NORP
-தலைவர்கள்	NOUN	B-POS
+தலைவர்கள்	NOUN	B-DES
 கொண்டு	VERB	O
 சென்ற	ADJ	O
 ஆக்கிரமிப்புக்	NOUN	O
@@ -21540,7 +21540,7 @@ Kampf	PROPN	I-LIT
 சிறந்த	ADJ	O
 பேச்சாற்றலோடு	NOUN	O
 திறமையான	ADJ	O
-தலைவராகவும்	PRON	B-POS
+தலைவராகவும்	PRON	B-DES
 திகழ்ந்த	ADJ	O
 சேர்ச்சில்	NOUN	B-PER
 ஒட்டுமொத்த	ADJ	O
@@ -21617,8 +21617,8 @@ Kampf	PROPN	I-LIT
 மோதல்கவின்போது	ADV	O
 பேர்ள்	NOUN	B-LOC
 துறைமுகத்தின்	NOUN	I-LOC
-இராணுவ	NOUN	B-FAC
-முகாம்	NOUN	I-FAC
+இராணுவ	NOUN	B-LOC
+முகாம்	NOUN	I-LOC
 ஜப்பானுக்குப்	NOUN	B-COU
 பெருந்தடையாக	VERB	O
 இருந்தது.	VERB	O
@@ -21646,7 +21646,7 @@ Kampf	PROPN	I-LIT
 அமெரிக்க	PROPN	B-COU
 ஐக்கிய	PROPN	I-COU
 நாட்டின்	NOUN	I-COU
-ஜனாதிபதியான	ADJ	B-POS
+ஜனாதிபதியான	ADJ	B-DES
 பிராங்ளின்	NOUN	B-PER
 ரூஸ்	PROPN	I-PER
 வேல்ட்	NOUN	I-PER
@@ -21793,7 +21793,7 @@ Kampf	PROPN	I-LIT
 எண்ணினார்.	PROPN	O
 
 பிரான்சின்	NOUN	B-COU
-சக்கரவர்த்தியான	ADJ	B-POS
+சக்கரவர்த்தியான	ADJ	B-DES
 நெப்போலியன்	NOUN	B-PER
 பொனாபட்	NOUN	I-PER
 இதற்கு	PRON	O
@@ -22119,7 +22119,7 @@ Kampf	PROPN	I-LIT
 நகரங்களும்	ADV	O
 அழிந்ததோடு	NOUN	O
 ஒரு	ADJ	B-NUM
-இலட்சத்திற்கும்	ADJ	I-NUM
+இலட்சத்திற்கும்	ADJ	B-NUM
 அதிகமான	ADJ	O
 மக்கள்	VERB	O
 உயிரிழந்தனர்.	PROPN	O
@@ -22143,7 +22143,7 @@ Kampf	PROPN	I-LIT
 கண்ணுற்ற	ADJ	O
 ஜப்பானின்	NOUN	B-COU
 ஹிரோஹித்தோ	NOUN	B-PER
-பேரரசன்	NOUN	B-POS
+பேரரசன்	NOUN	B-DES
 1945	NUM	B-YEAR
 ஆகஸ்ட்	NOUN	B-MON
 14	NUM	B-DATE
@@ -22301,8 +22301,8 @@ Kampf	PROPN	I-LIT
 அப்போதைய	NOUN	O
 ஐக்கிய	PROPN	B-COU
 அமெரிக்காவின்	PROPN	I-COU
-அரச	NOUN	B-POS
-செயலாளர்	NOUN	I-POS
+அரச	NOUN	B-DES
+செயலாளர்	NOUN	I-DES
 பதவியை	NOUN	O
 வகித்த	ADJ	O
 ஜோன்	NOUN	B-PER
@@ -22439,7 +22439,7 @@ Kampf	PROPN	I-LIT
 நிறுவப்பட்டது.	VERB	O
 
 இந்தியாவின்	PROPN	B-COU
-பிரதமர்	NOUN	B-POS
+பிரதமர்	NOUN	B-DES
 ஜவகர்லால்	NOUN	B-PER
 நேரு	NOUN	I-PER
 அவர்கள்	PRON	O
@@ -22449,12 +22449,12 @@ Kampf	PROPN	I-LIT
 
 அப்போதைய	NOUN	O
 யூகோஸ்லேவியாவின்	NOUN	B-COU
-ஜனாதிபதி	NOUN	B-POS
+ஜனாதிபதி	NOUN	B-DES
 மார்ஷல்	NOUN	B-PER
 டிட்டோ	NOUN	I-PER
 மற்றும்	CONJ	O
 எகிப்திய	ADJ	B-COU
-ஜனாதிபதி	NOUN	B-POS
+ஜனாதிபதி	NOUN	B-DES
 அப்துல்	PROPN	B-PER
 கமால்	NOUN	I-PER
 நசார்	NOUN	I-PER
@@ -22471,13 +22471,13 @@ Kampf	PROPN	I-LIT
 வேளையில்	NOUN	O
 இடைநடுவில்	NOUN	O
 பிரித்தானியப்	NOUN	B-COU
-பிரதமர்	NOUN	B-POS
+பிரதமர்	NOUN	B-DES
 வின்ஸ்டன்	PROPN	B-PER
 சேர்ச்சில்	NOUN	I-PER
 மற்றும்	CONJ	O
 ஐக்கிய	PROPN	B-COU
 அமெரிக்க	PROPN	I-COU
-ஜனாதிபதி	NOUN	B-POS
+ஜனாதிபதி	NOUN	B-DES
 பிராங்லின்	NOUN	B-PER
 ரூஸ்வெல்ட்	NOUN	I-PER
 1941	NUM	B-YEAR
@@ -22573,7 +22573,7 @@ Kampf	PROPN	I-LIT
 உலக	PROPN	O
 வல்லரசுகள்	NOUN	O
 மூன்றின்	NOUN	O
-தலைவர்கள்	NOUN	B-POS
+தலைவர்கள்	NOUN	B-DES
 இது	PRON	O
 குறித்து	ADP	O
 மென்மேலும்	ADJ	O
@@ -22898,8 +22898,8 @@ Kampf	PROPN	I-LIT
 செயலற்றுக்	VERB	O
 காணப்படுகின்றது.	VERB	O
 
-செயலாளர்	NOUN	B-POS
-நாயகத்தின்	NOUN	I-POS
+செயலாளர்	NOUN	B-DES
+நாயகத்தின்	NOUN	I-DES
 சிபாரிசின்படி	ADV	O
 நம்பிக்கைப்	NOUN	B-ORG
 பொறுப்புச்	NOUN	I-ORG
@@ -23004,8 +23004,8 @@ Kampf	PROPN	I-LIT
 தேர்ந்தெடுக்கபடும்	ADJ	O
 செயலாளரே	NOUN	O
 இதன்	PRON	O
-பிரதான	ADJ	B-POS
-நிருவாகர்	VERB	I-POS
+பிரதான	ADJ	B-DES
+நிருவாகர்	VERB	I-DES
 ஆவார்.	PROPN	O
 
 சர்வதேச	ADJ	O
@@ -23017,7 +23017,7 @@ Kampf	PROPN	I-LIT
 பாதுகாப்புச்	NOUN	B-ORG
 சபைக்கு	NOUN	I-ORG
 முன்வைப்பதற்கு	VERB	O
-செயலாளருக்கு	NOUN	B-POS
+செயலாளருக்கு	NOUN	B-DES
 அதிகாரம்	VERB	O
 உண்டு.	VERB	O
 
@@ -23133,7 +23133,7 @@ Kampf	PROPN	I-LIT
 
 எகிப்திய	ADJ	B-COU
 மிசிர்	NOUN	I-COU
-ஜனாதிபதி	NOUN	B-POS
+ஜனாதிபதி	NOUN	B-DES
 அப்துல்	PROPN	B-PER
 கமால்	NOUN	I-PER
 நாசர்	NOUN	I-PER
@@ -23266,8 +23266,8 @@ Kampf	PROPN	I-LIT
 ஐக்கிய	PROPN	B-ORG
 நாடுகள்	NOUN	I-ORG
 சபையின்	NOUN	I-ORG
-செயலாளர்	NOUN	B-POS
-நாயகத்தின்	NOUN	I-POS
+செயலாளர்	NOUN	B-DES
+நாயகத்தின்	NOUN	I-DES
 தலையீட்டினால்	VERB	O
 தீர்க்கப்பட்டது.	VERB	O
 
