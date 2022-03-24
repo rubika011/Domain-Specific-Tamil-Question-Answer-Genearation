@@ -1,10 +1,8 @@
-import re
-
 import snowballstemmer
 import tamil
 
 from FrontEnd import tamilutils, gazetteers, grammaticalrules
-from FrontEnd.crf_model_prediction import predictnertag
+from FrontEnd.crf_model_prediction import predict_ner_tag
 from FrontEnd.dataset.tagging_utils import is_year_format, check_if_word_is_number
 from FrontEnd.run import write_qa_file
 
@@ -86,22 +84,22 @@ def return_inflection_suffix(word):
     return 'None'
 
 
-def generatequestion(sentence, word, prevword, nextword, namedentitytype, writefile):
-    listofwords = word.split()
-    lastentityword = listofwords[-1]
-    inflectionsuffix = return_inflection_suffix(lastentityword)
-    if prevword != '' and search_clue_word_list(prevword, namedentitytype) != 'None':
-        questionword = search_rules(namedentitytype, inflectionsuffix)
-        question = sentence.replace(prevword + "\s" + word, questionword)
-    elif nextword != '' and search_clue_word_list(nextword, namedentitytype) != 'None':
-        nextwordinflectionsuffix = return_inflection_suffix(nextword)
-        questionword = search_rules(namedentitytype, nextwordinflectionsuffix)
-        question = sentence.replace(word + "\s" + nextword, questionword)
+def question_generation(sentence, word, prev_word, next_word, named_entity_type, writefile):
+    list_of_words = word.split()
+    last_entity_word = list_of_words[-1]
+    inflection_suffix = return_inflection_suffix(last_entity_word)
+    if prev_word != '' and search_clue_word_list(prev_word, named_entity_type) != 'None':
+        question_word = search_rules(named_entity_type, inflection_suffix)
+        question = sentence.replace(prev_word + "\s" + word, question_word)
+    elif next_word != '' and search_clue_word_list(next_word, named_entity_type) != 'None':
+        next_word_inf_suffix = return_inflection_suffix(next_word)
+        question_word = search_rules(named_entity_type, next_word_inf_suffix)
+        question = sentence.replace(word + "\s" + next_word, question_word)
     else:
-        questionword = search_rules(namedentitytype, inflectionsuffix)
-        question = sentence.replace(word, questionword)
+        question_word = search_rules(named_entity_type, inflection_suffix)
+        question = sentence.replace(word, question_word)
 
-    if questionword != '':
+    if question_word != '':
         write_qa_file(writefile, question, sentence)
 
 
@@ -122,43 +120,43 @@ def search_clue_word_list(word, key):
             return word
         if stem_word[0] in gazetteers.clue_words.get(key):
             return stem_word
-    return 'none'
+    return 'None'
 
 
-def nerquestiongeneration(sentences, writefile):
-    namedentitiespredicted = predictnertag(sentences)
-    namedentitytagtypes = ['COU', 'CITY', 'CONT', 'PER', 'KIN', 'EVE', 'TRO']
+def question_generation_ner(sentences, writefile):
+    named_entities_predicted = predict_ner_tag(sentences)
+    named_entity_tag_types = ['COU', 'CITY', 'CONT', 'PER', 'KIN', 'EVE', 'TRO']
     i = 0
     for sentence in sentences:
-        predictednamedentitytags = namedentitiespredicted[i]
+        predicted_named_entity_tags = named_entities_predicted[i]
         print(sentence)
-        print(namedentitiespredicted[i])
-        for namedentitytag in namedentitytagtypes:
-            processquestionword(sentence, predictednamedentitytags, namedentitytag, writefile)
+        print(named_entities_predicted[i])
+        for named_entity_tag in named_entity_tag_types:
+            process_question_word(sentence, predicted_named_entity_tags, named_entity_tag, writefile)
         i = i + 1
 
 
-def processquestionword(sentence, predictednamedentitytags, namedentitytag, writefile):
-    btag = "B-" + namedentitytag
-    itag = "I-" + namedentitytag
+def process_question_word(sentence, predicted_named_entity_tags, named_entity_tag, writefile):
+    b_tag = "B-" + named_entity_tag
+    i_tag = "I-" + named_entity_tag
 
-    startindex = returnindexoflist(predictednamedentitytags, btag)
-    endindex = startindex
+    start_index = return_index_of_list(predicted_named_entity_tags, b_tag)
+    end_index = start_index
 
-    if startindex >= 0:
-        while 0 <= endindex < len(predictednamedentitytags) - 1:
-            endindex = endindex + 1
-            if predictednamedentitytags[endindex] != itag:
+    if start_index >= 0:
+        while 0 <= end_index < len(predicted_named_entity_tags) - 1:
+            end_index = end_index + 1
+            if predicted_named_entity_tags[end_index] != i_tag:
                 break
         words = sentence.split()
-        namedentity = ''.join(words[startindex: endindex])
-        prevword = ''.join(words[startindex - 1])
-        nextword = ''.join(words[endindex])
+        named_entity = ''.join(words[start_index: end_index])
+        prev_word = ''.join(words[start_index - 1])
+        next_word = ''.join(words[end_index])
 
-        generatequestion(sentence, namedentity, prevword, nextword, namedentitytag, writefile)
+        question_generation(sentence, named_entity, prev_word, next_word, named_entity_tag, writefile)
 
 
-def returnindexoflist(list, item):
+def return_index_of_list(list, item):
     try:
         return list.index(item)
     except ValueError:
@@ -166,7 +164,7 @@ def returnindexoflist(list, item):
 
 
 def ner_question_generation(sentences, writefile):
-    named_entities_predicted = predictnertag(sentences)
+    named_entities_predicted = predict_ner_tag(sentences)
     i = 0
     for sentence in sentences:
         named_entity_identified = False
@@ -209,14 +207,13 @@ def identify_replacing_words(sentence, start_index, end_index, entity, writefile
     if end_index < len(words) - 1:
         next_word = ''.join(words[end_index + 1])
 
-    if entity == 'NUM' and word.isdigit() and not is_year_format(word):
-        question = sentence.replace(word, 'எத்தனை')
-        write_qa_file(writefile, question, sentence)
-    elif entity == 'NUM' and not word.isdigit():
+    if entity == 'NUM' and not word.isdigit():
         process_numeric_word_question(sentence, word, prev_word, writefile)
+
     elif word.endswith(',') and next_word != '':
         question = gap_fill_question(sentence, words, start_index, prev_word)
         write_qa_file(writefile, question, sentence)
+
     else:
         generate_question(sentence, word, prev_word, next_word, entity, writefile)
 
@@ -226,7 +223,7 @@ def generate_question(sentence, word, prev_word, next_word, entity, writefile):
     prev_clue_word = search_clue_word_list(prev_word, entity)
     inflection_suffix = get_inflection_suffix(word)
 
-    if prev_clue_word != 'none':
+    if prev_clue_word != 'None':
         prev_word_inf_suf = return_inflection_suffix(prev_word)
         if prev_word_inf_suf == 'u"ஆகிய"' or prev_word_inf_suf == 'None':
             question_word = get_question_word(entity, prev_clue_word, inflection_suffix)
@@ -244,7 +241,7 @@ def generate_question(sentence, word, prev_word, next_word, entity, writefile):
                 return
 
     next_clue_word = search_clue_word_list(next_word, entity)
-    if next_clue_word != 'none':
+    if next_clue_word != 'None':
         question = sentence.replace(word, 'எந்த')
         write_qa_file(writefile, question, sentence)
         return
@@ -331,17 +328,31 @@ def process_gap_fill_question(sentence, start_index, end_index, writefile):
 
 
 def process_numeric_word_question(sentence, word, prev_word, writefile):
-    prev_word_list = ['ஆகிய', 'போன்ற', 'என்ற', 'என', 'எனப்படும்']
-    if len(word) == 1 and prev_word not in prev_word_list:
-        if check_if_word_is_number(word):
-            question = sentence.replace(word, 'எத்தனை')
-            write_qa_file(writefile, question, sentence)
-        else:
-            inflection_suffix = numeric_inflection_suffix(word)
-            if inflection_suffix != 'None':
-                question_word = get_question_word('NUM', 'None',inflection_suffix)
-                question = sentence.replace(word, question_word)
-                write_qa_file(writefile, question, sentence)
+    prev_word_list = ['ஆகிய', 'போன்ற', 'என்ற', 'என', 'எனப்படும்', 'பல', 'சில']
+
+    for index, part_word in enumerate(word.split()):
+        if index == len(word)-1:
+            if prev_word not in prev_word_list:
+                if check_if_word_is_number(word):
+                    question = sentence.replace(word, 'எத்தனை')
+                    write_qa_file(writefile, question, sentence)
+                else:
+                    num_inf_suffix = numeric_inflection_suffix(word)
+                    if num_inf_suffix != 'None':
+                        question_word = get_question_word('NUM', 'None', num_inf_suffix)
+                        question = sentence.replace(word, question_word)
+                        write_qa_file(writefile, question, sentence)
+                        return
+
+                    inf_suffix = return_inflection_suffix(word)
+                    if inf_suffix != 'None':
+                        question_word = get_question_word('NUM', 'None', inf_suffix)
+                        question = sentence.replace(word, question_word)
+                        write_qa_file(writefile, question, sentence)
+                        return
+
+        elif not check_if_word_is_number(word):
+            return
 
 
 def numeric_inflection_suffix(word):

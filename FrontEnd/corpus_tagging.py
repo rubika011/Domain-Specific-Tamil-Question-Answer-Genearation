@@ -2,47 +2,48 @@ import re
 from rippletagger.tagger import Tagger
 from indicnlp.tokenize import sentence_tokenize
 
+
 def ner_tagging():
-    nertaggingfile = open('training_data_renaissance.txt', encoding="utf-8")
-    nertaggingsentences = nertaggingfile.read()
-    sentences = sentence_tokenize.sentence_split(nertaggingsentences, lang='tam')
+    ner_tagging_file = open('files/training_data_renaissance.txt', encoding="utf-8")
+    ner_tagging_sentences = ner_tagging_file.read()
+    sentences = sentence_tokenize.sentence_split(ner_tagging_sentences, lang='tam')
 
     writefile = open("ner_training_dataset.txt", mode="a", encoding="utf-8")
-    nersentencestag = []
-    nersentencestagstring = ""
+    ner_sentences_tag = []
+    ner_sentences_tag_string = ""
     for sentence in sentences:
         sentence = ' '.join(sentence.split())
         sentence = re.sub('\u200c', '', sentence)
         tagger = Tagger(language='tam')
-        postagger = tagger.tag(sentence)
-        nertaglist = []
-        for (word, tag) in postagger:
-            nertaglist.append((word, tag, 'O'))
+        pos_tagger = tagger.tag(sentence)
+        ner_tag_list = []
+        for (word, tag) in pos_tagger:
+            ner_tag_list.append((word, tag, 'O'))
 
-        nersentencestag.append(nertaglist)
-        nersentencestagstring = nersentencestagstring + str(nertaglist) + ',\n'
+        ner_sentences_tag.append(ner_tag_list)
+        ner_sentences_tag_string = ner_sentences_tag_string + str(ner_tag_list) + ',\n'
 
-    writefile.write(nersentencestagstring)
+    writefile.write(ner_sentences_tag_string)
     writefile.close()
 
-    nertaggingfile = open('testing_data_renaissance.txt', encoding="utf-8")
-    nertaggingsentences = nertaggingfile.read()
-    sentences = sentence_tokenize.sentence_split(nertaggingsentences, lang='tam')
+    ner_tagging_file = open('files/testing_data_renaissance.txt', encoding="utf-8")
+    ner_tagging_sentences = ner_tagging_file.read()
+    sentences = sentence_tokenize.sentence_split(ner_tagging_sentences, lang='tam')
 
     writefile = open("ner_testing_dataset.txt", mode="a", encoding="utf-8")
-    nersentencestag = []
-    nersentencestagstring = ""
+    ner_sentences_tag = []
+    ner_sentences_tag_string = ""
     for sentence in sentences:
         sentence = ' '.join(sentence.split())
         sentence = re.sub('\u200c', '', sentence)
         tagger = Tagger(language='tam')
-        postagger = tagger.tag(sentence)
-        nertaglist = []
-        for (word, tag) in postagger:
-            nertaglist.append((word, tag, 'O'))
+        pos_tagger = tagger.tag(sentence)
+        ner_tag_list = []
+        for (word, tag) in pos_tagger:
+            ner_tag_list.append((word, tag, 'O'))
 
-        nersentencestag.append(nertaglist)
-        nersentencestagstring = nersentencestagstring + str(nertaglist) + ',\n'
+        ner_sentences_tag.append(ner_tag_list)
+        ner_sentences_tag_string = ner_sentences_tag_string + str(ner_tag_list) + ',\n'
 
-    writefile.write(nersentencestagstring)
+    writefile.write(ner_sentences_tag_string)
     writefile.close()
